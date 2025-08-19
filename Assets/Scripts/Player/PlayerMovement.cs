@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isJumping = false;
 
     [Header("References")]
-    [SerializeField] private Transform playerObject; // Sprite & hitboxes live here
+    [SerializeField] private Transform playerObject;
     [SerializeField] private Transform shadow;
 
     private Rigidbody2D rb;
@@ -91,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Flip()
     {
-        spriteRenderer.flipX = !spriteRenderer.flipX; // flip horizontally, not Y
+        spriteRenderer.flipX = !spriteRenderer.flipX;
         facingRight = !facingRight;
     }
 }
