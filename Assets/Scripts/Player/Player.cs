@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IDamagable
 {
     [Header("Movement Settings")]
     [SerializeField] private float hSpeed = 10f;
@@ -17,6 +17,11 @@ public class PlayerMovement : MonoBehaviour
     [Header("References")]
     [SerializeField] private Transform playerObject;
     [SerializeField] private Transform shadow;
+
+    [Header("Attacks")]
+    [SerializeField] GameObject normalAttack;
+
+    private int Health = 100;
 
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
@@ -89,9 +94,29 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void NormalAttack(InputAction.CallbackContext context)
+    {
+        //whatever animator stuff
+
+        //
+        if (context.performed)
+        {
+            Instantiate(normalAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
+        }
+    }
+
+
+    public void ApplyDamage(float damage)
+    {
+        Health -= (int)damage;
+    }
+
     private void Flip()
     {
         spriteRenderer.flipX = !spriteRenderer.flipX;
         facingRight = !facingRight;
     }
+
+
+
 }
