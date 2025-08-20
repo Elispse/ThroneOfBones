@@ -98,8 +98,8 @@ GameObject:
   - component: {fileID: 6661506390532572142}
   - component: {fileID: 6245366315709543267}
   - component: {fileID: 6576275273829056083}
-  - component: {fileID: 7770379974760230605}
   - component: {fileID: 8987567015828812234}
+  - component: {fileID: 3149587017192602605}
   m_Layer: 0
   m_Name: PlayerRoot
   m_TagString: Player
@@ -188,25 +188,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.5, y: 1}
   m_Direction: 0
---- !u!114 &7770379974760230605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4675112536438087972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9bfecf5e95838341a24ce793dfc10e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hSpeed: 6
-  vSpeed: 4
-  jumpForce: 7
-  gravity: 20
-  playerObject: {fileID: 1243061524326444573}
-  shadow: {fileID: 8728967235390638041}
-  normalAttack: {fileID: 5818295537129569490, guid: aef00353b35769f4f841709cb58b96dc, type: 3}
 --- !u!114 &8987567015828812234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,7 +215,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7770379974760230605}
+      - m_Target: {fileID: 3149587017192602605}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: Move
         m_Mode: 0
@@ -249,12 +230,8 @@ MonoBehaviour:
     m_ActionId: 351f2ccd-1f9f-44bf-9bec-d62ac5c5f408
     m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 6b444451-8a00-4d00-a97e-f47457f736a8
-    m_ActionName: 'Player/Look[/Mouse/delta]'
-  - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7770379974760230605}
+      - m_Target: {fileID: 3149587017192602605}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: NormalAttack
         m_Mode: 0
@@ -273,12 +250,8 @@ MonoBehaviour:
     m_ActionId: 852140f2-7766-474d-8707-702459ba45f3
     m_ActionName: 'Player/Interact[/Keyboard/e]'
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 27c5f898-bc57-4ee1-8800-db469aca5fe3
-    m_ActionName: 'Player/Crouch[/Keyboard/c]'
-  - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7770379974760230605}
+      - m_Target: {fileID: 3149587017192602605}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: Jump
         m_Mode: 0
@@ -349,6 +322,25 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &3149587017192602605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4675112536438087972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9bfecf5e95838341a24ce793dfc10e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hSpeed: 10
+  vSpeed: 6
+  jumpForce: 10
+  gravity: 20
+  playerObject: {fileID: 1243061524326444573}
+  shadow: {fileID: 8728967235390638041}
+  normalAttack: {fileID: 5818295537129569490, guid: aef00353b35769f4f841709cb58b96dc, type: 3}
 --- !u!1 &7607817480333982793
 GameObject:
   m_ObjectHideFlags: 0

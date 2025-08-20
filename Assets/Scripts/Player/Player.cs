@@ -72,21 +72,17 @@ public class PlayerMovement : MonoBehaviour, IDamagable
     {
         if (!isJumping) return;
 
-        // Apply fake gravity
         jumpVelocity -= gravity * Time.deltaTime;
         jumpHeight += jumpVelocity * Time.deltaTime;
 
-        // Land
         if (jumpHeight <= 0f)
         {
             jumpHeight = 0f;
             isJumping = false;
         }
 
-        // Offset visuals upward
         playerObject.localPosition = new Vector3(0f, jumpHeight, 0f);
 
-        // Keep shadow on ground (optional)
         if (shadow != null)
         {
             float scale = Mathf.Lerp(1f, 0.4f, jumpHeight / jumpForce);
@@ -96,9 +92,6 @@ public class PlayerMovement : MonoBehaviour, IDamagable
 
     public void NormalAttack(InputAction.CallbackContext context)
     {
-        //whatever animator stuff
-
-        //
         if (context.performed)
         {
             Instantiate(normalAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
