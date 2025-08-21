@@ -40,7 +40,10 @@ public class PlayerMovement : MonoBehaviour, IDamagable
         if (playerObject == null)
             Debug.LogError("Assign a Visuals transform (child object).");
     }
-
+    private void Start()
+    {
+        Health = 100;
+    }
     private void Update()
     {
         HandleJump();
@@ -102,6 +105,7 @@ public class PlayerMovement : MonoBehaviour, IDamagable
     public void ApplyDamage(float damage)
     {
         Health -= (int)damage;
+        if (Health <= 0) GameManager.Instance.Death();
     }
 
     private void Flip()
@@ -110,6 +114,8 @@ public class PlayerMovement : MonoBehaviour, IDamagable
         facingRight = !facingRight;
     }
 
-
-
+    public void Knockback(Vector2 direction, float force)
+    {
+        rb.AddForce(direction.normalized * force, ForceMode2D.Impulse);
+    }
 }
