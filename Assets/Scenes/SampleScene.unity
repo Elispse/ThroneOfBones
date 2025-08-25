@@ -397,7 +397,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfece6eae1881034ebf06dbee4f3cf66, type: 3}
---- !u!1001 &1282690745
+--- !u!1001 &945198697
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -407,15 +407,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4675112536438087972, guid: 5d3ebf5f87adbcc44b1f4ce2e16ba378, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: DireWolf
       objectReference: {fileID: 0}
     - target: {fileID: 6661506390532572142, guid: 5d3ebf5f87adbcc44b1f4ce2e16ba378, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.439
+      value: 4.1515236
       objectReference: {fileID: 0}
     - target: {fileID: 6661506390532572142, guid: 5d3ebf5f87adbcc44b1f4ce2e16ba378, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.18546271
+      value: 0.17418462
       objectReference: {fileID: 0}
     - target: {fileID: 6661506390532572142, guid: 5d3ebf5f87adbcc44b1f4ce2e16ba378, type: 3}
       propertyPath: m_LocalPosition.z
@@ -868,6 +868,6 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 2112686724}
   - {fileID: 7766060313488012930}
-  - {fileID: 1282690745}
   - {fileID: 868755656}
   - {fileID: 1815796952}
+  - {fileID: 945198697}
