@@ -1,26 +1,17 @@
 using UnityEngine;
 
-public class EnemyNormal : MonoBehaviour
+public class KnightNormal : IAttack
 {
-    void Start()
-    {
-        Destroy(gameObject, 0.1f);
-    }
+    public override float damage => 33.34f;
+
+    public override float knockback => 10f;
+
+    public override string ignoreTag => "Player";
+    public override float destroyTime => 0.1f;
 
     void Update()
     {
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player")) return;
-        collision.gameObject.TryGetComponent<IDamagable>(out IDamagable damagable);
-        if (damagable != null)
-        {
-            damagable.ApplyDamage(34f);
-            Vector2 direction = (collision.transform.position - transform.position).normalized;
-            damagable.Knockback(direction, 10f);
-        }
-    }
 }

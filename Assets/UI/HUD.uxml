@@ -1,8 +1,12 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Timer.uss?fileID=7433441132597879392&amp;guid=b1e723b3d34de58489ba2e394e5f8f3a&amp;type=3#Timer" />
-    <ui:VisualElement style="flex-grow: 1; align-items: center; align-content: center; height: 10px; justify-content: center;">
+    <ui:VisualElement data-source="project://database/Assets/ScriptableObjects/UIVariables.asset?fileID=11400000&amp;guid=d400d26409fe6864c8a4826410af83e0&amp;type=2#UIVariables" style="flex-grow: 1; align-items: center; align-content: center; height: 10px; justify-content: center;">
         <ui:VisualElement name="Timer" style="flex-grow: 1; align-self: center; align-content: flex-start; width: 10%; height: 10%; align-items: stretch;">
-            <ui:FloatField value="42.2" data-source="project://database/Assets/ScriptableObjects/UIVariables.asset?fileID=11400000&amp;guid=d400d26409fe6864c8a4826410af83e0&amp;type=2#UIVariables" data-source-path="Timer" class="Timer" style="align-items: center; justify-content: center; align-self: center; align-content: center;" />
+            <ui:FloatField focusable="false" class="Timer" style="align-items: center; justify-content: center; align-self: center; align-content: center;">
+                <Bindings>
+                    <ui:DataBinding property="value" data-source-path="Timer" binding-mode="ToTarget" />
+                </Bindings>
+            </ui:FloatField>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
