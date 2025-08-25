@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour, IDamagable
 {
@@ -27,7 +28,7 @@ public class PlayerMovement : MonoBehaviour, IDamagable
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private bool facingRight = true;
-
+    private GameObject shield = null;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -45,6 +46,10 @@ public class PlayerMovement : MonoBehaviour, IDamagable
     private void Update()
     {
         HandleJump();
+        if (shield)
+        {
+            shield.transform.position = transform.position + new Vector3(facingRight ? 1 : -1, 0, 0);
+        }
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -99,18 +104,18 @@ public class PlayerMovement : MonoBehaviour, IDamagable
         }
     }
 
-    public void SecondaryAttach(InputAction.CallbackContext context)
+    public void SecondaryAttack(InputAction.CallbackContext context)
     {
-        GameObject shield = null;
-        // Implement secondary attack logic here
-        if (context.performed)
+        if (!shield)
         {
             Debug.Log("Secondary attack performed.");
             shield = Instantiate(secondaryAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
         }
+        
         if (context.canceled)
         {
             Destroy(shield);
+            shield = null;
         }
     }
 
