@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public Scene Level { get; set; }
     public float Timer { get; set; }
 
+    [SerializeField] public UIVariables uiVariables;
+
     private void Awake()
     {
         if (Instance == null)
@@ -33,6 +35,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         Timer += Time.deltaTime;
+        uiVariables.UpdateVars();
     }
 
     public void AddScore(int points)
