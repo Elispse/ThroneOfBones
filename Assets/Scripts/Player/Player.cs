@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour, IDamagable
 
     [Header("Attacks")]
     [SerializeField] GameObject normalAttack;
+    [SerializeField] GameObject secondaryAttack;
 
     private int Health = 100;
 
@@ -95,6 +96,21 @@ public class PlayerMovement : MonoBehaviour, IDamagable
         if (context.performed)
         {
             Instantiate(normalAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
+        }
+    }
+
+    public void SecondaryAttach(InputAction.CallbackContext context)
+    {
+        GameObject shield = null;
+        // Implement secondary attack logic here
+        if (context.performed)
+        {
+            Debug.Log("Secondary attack performed.");
+            shield = Instantiate(secondaryAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
+        }
+        if (context.canceled)
+        {
+            Destroy(shield);
         }
     }
 

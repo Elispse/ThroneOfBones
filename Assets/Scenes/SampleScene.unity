@@ -688,6 +688,7 @@ MonoBehaviour:
   playerObject: {fileID: 0}
   shadow: {fileID: 0}
   normalAttack: {fileID: 0}
+  secondaryAttack: {fileID: 0}
 --- !u!50 &2112686727
 Rigidbody2D:
   serializedVersion: 5
