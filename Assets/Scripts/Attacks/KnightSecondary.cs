@@ -15,11 +15,6 @@ public class KnightSecondary : MonoBehaviour
                 attack.blocked = true;
                 Debug.Log("Attack completely blocked!");
             }
-            else
-            {
-                attack.damage = Mathf.RoundToInt(attack.damage - damageReduction);
-                Debug.Log("Attack damage reduced!");
-            }
         }
     }
 }

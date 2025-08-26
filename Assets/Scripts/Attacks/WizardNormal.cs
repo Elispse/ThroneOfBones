@@ -10,6 +10,8 @@ public class WizardNormal : IAttack
 
     public override float destroyTime => 1f;
 
+    public override bool blocked { get; set; } = false;
+
     void Update()
     {
         

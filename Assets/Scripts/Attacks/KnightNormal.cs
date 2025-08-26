@@ -9,6 +9,8 @@ public class KnightNormal : IAttack
     public override string ignoreTag => "Player";
     public override float destroyTime => 0.1f;
 
+    public override bool blocked { get; set; } = false;
+
     void Update()
     {
         
