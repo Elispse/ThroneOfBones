@@ -12,9 +12,8 @@ public class WizardNormal : IAttack
 
     public override bool blocked { get; set; } = false;
 
-    void Update()
+    private void Awake()
     {
         
     }
-
 }

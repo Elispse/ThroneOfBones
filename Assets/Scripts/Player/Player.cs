@@ -2,8 +2,17 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
-public class PlayerMovement : MonoBehaviour, IDamagable
+enum CharacterType
 {
+    Knight,
+    Mage
+}
+
+public class Player : MonoBehaviour, IDamagable
+{
+    [Header("Character Settings")]
+    [SerializeField] private CharacterType characterType = CharacterType.Knight;
+
     [Header("Movement Settings")]
     [SerializeField] private float hSpeed = 10f;
     [SerializeField] private float vSpeed = 6f;
@@ -109,16 +118,24 @@ public class PlayerMovement : MonoBehaviour, IDamagable
 
     public void SecondaryAttack(InputAction.CallbackContext context)
     {
-        if (!shield)
+        if (!shield && characterType == CharacterType.Knight)
         {
             Debug.Log("Secondary attack performed.");
             shield = Instantiate(secondaryAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
         }
-        
+        else
+        {
+            GameObject projectile = Instantiate(secondaryAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
+            projectile.GetComponent<Rigidbody2D>().AddForce(new Vector2(facingRight ? 1 : -1, 0) * 20f, ForceMode2D.Impulse);
+        }
+
         if (context.canceled)
         {
-            Destroy(shield);
-            shield = null;
+            if (shield)
+            {
+                Destroy(shield);
+                shield = null;
+            }
         }
     }
 

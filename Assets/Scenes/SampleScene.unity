@@ -780,6 +780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9bfecf5e95838341a24ce793dfc10e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterType: 0
   hSpeed: 10
   vSpeed: 5
   jumpForce: 5
@@ -824,9 +825,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3149587017192602605, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
+      propertyPath: characterType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149587017192602605, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
       propertyPath: secondaryAttack
       value: 
-      objectReference: {fileID: 3376301848903417312, guid: 57e186284ea302a40ae79165f378983b, type: 3}
+      objectReference: {fileID: 4836819516391647605, guid: 38b2d8f4289246d4389f526d88fd3908, type: 3}
     - target: {fileID: 4675112536438087972, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
       propertyPath: m_Name
       value: PlayerRoot
