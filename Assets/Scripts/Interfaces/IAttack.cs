@@ -1,16 +1,25 @@
 using UnityEngine;
-
-public interface IAttack
+public abstract class IAttack : MonoBehaviour
 {
-    int damage
+    public abstract float damage { get; }
+    public abstract float knockback { get; }
+    public abstract string ignoreTag { get; }
+    public abstract float destroyTime { get; }
+
+    protected virtual void Start()
     {
-        get;
-        set;
+        Destroy(gameObject, destroyTime);
     }
 
-    bool blocked
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
-        get;
-        set;
+        if (collision.CompareTag(ignoreTag)) return;
+        collision.gameObject.TryGetComponent<IDamagable>(out IDamagable damagable);
+        if (damagable != null)
+        {
+            damagable.ApplyDamage(damage);
+            Vector2 direction = (collision.transform.position - transform.position).normalized;
+            damagable.Knockback(direction, knockback);
+        }
     }
 }

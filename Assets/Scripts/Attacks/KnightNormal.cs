@@ -1,23 +1,17 @@
 using UnityEngine;
 
-public class KnightNormal : MonoBehaviour, IAttack
+public class KnightNormal : IAttack
 {
-    [Header("Settings")]
-    public int damage { get; set; } = 35;
-    public bool blocked { get; set; } = false;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public override float damage => 33.34f;
+
+    public override float knockback => 10f;
+
+    public override string ignoreTag => "Player";
+    public override float destroyTime => 0.1f;
+
+    void Update()
     {
-        Destroy(gameObject, 0.1f);
+        
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player")) return;
-        collision.gameObject.TryGetComponent<IDamagable>(out IDamagable damagable);
-        if (damagable != null !& blocked)
-        {
-            damagable.ApplyDamage(damage);
-        }
-    }
 }
