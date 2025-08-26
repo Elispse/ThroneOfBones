@@ -341,6 +341,7 @@ MonoBehaviour:
   playerObject: {fileID: 1243061524326444573}
   shadow: {fileID: 8728967235390638041}
   normalAttack: {fileID: 5818295537129569490, guid: aef00353b35769f4f841709cb58b96dc, type: 3}
+  secondaryAttack: {fileID: 3376301848903417312, guid: 57e186284ea302a40ae79165f378983b, type: 3}
 --- !u!1 &7607817480333982793
 GameObject:
   m_ObjectHideFlags: 0
