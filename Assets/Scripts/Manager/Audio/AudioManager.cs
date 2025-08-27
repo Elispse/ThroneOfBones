@@ -47,8 +47,8 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        InitializeAmbience(FMODEvents.instance.ambience);
-        InitializeMusic(FMODEvents.instance.primaryTrack);
+        //InitializeAmbience(FMODEvents.instance.ambience);
+        //InitializeMusic(FMODEvents.instance.primaryTrack);
     }
 
     private void Update()
@@ -79,17 +79,21 @@ public class AudioManager : MonoBehaviour
         return emitter;
     }
 
-    private void InitializeAmbience(EventReference ambienceEventReference)
+    /*
+     * Uncomment when the ambience is added
+     * private void InitializeAmbience(EventReference ambienceEventReference)
     {
         ambienceEventInstance = CreateInstance(ambienceEventReference);
         ambienceEventInstance.start();
-    }
+    }*/
 
-    private void InitializeMusic(EventReference musicEventReference)
+    /*
+     * Uncomment when the game music is added
+     * private void InitializeMusic(EventReference musicEventReference)
     {
         musicEventInstance = CreateInstance(musicEventReference);
         musicEventInstance.start();
-    }
+    }*/
 
     private void CleanUp()
     {
