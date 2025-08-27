@@ -13,14 +13,9 @@ public class KnightNormal : IAttack
     public override bool blocked { get; set; } = false;
     private EventInstance attack;
 
-    protected override void Start()
-    {
-        Destroy(gameObject, destroyTime);
-        attack = AudioManager.instance.CreateInstance(FMODEvents.instance.knightSwordSwing);
-    }
-
     private void Awake()
     {
+        attack = AudioManager.instance.CreateInstance(FMODEvents.instance.knightSwordSwing);
         attack.start();
     }
 }
