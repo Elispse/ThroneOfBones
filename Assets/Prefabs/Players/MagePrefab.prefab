@@ -106,7 +106,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6661506390532572142
 Transform:
   m_ObjectHideFlags: 0
@@ -354,8 +354,8 @@ MonoBehaviour:
   shadow: {fileID: 8728967235390638041}
   normalAttack: {fileID: 4836819516391647605, guid: 38b2d8f4289246d4389f526d88fd3908, type: 3}
   secondaryAttack: {fileID: 0}
-  normalAttackCooldown: 0
-  secondaryAttackCooldown: 0
+  normalAttackCooldown: 0.15
+  secondaryAttackCooldown: 1
 --- !u!1 &7607817480333982793
 GameObject:
   m_ObjectHideFlags: 0
