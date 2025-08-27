@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,9 +12,10 @@ public class KnightPlayer : IPlayer, IDamagable
 
     public override void NormalAttack(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && normalCDComplete)
         {
             Instantiate(normalAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
+            StartCoroutine(AttackDelay(normalAttackCooldown));
         }
     }
 
@@ -32,5 +34,12 @@ public class KnightPlayer : IPlayer, IDamagable
                 shield = null;
             }
         }
+    }
+
+    private IEnumerator AttackDelay(float attackCooldown)
+    {
+        normalCDComplete = false;
+        yield return new WaitForSeconds(attackCooldown);
+        normalCDComplete = true;
     }
 }

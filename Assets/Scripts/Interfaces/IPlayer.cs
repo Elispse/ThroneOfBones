@@ -23,8 +23,8 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
     [SerializeField] protected GameObject secondaryAttack;
 
     [Header("Attack Settings")]
-    [SerializeField] protected float normalAttackCooldown;
-    [SerializeField] protected float secondaryAttackCooldown;
+    [SerializeField] protected float normalAttackCooldown = 0.2f;
+    [SerializeField] protected float secondaryAttackCooldown = 0.5f;
     protected bool normalCDComplete = true;
     protected bool secondaryCDComplete = true;
 

@@ -262,17 +262,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &604292233 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1137789911161541230, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
-  m_PrefabInstance: {fileID: 1475921045}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 476d653044b963e489d8af4699afab52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1185822830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -281,13 +270,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3149587017192602605, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
+      propertyPath: normalAttackCooldown
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3149587017192602605, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
+      propertyPath: secondaryAttackCooldown
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 4675112536438087972, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
       propertyPath: m_Name
       value: PlayerRoot
       objectReference: {fileID: 0}
     - target: {fileID: 4675112536438087972, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6661506390532572142, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -346,6 +343,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MagePrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 4675112536438087972, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6661506390532572142, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -385,54 +386,6 @@ PrefabInstance:
     - target: {fileID: 6661506390532572142, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8987567015828812234, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 604292233}
-    - target: {fileID: 8987567015828812234, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 604292233}
-    - target: {fileID: 8987567015828812234, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 604292233}
-    - target: {fileID: 8987567015828812234, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 604292233}
-    - target: {fileID: 8987567015828812234, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Move
-      objectReference: {fileID: 0}
-    - target: {fileID: 8987567015828812234, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: NormalAttack
-      objectReference: {fileID: 0}
-    - target: {fileID: 8987567015828812234, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SecondaryAttack
-      objectReference: {fileID: 0}
-    - target: {fileID: 8987567015828812234, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Jump
-      objectReference: {fileID: 0}
-    - target: {fileID: 8987567015828812234, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: IPlayer, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8987567015828812234, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MagePlayer, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8987567015828812234, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MagePlayer, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8987567015828812234, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: IPlayer, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
