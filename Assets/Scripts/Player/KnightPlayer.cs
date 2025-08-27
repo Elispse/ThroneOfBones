@@ -8,6 +8,10 @@ public class KnightPlayer : IPlayer, IDamagable
     private void Update()
     {
         HandleJump();
+        if (shield)
+        {
+            shield.transform.position = transform.position + new Vector3(facingRight ? 1 : -1, 0, 0);
+        }
     }
 
     public override void NormalAttack(InputAction.CallbackContext context)
@@ -15,13 +19,13 @@ public class KnightPlayer : IPlayer, IDamagable
         if (context.performed && normalCDComplete)
         {
             Instantiate(normalAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
-            StartCoroutine(AttackDelay(normalAttackCooldown));
+            StartCoroutine(NormalDelay(normalAttackCooldown));
         }
     }
 
     public override void SecondaryAttack(InputAction.CallbackContext context)
     {
-        if (!shield)
+        if (!shield && secondaryCDComplete)
         {
             Debug.Log("Secondary attack performed.");
             shield = Instantiate(secondaryAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
@@ -32,14 +36,22 @@ public class KnightPlayer : IPlayer, IDamagable
             {
                 Destroy(shield);
                 shield = null;
+                StartCoroutine(SecondaryDelay(secondaryAttackCooldown));
             }
         }
     }
 
-    private IEnumerator AttackDelay(float attackCooldown)
+    private IEnumerator NormalDelay(float attackCooldown)
     {
         normalCDComplete = false;
         yield return new WaitForSeconds(attackCooldown);
         normalCDComplete = true;
+    }
+
+    private IEnumerator SecondaryDelay(float attackCooldown)
+    {
+        secondaryCDComplete = false;
+        yield return new WaitForSeconds(attackCooldown);
+        secondaryCDComplete = true;
     }
 }

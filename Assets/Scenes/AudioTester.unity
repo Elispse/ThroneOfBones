@@ -270,21 +270,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3149587017192602605, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
-      propertyPath: normalAttackCooldown
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 3149587017192602605, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
-      propertyPath: secondaryAttackCooldown
-      value: 0.25
-      objectReference: {fileID: 0}
     - target: {fileID: 4675112536438087972, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
       propertyPath: m_Name
       value: PlayerRoot
-      objectReference: {fileID: 0}
-    - target: {fileID: 4675112536438087972, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6661506390532572142, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -339,21 +327,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1137789911161541230, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
-      propertyPath: normalAttackCooldown
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1137789911161541230, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
-      propertyPath: secondaryAttackCooldown
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4675112536438087972, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
       propertyPath: m_Name
       value: MagePrefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 4675112536438087972, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6661506390532572142, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
       propertyPath: m_LocalPosition.x
