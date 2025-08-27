@@ -312,7 +312,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <knightSwordSwing>k__BackingField.Path
-      value: 
+      value: event:/SFX/SwordSwing
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <knightSwordSwing>k__BackingField.Guid.Data1
+      value: 1397469684
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <knightSwordSwing>k__BackingField.Guid.Data2
+      value: 1167592028
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <knightSwordSwing>k__BackingField.Guid.Data3
+      value: 2105519796
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <knightSwordSwing>k__BackingField.Guid.Data4
+      value: 450993801
       objectReference: {fileID: 0}
     - target: {fileID: 5325122485673823143, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: m_Name

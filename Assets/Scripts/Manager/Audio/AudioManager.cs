@@ -32,7 +32,7 @@ public class AudioManager : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogError("Found more thatn one audio manager in the scene");
+            Debug.LogError("Found more that one audio manager in the scene");
         }
         instance = this;
 
