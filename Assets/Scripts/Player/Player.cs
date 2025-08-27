@@ -1,8 +1,18 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
-public class PlayerMovement : MonoBehaviour
+enum CharacterType
 {
+    Knight,
+    Mage
+}
+
+public class Player : MonoBehaviour, IDamagable
+{
+    [Header("Character Settings")]
+    [SerializeField] private CharacterType characterType = CharacterType.Knight;
+
     [Header("Movement Settings")]
     [SerializeField] private float hSpeed = 10f;
     [SerializeField] private float vSpeed = 6f;
@@ -18,10 +28,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform playerObject;
     [SerializeField] private Transform shadow;
 
+    [Header("Attacks")]
+    [SerializeField] GameObject normalAttack;
+    [SerializeField] GameObject secondaryAttack;
+
+    private int Health = 100;
+
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private bool facingRight = true;
-
+    private GameObject shield = null;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -35,10 +51,17 @@ public class PlayerMovement : MonoBehaviour
         if (playerObject == null)
             Debug.LogError("Assign a Visuals transform (child object).");
     }
-
+    private void Start()
+    {
+        Health = 100;
+    }
     private void Update()
     {
         HandleJump();
+        if (shield)
+        {
+            shield.transform.position = transform.position + new Vector3(facingRight ? 1 : -1, 0, 0);
+        }
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -67,21 +90,17 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!isJumping) return;
 
-        // Apply fake gravity
         jumpVelocity -= gravity * Time.deltaTime;
         jumpHeight += jumpVelocity * Time.deltaTime;
 
-        // Land
         if (jumpHeight <= 0f)
         {
             jumpHeight = 0f;
             isJumping = false;
         }
 
-        // Offset visuals upward
         playerObject.localPosition = new Vector3(0f, jumpHeight, 0f);
 
-        // Keep shadow on ground (optional)
         if (shadow != null)
         {
             float scale = Mathf.Lerp(1f, 0.4f, jumpHeight / jumpForce);
@@ -89,9 +108,52 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void NormalAttack(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Instantiate(normalAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
+        }
+    }
+
+    public void SecondaryAttack(InputAction.CallbackContext context)
+    {
+        if (!shield && characterType == CharacterType.Knight)
+        {
+            Debug.Log("Secondary attack performed.");
+            shield = Instantiate(secondaryAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
+        }
+        else
+        {
+            GameObject projectile = Instantiate(secondaryAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
+            projectile.GetComponent<Rigidbody2D>().AddForce(new Vector2(facingRight ? 1 : -1, 0) * 20f, ForceMode2D.Impulse);
+        }
+
+        if (context.canceled)
+        {
+            if (shield)
+            {
+                Destroy(shield);
+                shield = null;
+            }
+        }
+    }
+
+
+    public void ApplyDamage(float damage)
+    {
+        Health -= (int)damage;
+        if (Health <= 0) GameManager.Instance.Death();
+    }
+
     private void Flip()
     {
         spriteRenderer.flipX = !spriteRenderer.flipX;
         facingRight = !facingRight;
+    }
+
+    public void Knockback(Vector2 direction, float force)
+    {
+        rb.AddForce(direction.normalized * force, ForceMode2D.Impulse);
     }
 }
