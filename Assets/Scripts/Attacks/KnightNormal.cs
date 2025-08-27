@@ -1,3 +1,4 @@
+using FMOD.Studio;
 using UnityEngine;
 
 public class KnightNormal : IAttack
@@ -10,10 +11,11 @@ public class KnightNormal : IAttack
     public override float destroyTime => 0.1f;
 
     public override bool blocked { get; set; } = false;
+    private EventInstance attack;
 
-    void Update()
+    private void Awake()
     {
-        
+        attack = AudioManager.instance.CreateInstance(FMODEvents.instance.knightSwordSwing);
+        attack.start();
     }
-
 }
