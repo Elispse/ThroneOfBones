@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public abstract class IPlayer : MonoBehaviour
+public abstract class IPlayer : MonoBehaviour, IDamagable
 {
     [Header("Movement Settings")]
     [SerializeField] protected float hSpeed = 10f;
@@ -21,6 +21,12 @@ public abstract class IPlayer : MonoBehaviour
     [Header("Attacks")]
     [SerializeField] protected GameObject normalAttack;
     [SerializeField] protected GameObject secondaryAttack;
+
+    [Header("Attack Settings")]
+    [SerializeField] protected float normalAttackCooldown;
+    [SerializeField] protected float secondaryAttackCooldown;
+    protected bool normalCDComplete = true;
+    protected bool secondaryCDComplete = true;
 
     protected int Health = 100;
 
@@ -98,5 +104,16 @@ public abstract class IPlayer : MonoBehaviour
     {
         spriteRenderer.flipX = !spriteRenderer.flipX;
         facingRight = !facingRight;
+    }
+
+    public void ApplyDamage(float damage)
+    {
+        Health -= (int)damage;
+        if (Health <= 0) GameManager.Instance.Death();
+    }
+
+    public void Knockback(Vector2 direction, float force)
+    {
+        rb.AddForce(direction.normalized * force, ForceMode2D.Impulse);
     }
 }
