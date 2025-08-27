@@ -14,9 +14,8 @@ public abstract class IAttack : MonoBehaviour
 
     protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag(ignoreTag)) return;
         collision.gameObject.TryGetComponent<IDamagable>(out IDamagable damagable);
-        if (damagable != null && !blocked)
+        if (damagable != null && !blocked && !collision.CompareTag(ignoreTag))
         {
             damagable.ApplyDamage(damage);
             Vector2 direction = (collision.transform.position - transform.position).normalized;
