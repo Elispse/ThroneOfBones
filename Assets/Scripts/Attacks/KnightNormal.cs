@@ -11,9 +11,8 @@ public class KnightNormal : IAttack
 
     public override bool blocked { get; set; } = false;
 
-    void Update()
+    private void Awake()
     {
         
     }
-
 }
