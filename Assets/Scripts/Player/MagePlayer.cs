@@ -24,7 +24,7 @@ public class MagePlayer : IPlayer
         if (context.performed && secondaryCDComplete)
         {
             Debug.Log("Secondary attack performed.");
-            Instantiate(secondaryAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
+            Instantiate(secondaryAttack, transform.position + new Vector3(facingRight ? 2.5f : -2.5f, 0), Quaternion.Euler(0, 0,facingRight ? 90 : 270));
             StartCoroutine(SecondaryDelay(secondaryAttackCooldown));
         }
     }
