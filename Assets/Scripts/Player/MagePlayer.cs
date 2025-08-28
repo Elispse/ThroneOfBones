@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -14,11 +15,31 @@ public class MagePlayer : IPlayer
         {
             var attack = Instantiate(normalAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
             attack.GetComponent<Rigidbody2D>().AddForce((new Vector3(facingRight ? 1 : -1, 0, 0) * 5.0f), ForceMode2D.Impulse);
+            StartCoroutine(NormalDelay(normalAttackCooldown));
         }
     }
 
     public override void SecondaryAttack(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        if (context.performed && secondaryCDComplete)
+        {
+            Debug.Log("Secondary attack performed.");
+            Instantiate(secondaryAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
+            StartCoroutine(SecondaryDelay(secondaryAttackCooldown));
+        }
+    }
+
+    private IEnumerator NormalDelay(float attackCooldown)
+    {
+        normalCDComplete = false;
+        yield return new WaitForSeconds(attackCooldown);
+        normalCDComplete = true;
+    }
+
+    private IEnumerator SecondaryDelay(float attackCooldown)
+    {
+        secondaryCDComplete = false;
+        yield return new WaitForSeconds(attackCooldown);
+        secondaryCDComplete = true;
     }
 }

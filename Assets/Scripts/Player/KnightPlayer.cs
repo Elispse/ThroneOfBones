@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class KnightPlayer : IPlayer, IDamagable
+public class KnightPlayer : IPlayer
 {
     private GameObject shield;
     private void Update()
