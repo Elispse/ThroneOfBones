@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 81fab5eff22259f4b9ae4cb2affaf058
+guid: 4d7ab7be7b307d04390e81cdcee22e80
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5777635662082587063
-    second: DireWolf_Idle_0
+      213: 6991849013916550155
+    second: Death_0
   - first:
-      213: -1986620436357252704
-    second: DireWolf_Idle_1
+      213: -276728812324164698
+    second: Death_1
+  - first:
+      213: 3156895337291164288
+    second: Death_2
+  - first:
+      213: 1400002288684528572
+    second: Death_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -103,45 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DireWolf_Idle_0
+      name: Death_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 96
-        height: 32
+        x: 56
+        y: 64
+        width: 45
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4e6f024347357114893613401669895c
-      internalID: -677506311
+      spriteID: b0449ad32a9080160800000000000000
+      internalID: 6991849013916550155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DireWolf_Idle_1
+      name: Death_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 96
-        height: 32
+        x: 209
+        y: 49
+        width: 37
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 085dfb30b72123546b5685be8f6545ac
-      internalID: -469480051
+      spriteID: 6ab6d428c9cd82cf0800000000000000
+      internalID: -276728812324164698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_2
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 48
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08aa354559b8fcb20800000000000000
+      internalID: 3156895337291164288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_3
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 48
+        width: 53
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb376cdf9aecd6310800000000000000
+      internalID: 1400002288684528572
       vertices: []
       indices: 
       edges: []
@@ -150,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 06082a00be68c90408341634a731c26d
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -159,9 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      DireWolf_Idle_0: -677506311
-      DireWolf_Idle_1: -469480051
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
