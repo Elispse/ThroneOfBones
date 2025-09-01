@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{1e8600f3-74d7-4b6d-ae61-22fed74f28a9}">
+		<property name="assetPath">
+			<value>Haunted Forest - Ambience (no music) - sounds of a misty creepy forest 4.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>518.99075000000005</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{1f14b0de-9299-4197-a08b-53c6ce5acc80}</destination>
+		</relationship>
+	</object>
+</objects>
