@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 223db39a2b47dab4390ebb786c3e2bb3
+guid: d3102c6ef295c644681fdf22f41adf5c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5966621866309598838
-    second: Fall_0
-  - first:
-      213: -2069157278089061004
-    second: Fall_1
+      213: -1552300161795125819
+    second: Paladin_JumpAttack_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -116,45 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fall_0
+      name: Paladin_JumpAttack_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 231
-        height: 190
+        x: 240
+        y: 112
+        width: 576
+        height: 784
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a81c98d660d423da0800000000000000
-      internalID: -5966621866309598838
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fall_1
-      rect:
-        serializedVersion: 2
-        x: 231
-        y: 0
-        width: 231
-        height: 190
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 47d561f1b60e843e0800000000000000
-      internalID: -2069157278089061004
+      spriteID: 608efcf1fbdc1cc4ca8106fdbc83d4f9
+      internalID: 625739670
       vertices: []
       indices: 
       edges: []
@@ -163,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a109ec61616c3264db898341b5da868d
+    spriteID: d488d7ccdeae0d04a95d11fdf949c19b
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fall_0: -5966621866309598838
-      Fall_1: -2069157278089061004
+      Paladin_JumpAttack_0: 625739670
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
