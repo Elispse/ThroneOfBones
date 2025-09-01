@@ -273,6 +273,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1609,7 +1622,67 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Skeleton Mage_0: 1330501706491972260
+      Skeleton Mage_1: -368425226439959619
+      Skeleton Mage_10: 2780802610417574845
+      Skeleton Mage_11: 1800517023299554688
+      Skeleton Mage_12: 1507979446916954432
+      Skeleton Mage_13: -2704761456623736692
+      Skeleton Mage_14: -2197518976581038857
+      Skeleton Mage_15: -1292793762611354400
+      Skeleton Mage_16: 3820424369905995160
+      Skeleton Mage_17: 7855391470951026743
+      Skeleton Mage_18: 8614482651302535
+      Skeleton Mage_19: -6965643889177695682
+      Skeleton Mage_2: 6377325722453378382
+      Skeleton Mage_20: -7440532147432916802
+      Skeleton Mage_21: 6936177644901565929
+      Skeleton Mage_22: 5446021374680714861
+      Skeleton Mage_23: -1995893867502117761
+      Skeleton Mage_24: 4942050881788331265
+      Skeleton Mage_25: -4178441654342285090
+      Skeleton Mage_26: -2791974787085874681
+      Skeleton Mage_27: -5430882379271058390
+      Skeleton Mage_28: -7212451991150961316
+      Skeleton Mage_29: 287811582532641586
+      Skeleton Mage_3: -6731379413181729491
+      Skeleton Mage_30: 4193885127373240514
+      Skeleton Mage_31: 5879286581552092676
+      Skeleton Mage_32: 7067191568424111649
+      Skeleton Mage_33: 2281562793954552872
+      Skeleton Mage_34: 7582671626741398108
+      Skeleton Mage_35: -7406482745040777062
+      Skeleton Mage_36: 7525331615470788772
+      Skeleton Mage_37: 7930705601308456186
+      Skeleton Mage_38: -840797506629815906
+      Skeleton Mage_39: 8756260950513456908
+      Skeleton Mage_4: -5070232852505537714
+      Skeleton Mage_40: 9040915915728899118
+      Skeleton Mage_41: 5022052558723456758
+      Skeleton Mage_42: -6346906910061222732
+      Skeleton Mage_43: -7649020369235205688
+      Skeleton Mage_44: 1952387426200084455
+      Skeleton Mage_45: 8196072837254239675
+      Skeleton Mage_46: -8683726883182792305
+      Skeleton Mage_47: -4490751071127931418
+      Skeleton Mage_48: 3096150648337326253
+      Skeleton Mage_49: 3125274301511767353
+      Skeleton Mage_5: 3429620315501566082
+      Skeleton Mage_50: 7614450230308624880
+      Skeleton Mage_51: -5550588240517489233
+      Skeleton Mage_52: -5973111160846486254
+      Skeleton Mage_53: -1587855586834878692
+      Skeleton Mage_54: 6969821719858241437
+      Skeleton Mage_55: -4481044272872398408
+      Skeleton Mage_56: 9045341902555191571
+      Skeleton Mage_57: -3863398372594848793
+      Skeleton Mage_58: 7851971973740277951
+      Skeleton Mage_59: -4534543735136333027
+      Skeleton Mage_6: -6116961200243513640
+      Skeleton Mage_7: 5632914859675668217
+      Skeleton Mage_8: -4621994916786423148
+      Skeleton Mage_9: 7012050041967554105
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
