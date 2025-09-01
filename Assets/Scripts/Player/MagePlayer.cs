@@ -4,11 +4,6 @@ using UnityEngine.InputSystem;
 
 public class MagePlayer : IPlayer
 {
-    private void Update()
-    {
-        HandleJump();
-    }
-
     public override void NormalAttack(InputAction.CallbackContext context)
     {
         if (context.performed && normalCDComplete)

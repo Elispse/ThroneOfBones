@@ -5,9 +5,10 @@ using UnityEngine.InputSystem;
 public class KnightPlayer : IPlayer
 {
     private GameObject shield;
-    private void Update()
+    public override void Update()
     {
         HandleJump();
+        rb.linearVelocity = targetVelocity;
         if (shield)
         {
             shield.transform.position = transform.position + new Vector3(facingRight ? 1 : -1, 0, 0);

@@ -11,4 +11,5 @@ public class WizardSecondary : IAttack
     public override float destroyTime => 1f;
 
     public override bool blocked { get; set; } = false;
+    public override IPlayer owner { get; set; }
 }

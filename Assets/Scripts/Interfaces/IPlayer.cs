@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Windows;
 
 public abstract class IPlayer : MonoBehaviour, IDamagable
 {
@@ -37,6 +38,7 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
     protected Rigidbody2D rb;
     [SerializeField] SpriteRenderer spriteRenderer;
     protected bool facingRight = true;
+    protected Vector3 targetVelocity = Vector3.zero;
 
     protected virtual void Awake()
     {
@@ -51,18 +53,24 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
         if (playerObject == null)
             Debug.LogError("Assign a Visuals transform (child object).");
 
-        rb.linearDamping = 100f;
+        rb.linearDamping = 1f;
     }
 
-    protected virtual void Start()
+    public virtual void Start()
     {
         Health = 100;
+    }
+
+    public virtual void Update()
+    {
+        HandleJump();
+        rb.linearVelocity = targetVelocity;
     }
 
     public virtual void Move(InputAction.CallbackContext context)
     {
         Vector2 input = context.ReadValue<Vector2>();
-        Vector3 targetVelocity = new Vector3(input.x * hSpeed, input.y * vSpeed);
+        targetVelocity = new Vector3(input.x * hSpeed, input.y * vSpeed);
 
         rb.linearVelocity = targetVelocity;
         if (targetVelocity.x > 0 && !facingRight)

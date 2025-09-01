@@ -12,6 +12,7 @@ public class KnightNormal : IAttack
 
     public override bool blocked { get; set; } = false;
     private EventInstance attack;
+    public override IPlayer owner { get; set; }
 
     private void Awake()
     {
