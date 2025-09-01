@@ -12,7 +12,7 @@ public class KnightPlayer : IPlayer
         if (shield)
         {
             shield.transform.position = transform.position + new Vector3(facingRight ? 1 : -1, 0, 0);
-        }
+        }   
     }
 
     public override void NormalAttack(InputAction.CallbackContext context)

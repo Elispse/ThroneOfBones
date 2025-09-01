@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour, IDamagable
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.linearDamping = 100f;
+        rb.linearDamping = 1f;
     }
 
     // Update is called once per frame
@@ -82,7 +82,7 @@ public class Enemy : MonoBehaviour, IDamagable
 
     public void Knockback(Vector2 direction, float force)
     {
-        rb.linearVelocity = direction.normalized * force;
+        rb.linearVelocity = (direction.normalized * force);
     }
 
     public void randomMove()

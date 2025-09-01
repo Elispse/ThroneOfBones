@@ -135,18 +135,18 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
         facingRight = !facingRight;
     }
 
-    public void ApplyDamage(float damage)
+    public virtual void ApplyDamage(float damage)
     {
         Health -= (int)damage;
         if (Health <= 0) GameManager.Instance.Death();
     }
 
-    public void Knockback(Vector2 direction, float force)
+    public virtual void Knockback(Vector2 direction, float force)
     {
-        rb.AddForce(direction.normalized * force, ForceMode2D.Impulse);
+        rb.linearVelocity = (direction.normalized * force);
     }
 
-    public void addCombo()
+    public virtual void addCombo()
     {
         Combo++;
     }
