@@ -18,7 +18,8 @@ public class KnightPlayer : IPlayer
     {
         if (context.performed && normalCDComplete)
         {
-            Instantiate(normalAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
+            var attack = Instantiate(normalAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
+            attack.GetComponent<IAttack>().owner = this;
             StartCoroutine(NormalDelay(normalAttackCooldown));
         }
     }
