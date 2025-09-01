@@ -2,14 +2,30 @@
     <Style src="project://database/Assets/UI/HUD.uss?fileID=7433441132597879392&amp;guid=5a47b972325c1664bb76a8bba8e8382b&amp;type=3#HUD" />
     <ui:VisualElement data-source="project://database/Assets/ScriptableObjects/UIVariables.asset?fileID=11400000&amp;guid=d400d26409fe6864c8a4826410af83e0&amp;type=2#UIVariables" name="Background" class="background" style="flex-grow: 1; min-height: 7px;">
         <ui:VisualElement name="HealthBox" class="healthBox">
-            <ui:ProgressBar value="100" name="HealthBar1" class="healthBar" />
+            <ui:ProgressBar value="100" name="HealthBar1" class="healthBar">
+                <Bindings>
+                    <ui:DataBinding property="value" data-source-path="p1Health" binding-mode="ToTarget" />
+                </Bindings>
+            </ui:ProgressBar>
             <ui:Label text="Score: 0" name="Score" class="scoreText" />
-            <ui:ProgressBar value="100" name="HealthBar2" class="healthBar" />
+            <ui:ProgressBar value="100" name="HealthBar2" class="healthBar">
+                <Bindings>
+                    <ui:DataBinding property="value" data-source-path="p2Health" binding-mode="ToTarget" />
+                </Bindings>
+            </ui:ProgressBar>
         </ui:VisualElement>
         <ui:VisualElement name="ComboBox" class="comboBox">
-            <ui:Label text="0 Combo" name="ComboTxt1" class="comboText" style="visibility: hidden;" />
+            <ui:Label text="0 Combo" name="ComboTxt1" class="comboText" style="visibility: hidden;">
+                <Bindings>
+                    <ui:DataBinding property="text" data-source-path="p1Combo" binding-mode="ToTarget" />
+                </Bindings>
+            </ui:Label>
             <ui:VisualElement name="ComboSpacer" style="flex-grow: 1; max-width: 50%; min-width: 64%;" />
-            <ui:Label text="0 Combo" name="ComboTxt2" class="comboText" style="visibility: hidden;" />
+            <ui:Label text="0 Combo" name="ComboTxt2" class="comboText" style="visibility: hidden;">
+                <Bindings>
+                    <ui:DataBinding property="text" data-source-path="p2Combo" binding-mode="ToTarget" />
+                </Bindings>
+            </ui:Label>
         </ui:VisualElement>
         <ui:VisualElement name="ArrowBox" class="arrowBox" style="max-height: 30%; min-height: 30%; margin-top: 10%; visibility: hidden;">
             <ui:VisualElement name="Arrow" class="arrow" />

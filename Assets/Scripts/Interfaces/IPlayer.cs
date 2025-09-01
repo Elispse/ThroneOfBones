@@ -30,7 +30,9 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
 
     [SerializeField] public Animator animator;
 
-    protected int Health = 100;
+    public int Health = 100;
+
+    public int Combo = 0;
 
     protected Rigidbody2D rb;
     [SerializeField] SpriteRenderer spriteRenderer;
