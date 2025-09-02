@@ -65,6 +65,7 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
     {
         HandleJump();
         rb.linearVelocity = targetVelocity;
+
     }
 
     public virtual void Move(InputAction.CallbackContext context)
