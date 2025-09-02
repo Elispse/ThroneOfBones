@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 577310
+--- !u!114 &-8065547336645033870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Knight/KnightWalk
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Knight/KnightWalk
+  Guid:
+    Data1: -1387641527
+    Data2: 1183273922
+    Data3: 761285815
+    Data4: -2112544430
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 600
 --- !u!114 &-7707472834049543520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,10 +69,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638924228463978959
+  lastModified: 638924237335996403
   FileSizes:
   - Name: Desktop
-    Value: 1840
+    Value: 1888
   Exists: 1
 --- !u!114 &-6711110273718673508
 MonoBehaviour:
@@ -353,13 +380,14 @@ MonoBehaviour:
   - {fileID: 1855866501160341833}
   - {fileID: 8521473199267800797}
   - {fileID: 5229187838689318177}
+  - {fileID: -8065547336645033870}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3037067889015032689}
   StringsBanks:
   - {fileID: -7707472834049543520}
   cacheVersion: 131848
-  cacheTime: 638924228464592354
+  cacheTime: 638924237336607328
   SerializableEventsDict:
   - key: event:/Ambience/Forest Ambience
     index: 0
@@ -395,6 +423,10 @@ MonoBehaviour:
     index: 15
   - key: event:/SFX/Knight/ShieldBlock
     index: 16
+  - key: event:/SFX/Wizard/WizardWalk
+    index: 17
+  - key: event:/SFX/Knight/KnightWalk
+    index: 18
 --- !u!114 &360092067355563068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -585,7 +617,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638924228463969227
+  lastModified: 638924237335996403
   FileSizes:
   - Name: Desktop
     Value: 1524
@@ -632,10 +664,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638924228464592354
+  lastModified: 638924237336607328
   FileSizes:
   - Name: Desktop
-    Value: 196992
+    Value: 220064
   Exists: 1
 --- !u!114 &4752320171984449503
 MonoBehaviour:

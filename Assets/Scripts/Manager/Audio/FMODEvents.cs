@@ -21,6 +21,16 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference skeletonDeath { get; private set; }
     [field: SerializeField] public EventReference skeletonHit { get; private set; }
 
+    [field: Header("Goblin Enemy SFX")]
+    [field: SerializeField] public EventReference GoblinAttack { get; private set; }
+    [field: SerializeField] public EventReference GoblinDeath { get; private set; }
+    [field: SerializeField] public EventReference GoblinHit { get; private set; }
+
+    [field: Header("Eyebat Enemy SFX")]
+    [field: SerializeField] public EventReference EyebatAttack { get; private set; }
+    [field: SerializeField] public EventReference EyebatDeath { get; private set; }
+    [field: SerializeField] public EventReference EyebatHit { get; private set; }
+
     [field: Header("Menu SFX")]
     [field: SerializeField] public EventReference UIClick {  get; private set; }
     [field: SerializeField] public EventReference UIPlayButton {  get; private set; }

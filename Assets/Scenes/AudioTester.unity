@@ -514,6 +514,10 @@ PrefabInstance:
       value: event:/SFX/Knight/KnightHurt
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <knightWalk>k__BackingField.Path
+      value: event:/SFX/Knight/KnightWalk
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <wizardHurt>k__BackingField.Path
       value: event:/SFX/Wizard/WizardHurt
       objectReference: {fileID: 0}
@@ -632,6 +636,22 @@ PrefabInstance:
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <knightSwordSwing>k__BackingField.Path
       value: event:/SFX/Knight/SwordSwing
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <knightWalk>k__BackingField.Guid.Data1
+      value: -1387641527
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <knightWalk>k__BackingField.Guid.Data2
+      value: 1183273922
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <knightWalk>k__BackingField.Guid.Data3
+      value: 761285815
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <knightWalk>k__BackingField.Guid.Data4
+      value: -2112544430
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <wizardHurt>k__BackingField.Guid.Data1
