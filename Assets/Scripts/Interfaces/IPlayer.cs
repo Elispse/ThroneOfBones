@@ -106,15 +106,17 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
     {
         if (!isJumping) return;
 
+        animator.SetBool("Airborne", true);
         jumpVelocity -= gravity * Time.deltaTime;
         jumpHeight += jumpVelocity * Time.deltaTime;
-        animator.SetBool("Airborne", true);
+
 
         if (jumpHeight <= 0f)
         {
+            animator.SetBool("Airborne", false);
+
             jumpHeight = 0f;
             isJumping = false;
-            animator.SetBool("Airborne", false);
         }
 
         playerObject.localPosition = new Vector3(0f, jumpHeight, 0f);

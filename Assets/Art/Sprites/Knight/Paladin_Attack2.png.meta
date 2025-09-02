@@ -119,10 +119,10 @@ TextureImporter:
       name: Paladin_Attack2_0
       rect:
         serializedVersion: 2
-        x: 239
-        y: 95
-        width: 482
-        height: 802
+        x: 0
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,10 +141,10 @@ TextureImporter:
       name: Paladin_Attack2_1
       rect:
         serializedVersion: 2
-        x: 1087
-        y: 95
-        width: 914
-        height: 882
+        x: 1024
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cacddb8772d1c8742a4dba634b318a53
     internalID: 0
     vertices: []
     indices: 

@@ -119,10 +119,10 @@ TextureImporter:
       name: Paladin_Jump_0
       rect:
         serializedVersion: 2
-        x: 239
-        y: 95
-        width: 546
-        height: 770
+        x: 0
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,10 +141,10 @@ TextureImporter:
       name: Paladin_Jump_1
       rect:
         serializedVersion: 2
-        x: 1263
-        y: 111
-        width: 546
-        height: 786
+        x: 1024
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b0ce0b0d5daf44d4da71b7640057ebed
     internalID: 0
     vertices: []
     indices: 
