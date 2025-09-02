@@ -5,20 +5,22 @@ using UnityEngine.InputSystem;
 public class KnightPlayer : IPlayer
 {
     private GameObject shield;
-    private void Update()
+    public override void Update()
     {
         HandleJump();
+        rb.linearVelocity = targetVelocity;
         if (shield)
         {
             shield.transform.position = transform.position + new Vector3(facingRight ? 1 : -1, 0, 0);
-        }
+        }   
     }
 
     public override void NormalAttack(InputAction.CallbackContext context)
     {
         if (context.performed && normalCDComplete)
         {
-            Instantiate(normalAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
+            var attack = Instantiate(normalAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
+            attack.GetComponent<IAttack>().owner = this;
             StartCoroutine(NormalDelay(normalAttackCooldown));
         }
     }

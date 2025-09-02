@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Windows;
 
 public abstract class IPlayer : MonoBehaviour, IDamagable
 {
@@ -37,6 +38,7 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
     protected Rigidbody2D rb;
     [SerializeField] SpriteRenderer spriteRenderer;
     protected bool facingRight = true;
+    protected Vector3 targetVelocity = Vector3.zero;
 
     protected virtual void Awake()
     {
@@ -50,29 +52,45 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
 
         if (playerObject == null)
             Debug.LogError("Assign a Visuals transform (child object).");
+
+        rb.linearDamping = 1f;
     }
 
-    protected virtual void Start()
+    public virtual void Start()
     {
         Health = 100;
+    }
+
+    public virtual void Update()
+    {
+        HandleJump();
+        rb.linearVelocity = targetVelocity;
+
     }
 
     public virtual void Move(InputAction.CallbackContext context)
     {
         Vector2 input = context.ReadValue<Vector2>();
-        Vector3 targetVelocity = new Vector3(input.x * hSpeed, input.y * vSpeed);
+        targetVelocity = new Vector3(input.x * hSpeed, input.y * vSpeed);
 
         rb.linearVelocity = targetVelocity;
+        if (targetVelocity.x > 0 && !facingRight)
+        {
+            Flip();
+        }
+        else if (targetVelocity.x < 0 && facingRight)
+        {
+            Flip();
+        }
 
-        if(targetVelocity.magnitude > 0)
+        if (targetVelocity.magnitude > 0)
+        {
             animator.SetBool("Move", true);
+        }
         else
+        {
             animator.SetBool("Move", false);
-
-        if (rb.linearVelocityX > 0 && !facingRight)
-            Flip();
-        else if (rb.linearVelocityX < 0 && facingRight)
-            Flip();
+        }
     }
 
     public virtual void Jump(InputAction.CallbackContext context)
@@ -113,18 +131,24 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
 
     protected virtual void Flip()
     {
-        spriteRenderer.flipX = !spriteRenderer.flipX;
+        Debug.Log("Flip");
+        playerObject.localScale = new Vector3(-playerObject.localScale.x, playerObject.localScale.y, playerObject.localScale.z);
         facingRight = !facingRight;
     }
 
-    public void ApplyDamage(float damage)
+    public virtual void ApplyDamage(float damage)
     {
         Health -= (int)damage;
         if (Health <= 0) GameManager.Instance.Death();
     }
 
-    public void Knockback(Vector2 direction, float force)
+    public virtual void Knockback(Vector2 direction, float force)
     {
-        rb.AddForce(direction.normalized * force, ForceMode2D.Impulse);
+        rb.linearVelocity = (direction.normalized * force);
+    }
+
+    public virtual void addCombo()
+    {
+        Combo++;
     }
 }

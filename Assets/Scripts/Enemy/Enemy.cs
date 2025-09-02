@@ -9,8 +9,9 @@ public class Enemy : MonoBehaviour, IDamagable
     private Rigidbody2D rb;
     private int Health = 100;
     private int attackTimer = 0;
-    public int AttackDelay = 60;
+    [SerializeField] public int AttackDelay = 90;
     private bool facingRight = true;
+    [SerializeField] public Animator animator;
 
     private Vector2 movement = Vector2.zero;
     private SpriteRenderer spriteRenderer;
@@ -24,6 +25,7 @@ public class Enemy : MonoBehaviour, IDamagable
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        rb.linearDamping = 1f;
     }
 
     // Update is called once per frame
@@ -80,7 +82,7 @@ public class Enemy : MonoBehaviour, IDamagable
 
     public void Knockback(Vector2 direction, float force)
     {
-        rb.AddForce(direction.normalized * force, ForceMode2D.Impulse);
+        rb.linearVelocity = (direction.normalized * force);
     }
 
     public void randomMove()
@@ -89,7 +91,7 @@ public class Enemy : MonoBehaviour, IDamagable
         float randomY = Random.Range(-1f, 1f);
         Vector2 randomDirection = new Vector2(randomX, randomY).normalized;
         Move(randomDirection, 3f);
-        NormalAttack();
+        if (attackTimer >= AttackDelay) NormalAttack();
 
     }
 
@@ -112,7 +114,7 @@ public class Enemy : MonoBehaviour, IDamagable
         {
             Vector2 direction = (nearestPlayer.transform.position - transform.position).normalized;
             Move(direction, 5f);
-            if (minDistance < 2f)
+            if (minDistance <= 6f)
             {
                 NormalAttack();
             }
@@ -134,6 +136,10 @@ public class Enemy : MonoBehaviour, IDamagable
     }
     public void NormalAttack()
     {
-        Instantiate(normalAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
+        if (attackTimer >= AttackDelay)
+        {
+            attackTimer = 0;
+            Instantiate(normalAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
+        }
     }
 }

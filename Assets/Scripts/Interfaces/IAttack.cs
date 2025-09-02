@@ -7,6 +7,8 @@ public abstract class IAttack : MonoBehaviour
     public abstract float destroyTime { get; }
     public abstract bool blocked { get; set; }
 
+    public abstract IPlayer owner { get; set; }
+
     protected virtual void Start()
     {
         Destroy(gameObject, destroyTime);
@@ -20,6 +22,7 @@ public abstract class IAttack : MonoBehaviour
             damagable.ApplyDamage(damage);
             Vector2 direction = (collision.transform.position - transform.position).normalized;
             damagable.Knockback(direction, knockback);
+            if (owner) owner.addCombo();
         }
     }
 }
