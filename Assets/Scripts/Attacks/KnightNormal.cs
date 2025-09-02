@@ -11,9 +11,9 @@ public class KnightNormal : IAttack
     public override float destroyTime => 0.1f;
 
     public override bool blocked { get; set; } = false;
-    private EventInstance attack;
     public override IPlayer owner { get; set; }
-    public override bool facingRight { get; set; } = true;
+    private EventInstance attack;
+
     private void Awake()
     {
         attack = AudioManager.instance.CreateInstance(FMODEvents.instance.knightSwordSwing);
