@@ -11,8 +11,8 @@ public class KnightNormal : IAttack
     public override float destroyTime => 0.1f;
 
     public override bool blocked { get; set; } = false;
-    private EventInstance attack;
     public override IPlayer owner { get; set; }
+    private EventInstance attack;
 
     private void Awake()
     {
