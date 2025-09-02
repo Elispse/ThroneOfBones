@@ -12,6 +12,9 @@ public class MagePlayer : IPlayer
             var attack = Instantiate(normalAttack, playerObject.transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
             attack.GetComponent<Rigidbody2D>().AddForce((new Vector3(facingRight ? 1 : -1, 0, 0) * 5.0f), ForceMode2D.Impulse);
             attack.GetComponent<IAttack>().owner = this;
+            var localScale = attack.transform.localScale;
+            localScale.x *= facingRight ? 1 : -1;
+            attack.transform.localScale = localScale;
             StartCoroutine(NormalDelay(normalAttackCooldown));
         }
     }
@@ -22,8 +25,12 @@ public class MagePlayer : IPlayer
         {
             animator.SetTrigger("Secondary");
             Debug.Log("Secondary attack performed.");
-            var attack = Instantiate(secondaryAttack, playerObject.transform.position + new Vector3(facingRight ? 2.5f : -2.5f, 0), Quaternion.Euler(0, 0,facingRight ? 90 : 270));
+            var attack = Instantiate(secondaryAttack, playerObject.transform.position + new Vector3(facingRight ? 2.5f : -2.5f, 0), Quaternion.Euler(0, 0, facingRight ? 90 : 270));
             attack.GetComponent<IAttack>().owner = this;
+            var localScale = attack.transform.localScale;
+            localScale.x *= facingRight ? 1 : -1;
+            attack.transform.localScale = localScale;
+
             StartCoroutine(SecondaryDelay(secondaryAttackCooldown));
         }
     }

@@ -4,7 +4,7 @@ public class WizardSecondary : IAttack
 {
     public override float damage => 5.0f;
 
-    public override float knockback => 30.0f;
+    public override float knockback => 15f;
 
     public override string ignoreTag => "Player";
 

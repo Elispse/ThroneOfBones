@@ -463,10 +463,12 @@ MonoBehaviour:
   playerObject: {fileID: 8651865059608760407}
   shadow: {fileID: 8728967235390638041}
   normalAttack: {fileID: 4836819516391647605, guid: 38b2d8f4289246d4389f526d88fd3908, type: 3}
-  secondaryAttack: {fileID: 0}
+  secondaryAttack: {fileID: 310374871539887775, guid: 29f61e2838d82404f9dc15b645c9da8d, type: 3}
   normalAttackCooldown: 0.15
   secondaryAttackCooldown: 1
   animator: {fileID: 7097069595263913314}
+  Health: 100
+  Combo: 0
   spriteRenderer: {fileID: 5337594951667196285}
 --- !u!1 &7017531388651364303
 GameObject:
