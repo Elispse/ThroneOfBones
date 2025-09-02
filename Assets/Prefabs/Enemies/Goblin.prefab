@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 8950688508693568380}
   - component: {fileID: 4474377302974515767}
   m_Layer: 0
-  m_Name: SkeletonWizard
+  m_Name: Goblin
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -216,8 +216,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.34}
-  m_Size: {x: 0.73, y: 1.38}
+  m_Offset: {x: 0, y: 0.01}
+  m_Size: {x: 0.55, y: 1.01}
   m_Direction: 0
 --- !u!114 &4474377302974515767
 MonoBehaviour:
@@ -231,13 +231,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d095b0e95ec93c4f8e84a56bf5eba54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalAttack: {fileID: 5818295537129569490, guid: dcf92f6b8cc37ee449853eaf0cc935c7, type: 3}
-  AIType: 2
-  AttackDelay: 120
-  attackTime: 1.5
+  normalAttack: {fileID: 5818295537129569490, guid: 988cb7957e0538c44906875dd4d0b5a8, type: 3}
+  AIType: 0
+  AttackDelay: 90
+  attackTime: 1
   fleeDistance: 20
   animator: {fileID: 995509736662836898}
-  flipOffset: 0
+  flipOffset: 0.1
   spriteRenderer: {fileID: 1695039557224326954}
   jumpForce: 9
   gravity: 30
@@ -270,8 +270,8 @@ Transform:
   m_GameObject: {fileID: 7385500254613368200}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.154, y: 0.138, z: -0.012400855}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: 0.045, y: -0.106, z: -0.012401}
+  m_LocalScale: {x: 1.8332701, y: 1.8332701, z: 1.8332701}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1106343294229786024}
@@ -320,7 +320,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1330501706491972260, guid: b1e073f59f772914a8928d3901a52aa3, type: 3}
+  m_Sprite: {fileID: 4723107735738678597, guid: 539560a9f065d35448d650bb0a7747a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -341,7 +341,7 @@ Animator:
   m_GameObject: {fileID: 7385500254613368200}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 079442a43a15444439723890a0f6356f, type: 2}
+  m_Controller: {fileID: 9100000, guid: e8ff0b4fdb1090b4498e851acfe882d6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

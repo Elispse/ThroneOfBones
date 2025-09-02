@@ -13,7 +13,7 @@ public class KnightNormal : IAttack
     public override bool blocked { get; set; } = false;
     private EventInstance attack;
     public override IPlayer owner { get; set; }
-
+    public override bool facingRight { get; set; } = true;
     private void Awake()
     {
         attack = AudioManager.instance.CreateInstance(FMODEvents.instance.knightSwordSwing);

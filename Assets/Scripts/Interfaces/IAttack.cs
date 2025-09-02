@@ -6,6 +6,7 @@ public abstract class IAttack : MonoBehaviour
     public abstract string ignoreTag { get; }
     public abstract float destroyTime { get; }
     public abstract bool blocked { get; set; }
+    public abstract bool facingRight { get; set; }
 
     public abstract IPlayer owner { get; set; }
 
