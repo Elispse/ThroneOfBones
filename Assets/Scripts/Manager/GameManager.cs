@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     public Scene Level { get; set; }
     public float Timer { get; set; }
 
+    public IPlayer Player1 { get; set; }
+    public IPlayer Player2 { get; set; }
+
     [SerializeField] public UIVariables uiVariables;
 
     private void Awake()

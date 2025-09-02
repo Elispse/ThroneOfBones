@@ -4,10 +4,12 @@ using UnityEngine.InputSystem;
 public class Enemy : MonoBehaviour, IDamagable
 {
     [SerializeField] GameObject normalAttack;
+    [SerializeField] int AIType = 0; // 0 is random, 1 is chase player, 2 is flee
 
     private Rigidbody2D rb;
     private int Health = 100;
-    private float moveTimer = 0;
+    private int attackTimer = 0;
+    public int AttackDelay = 60;
     private bool facingRight = true;
 
     private Vector2 movement = Vector2.zero;
@@ -28,11 +30,21 @@ public class Enemy : MonoBehaviour, IDamagable
     void Update()
     {
         rb.linearVelocity *= 0.9f;
-        moveTimer += Time.deltaTime;
-        if (moveTimer >= 2.5f)
+        attackTimer++;
+        switch (AIType)
         {
-            moveTimer = 0f;
-            randomMove();
+            case 0:
+                randomMove();
+                break;
+            case 1:
+                runToNearestPlayer();
+                break;
+            case 2:
+                flee();
+                break;
+            default:
+                randomMove();
+                break;
         }
     }
 
@@ -79,6 +91,46 @@ public class Enemy : MonoBehaviour, IDamagable
         Move(randomDirection, 3f);
         NormalAttack();
 
+    }
+
+    public void runToNearestPlayer()
+    {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        if (players.Length == 0) return;
+        GameObject nearestPlayer = null;
+        float minDistance = float.MaxValue;
+        foreach (var player in players)
+        {
+            float distance = Vector2.Distance(transform.position, player.transform.position);
+            if (distance < minDistance)
+            {
+                minDistance = distance;
+                nearestPlayer = player;
+            }
+        }
+        if (nearestPlayer != null)
+        {
+            Vector2 direction = (nearestPlayer.transform.position - transform.position).normalized;
+            Move(direction, 5f);
+            if (minDistance < 2f)
+            {
+                NormalAttack();
+            }
+        }
+    }
+
+    public void flee()
+    {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        if (players.Length == 0) return;
+        Vector2 fleeDirection = Vector2.zero;
+        foreach (var player in players)
+        {
+            Vector2 direction = (transform.position - player.transform.position).normalized;
+            fleeDirection += direction;
+        }
+        fleeDirection = fleeDirection.normalized;
+        Move(fleeDirection, 3f);
     }
     public void NormalAttack()
     {

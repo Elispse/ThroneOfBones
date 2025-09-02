@@ -28,10 +28,14 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
     protected bool normalCDComplete = true;
     protected bool secondaryCDComplete = true;
 
-    protected int Health = 100;
+    [SerializeField] public Animator animator;
+
+    public int Health = 100;
+
+    public int Combo = 0;
 
     protected Rigidbody2D rb;
-    protected SpriteRenderer spriteRenderer;
+    [SerializeField] SpriteRenderer spriteRenderer;
     protected bool facingRight = true;
 
     protected virtual void Awake()
@@ -60,6 +64,11 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
 
         rb.linearVelocity = targetVelocity;
 
+        if(targetVelocity.magnitude > 0)
+            animator.SetBool("Move", true);
+        else
+            animator.SetBool("Move", false);
+
         if (rb.linearVelocityX > 0 && !facingRight)
             Flip();
         else if (rb.linearVelocityX < 0 && facingRight)
@@ -81,11 +90,13 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
 
         jumpVelocity -= gravity * Time.deltaTime;
         jumpHeight += jumpVelocity * Time.deltaTime;
+        animator.SetBool("Airborne", true);
 
         if (jumpHeight <= 0f)
         {
             jumpHeight = 0f;
             isJumping = false;
+            animator.SetBool("Airborne", false);
         }
 
         playerObject.localPosition = new Vector3(0f, jumpHeight, 0f);
