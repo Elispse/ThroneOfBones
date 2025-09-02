@@ -13,6 +13,7 @@ public class WizardSecondary : IAttack
 
     public override bool blocked { get; set; } = false;
     public override IPlayer owner { get; set; }
+    public override bool facingRight { get; set; } = true;
     private EventInstance attack;
 
     private void Awake()
