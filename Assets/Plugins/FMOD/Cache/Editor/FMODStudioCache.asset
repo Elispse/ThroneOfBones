@@ -1,5 +1,59 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8899338590643316644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Menu Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Menu Music
+  Guid:
+    Data1: -951820681
+    Data2: 1308361717
+    Data3: 564706185
+    Data4: 1797267348
+  Banks:
+  - {fileID: 600913413862493494}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 577310
+--- !u!114 &-8065547336645033870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Knight/KnightWalk
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Knight/KnightWalk
+  Guid:
+    Data1: -1387641527
+    Data2: 1183273922
+    Data3: 761285815
+    Data4: -2112544430
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 600
 --- !u!114 &-7707472834049543520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,11 +69,92 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638918562256285107
+  lastModified: 638924237335996403
   FileSizes:
   - Name: Desktop
-    Value: 1016
+    Value: 1888
   Exists: 1
+--- !u!114 &-6711110273718673508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Knight/KnightHurt
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Knight/KnightHurt
+  Guid:
+    Data1: 162849545
+    Data2: 1230268859
+    Data3: 1622864783
+    Data4: 65911784
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6368542070929442932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/UIPlay
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/UIPlay
+  Guid:
+    Data1: 1301389538
+    Data2: 1338368292
+    Data3: -304952919
+    Data4: 1871251588
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 432
+--- !u!114 &-6028927622257618068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Castle Music Backup
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Castle Music Backup
+  Guid:
+    Data1: -1013304216
+    Data2: 1228660281
+    Data3: 481906111
+    Data4: -1870961513
+  Banks:
+  - {fileID: 600913413862493494}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 171305
 --- !u!114 &-4954629376807046201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,11 +190,38 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Ambient.bank
   Name: Ambient
   StudioPath: bank:/Ambient
-  lastModified: 638918562256249775
+  lastModified: 638924153615360939
   FileSizes:
   - Name: Desktop
-    Value: 506
+    Value: 6206816
   Exists: 1
+--- !u!114 &-4526035076884237158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Wizard/WizardHurt
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Wizard/WizardHurt
+  Guid:
+    Data1: -512103618
+    Data2: 1211781640
+    Data3: -764217961
+    Data4: 932808343
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 888
 --- !u!114 &-4512207113095932542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,6 +242,87 @@ MonoBehaviour:
   - Name: Desktop
     Value: 506
   Exists: 1
+--- !u!114 &-4323130651508199510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Forest Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Forest Music
+  Guid:
+    Data1: 1835527863
+    Data2: 1081891521
+    Data3: -1353324902
+    Data4: 1094024521
+  Banks:
+  - {fileID: 600913413862493494}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 180256
+--- !u!114 &-3338888776435263336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/UIPause
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/UIPause
+  Guid:
+    Data1: -1050417758
+    Data2: 1204105084
+    Data3: 1375683487
+    Data4: 2141847054
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2500
+--- !u!114 &-661828920737891035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/UIButton
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/UIButton
+  Guid:
+    Data1: -1474254523
+    Data2: 1199384022
+    Data3: -1029743972
+    Data4: -1394848225
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 468
 --- !u!114 &-92760632051058008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,17 +362,125 @@ MonoBehaviour:
   - {fileID: 600913413862493494}
   - {fileID: 4565676149254333236}
   EditorEvents:
-  - {fileID: 5545298238784134324}
+  - {fileID: 7442366376709209167}
+  - {fileID: -6028927622257618068}
+  - {fileID: -8899338590643316644}
+  - {fileID: -4323130651508199510}
+  - {fileID: -6711110273718673508}
+  - {fileID: 6261220201751276143}
+  - {fileID: 360092067355563068}
+  - {fileID: 4769989795108604687}
+  - {fileID: 3631058388203709447}
+  - {fileID: 2201496727616562892}
+  - {fileID: -4526035076884237158}
+  - {fileID: -661828920737891035}
+  - {fileID: -3338888776435263336}
+  - {fileID: 532342860859190231}
+  - {fileID: -6368542070929442932}
+  - {fileID: 1855866501160341833}
+  - {fileID: 8521473199267800797}
+  - {fileID: 5229187838689318177}
+  - {fileID: -8065547336645033870}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3037067889015032689}
   StringsBanks:
   - {fileID: -7707472834049543520}
   cacheVersion: 131848
-  cacheTime: 638918562257259878
+  cacheTime: 638924237336607328
   SerializableEventsDict:
-  - key: event:/SFX/SwordSwing
+  - key: event:/Ambience/Forest Ambience
     index: 0
+  - key: event:/Music/Castle Music Backup
+    index: 1
+  - key: event:/Music/Menu Music
+    index: 2
+  - key: event:/Music/Forest Music
+    index: 3
+  - key: event:/SFX/Knight/KnightHurt
+    index: 4
+  - key: event:/SFX/Skeleton/SkeletonAttack
+    index: 5
+  - key: event:/SFX/Skeleton/SkeletonDeath
+    index: 6
+  - key: event:/SFX/Skeleton/SkeletonHit
+    index: 7
+  - key: event:/SFX/Equip
+    index: 8
+  - key: event:/SFX/Knight/SwordSwing
+    index: 9
+  - key: event:/SFX/Wizard/WizardHurt
+    index: 10
+  - key: event:/SFX/UI/UIButton
+    index: 11
+  - key: event:/SFX/UI/UIPause
+    index: 12
+  - key: event:/SFX/Wizard/WizardSecondary
+    index: 13
+  - key: event:/SFX/UI/UIPlay
+    index: 14
+  - key: event:/SFX/Wizard/WizardPrimary
+    index: 15
+  - key: event:/SFX/Knight/ShieldBlock
+    index: 16
+  - key: event:/SFX/Wizard/WizardWalk
+    index: 17
+  - key: event:/SFX/Knight/KnightWalk
+    index: 18
+--- !u!114 &360092067355563068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Skeleton/SkeletonDeath
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Skeleton/SkeletonDeath
+  Guid:
+    Data1: -1087584596
+    Data2: 1279091887
+    Data3: -199119712
+    Data4: 94147149
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &532342860859190231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Wizard/WizardSecondary
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Wizard/WizardSecondary
+  Guid:
+    Data1: 734807519
+    Data2: 1336581627
+    Data3: 193206707
+    Data4: -198537073
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1607
 --- !u!114 &600913413862493494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,11 +496,65 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638918562256335646
+  lastModified: 638924153705285497
   FileSizes:
   - Name: Desktop
-    Value: 506
+    Value: 13726432
   Exists: 1
+--- !u!114 &1855866501160341833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Wizard/WizardPrimary
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Wizard/WizardPrimary
+  Guid:
+    Data1: -480391681
+    Data2: 1336524991
+    Data3: 1953061803
+    Data4: 1030210555
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1063
+--- !u!114 &2201496727616562892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Knight/SwordSwing
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Knight/SwordSwing
+  Guid:
+    Data1: 1397469684
+    Data2: 1167592028
+    Data3: 2105519796
+    Data4: 450993801
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 470
 --- !u!114 &2714458367169699651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,11 +617,38 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638918562256270076
+  lastModified: 638924237335996403
   FileSizes:
   - Name: Desktop
     Value: 1524
   Exists: 1
+--- !u!114 &3631058388203709447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Equip
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Equip
+  Guid:
+    Data1: 2038892480
+    Data2: 1299945822
+    Data3: 118572179
+    Data4: -442060080
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &4565676149254333236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,10 +664,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638918562257259878
+  lastModified: 638924237336607328
   FileSizes:
   - Name: Desktop
-    Value: 12928
+    Value: 220064
   Exists: 1
 --- !u!114 &4752320171984449503
 MonoBehaviour:
@@ -257,7 +689,7 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1524
   Exists: 1
---- !u!114 &5545298238784134324
+--- !u!114 &4769989795108604687
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -267,14 +699,41 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/SwordSwing
+  m_Name: event:/SFX/Skeleton/SkeletonHit
   m_EditorClassIdentifier: 
-  Path: event:/SFX/SwordSwing
+  Path: event:/SFX/Skeleton/SkeletonHit
   Guid:
-    Data1: 1397469684
-    Data2: 1167592028
-    Data3: 2105519796
-    Data4: 450993801
+    Data1: -2127350859
+    Data2: 1145328850
+    Data3: -117463654
+    Data4: 1893323053
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5229187838689318177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Wizard/WizardWalk
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Wizard/WizardWalk
+  Guid:
+    Data1: 296572246
+    Data2: 1179616063
+    Data3: 1437463231
+    Data4: 154803203
   Banks:
   - {fileID: 4565676149254333236}
   IsStream: 0
@@ -283,4 +742,85 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 470
+  Length: 95
+--- !u!114 &6261220201751276143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Skeleton/SkeletonAttack
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Skeleton/SkeletonAttack
+  Guid:
+    Data1: 1878831753
+    Data2: 1185503962
+    Data3: -851602773
+    Data4: 1729057058
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7442366376709209167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Forest Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Forest Ambience
+  Guid:
+    Data1: -1192136865
+    Data2: 1101274566
+    Data3: -1531220308
+    Data4: -1008006372
+  Banks:
+  - {fileID: -4579064627366816421}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 518990
+--- !u!114 &8521473199267800797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Knight/ShieldBlock
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Knight/ShieldBlock
+  Guid:
+    Data1: 1772882035
+    Data2: 1293294183
+    Data3: -1814528597
+    Data4: -736528864
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 680
