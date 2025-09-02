@@ -499,7 +499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <knightSwordSwing>k__BackingField.Path
-      value: event:/SFX/SwordSwing
+      value: event:/SFX/Knight/SwordSwing
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <knightSwordSwing>k__BackingField.Guid.Data1
