@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638924153615426815
+  lastModified: 638924208331137262
   FileSizes:
   - Name: Desktop
-    Value: 1478
+    Value: 1752
   Exists: 1
 --- !u!114 &-6711110273718673508
 MonoBehaviour:
@@ -74,6 +74,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-6368542070929442932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/UIPlay
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/UIPlay
+  Guid:
+    Data1: 1301389538
+    Data2: 1338368292
+    Data3: -304952919
+    Data4: 1871251588
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 432
 --- !u!114 &-6028927622257618068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,6 +168,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 6206816
   Exists: 1
+--- !u!114 &-4526035076884237158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Wizard/WizardHurt
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Wizard/WizardHurt
+  Guid:
+    Data1: -512103618
+    Data2: 1211781640
+    Data3: -764217961
+    Data4: 932808343
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 888
 --- !u!114 &-4512207113095932542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,6 +242,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 180256
+--- !u!114 &-3338888776435263336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/UIPause
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/UIPause
+  Guid:
+    Data1: -1050417758
+    Data2: 1204105084
+    Data3: 1375683487
+    Data4: 2141847054
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2500
+--- !u!114 &-661828920737891035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/UIButton
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/UIButton
+  Guid:
+    Data1: -1474254523
+    Data2: 1199384022
+    Data3: -1029743972
+    Data4: -1394848225
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 468
 --- !u!114 &-92760632051058008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,13 +345,19 @@ MonoBehaviour:
   - {fileID: 4769989795108604687}
   - {fileID: 3631058388203709447}
   - {fileID: 2201496727616562892}
+  - {fileID: -4526035076884237158}
+  - {fileID: -661828920737891035}
+  - {fileID: -3338888776435263336}
+  - {fileID: 532342860859190231}
+  - {fileID: -6368542070929442932}
+  - {fileID: 1855866501160341833}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3037067889015032689}
   StringsBanks:
   - {fileID: -7707472834049543520}
   cacheVersion: 131848
-  cacheTime: 638924153707105529
+  cacheTime: 638924208332609231
   SerializableEventsDict:
   - key: event:/Ambience/Forest Ambience
     index: 0
@@ -265,6 +379,18 @@ MonoBehaviour:
     index: 8
   - key: event:/SFX/Knight/SwordSwing
     index: 9
+  - key: event:/SFX/Wizard/WizardHurt
+    index: 10
+  - key: event:/SFX/UI/UIButton
+    index: 11
+  - key: event:/SFX/UI/UIPause
+    index: 12
+  - key: event:/SFX/Wizard/WizardSecondary
+    index: 13
+  - key: event:/SFX/UI/UIPlay
+    index: 14
+  - key: event:/SFX/Wizard/WizardPrimary
+    index: 15
 --- !u!114 &360092067355563068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,6 +418,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &532342860859190231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Wizard/WizardSecondary
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Wizard/WizardSecondary
+  Guid:
+    Data1: 734807519
+    Data2: 1336581627
+    Data3: 193206707
+    Data4: -198537073
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1607
 --- !u!114 &600913413862493494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,6 +465,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 13726432
   Exists: 1
+--- !u!114 &1855866501160341833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Wizard/WizardPrimary
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Wizard/WizardPrimary
+  Guid:
+    Data1: -480391681
+    Data2: 1336524991
+    Data3: 1953061803
+    Data4: 1030210555
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1063
 --- !u!114 &2201496727616562892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,7 +581,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638924153615426815
+  lastModified: 638924208331121774
   FileSizes:
   - Name: Desktop
     Value: 1524
@@ -448,10 +628,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638924153707105529
+  lastModified: 638924208332609231
   FileSizes:
   - Name: Desktop
-    Value: 75072
+    Value: 183008
   Exists: 1
 --- !u!114 &4752320171984449503
 MonoBehaviour:
