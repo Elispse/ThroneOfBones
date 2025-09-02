@@ -518,12 +518,20 @@ PrefabInstance:
       value: event:/SFX/Wizard/WizardHurt
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <wizardWalk>k__BackingField.Path
+      value: event:/SFX/Wizard/WizardWalk
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <castleMusic>k__BackingField.Path
       value: event:/Music/Castle Music Backup
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <forestMusic>k__BackingField.Path
       value: event:/Music/Forest Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <knightBlock>k__BackingField.Path
+      value: event:/SFX/Knight/ShieldBlock
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <skeletonHit>k__BackingField.Path
@@ -642,6 +650,22 @@ PrefabInstance:
       value: 932808343
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <wizardWalk>k__BackingField.Guid.Data1
+      value: 296572246
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <wizardWalk>k__BackingField.Guid.Data2
+      value: 1179616063
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <wizardWalk>k__BackingField.Guid.Data3
+      value: 1437463231
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <wizardWalk>k__BackingField.Guid.Data4
+      value: 154803203
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <castleMusic>k__BackingField.Guid.Data1
       value: -1013304216
       objectReference: {fileID: 0}
@@ -672,6 +696,22 @@ PrefabInstance:
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <forestMusic>k__BackingField.Guid.Data4
       value: 1094024521
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <knightBlock>k__BackingField.Guid.Data1
+      value: 1772882035
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <knightBlock>k__BackingField.Guid.Data2
+      value: 1293294183
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <knightBlock>k__BackingField.Guid.Data3
+      value: -1814528597
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <knightBlock>k__BackingField.Guid.Data4
+      value: -736528864
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <skeletonHit>k__BackingField.Guid.Data1

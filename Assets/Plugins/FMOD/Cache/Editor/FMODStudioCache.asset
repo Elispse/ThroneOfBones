@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638924208331137262
+  lastModified: 638924228463978959
   FileSizes:
   - Name: Desktop
-    Value: 1752
+    Value: 1840
   Exists: 1
 --- !u!114 &-6711110273718673508
 MonoBehaviour:
@@ -351,13 +351,15 @@ MonoBehaviour:
   - {fileID: 532342860859190231}
   - {fileID: -6368542070929442932}
   - {fileID: 1855866501160341833}
+  - {fileID: 8521473199267800797}
+  - {fileID: 5229187838689318177}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3037067889015032689}
   StringsBanks:
   - {fileID: -7707472834049543520}
   cacheVersion: 131848
-  cacheTime: 638924208332609231
+  cacheTime: 638924228464592354
   SerializableEventsDict:
   - key: event:/Ambience/Forest Ambience
     index: 0
@@ -391,6 +393,8 @@ MonoBehaviour:
     index: 14
   - key: event:/SFX/Wizard/WizardPrimary
     index: 15
+  - key: event:/SFX/Knight/ShieldBlock
+    index: 16
 --- !u!114 &360092067355563068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -581,7 +585,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638924208331121774
+  lastModified: 638924228463969227
   FileSizes:
   - Name: Desktop
     Value: 1524
@@ -628,10 +632,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638924208332609231
+  lastModified: 638924228464592354
   FileSizes:
   - Name: Desktop
-    Value: 183008
+    Value: 196992
   Exists: 1
 --- !u!114 &4752320171984449503
 MonoBehaviour:
@@ -680,6 +684,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &5229187838689318177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Wizard/WizardWalk
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Wizard/WizardWalk
+  Guid:
+    Data1: 296572246
+    Data2: 1179616063
+    Data3: 1437463231
+    Data4: 154803203
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 95
 --- !u!114 &6261220201751276143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -734,3 +765,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 518990
+--- !u!114 &8521473199267800797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Knight/ShieldBlock
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Knight/ShieldBlock
+  Guid:
+    Data1: 1772882035
+    Data2: 1293294183
+    Data3: -1814528597
+    Data4: -736528864
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 680
