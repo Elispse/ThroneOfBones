@@ -49,7 +49,7 @@ public class AudioManager : MonoBehaviour
         ambienceBus.getVolume(out ambienceVolume);
         sfxBus.getVolume(out SFXVolume);
 
-        Scene currentScene = SceneManager.GetActiveScene();
+        UnityEngine.SceneManagement.Scene currentScene = SceneManager.GetActiveScene();
         switch (currentScene.buildIndex)
         {
             case 0:
@@ -102,6 +102,22 @@ public class AudioManager : MonoBehaviour
         eventEmitters.Add(emitter);
         return emitter;
     }
+
+    /*
+     * Uncomment when the ambience is added
+     * private void InitializeAmbience(EventReference ambienceEventReference)
+    {
+        ambienceEventInstance = CreateInstance(ambienceEventReference);
+        ambienceEventInstance.start();
+    }*/
+
+    /*
+     * Uncomment when the game music is added
+     * private void InitializeMusic(EventReference musicEventReference)
+    {
+        musicEventInstance = CreateInstance(musicEventReference);
+        musicEventInstance.start();
+    }*/
 
     private void CleanUp()
     {
