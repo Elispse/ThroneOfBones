@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement style="flex-grow: 1; align-self: center; justify-content: flex-start; align-items: stretch; flex-direction: column;">
+    <ui:VisualElement style="flex-grow: 1; align-self: center; justify-content: flex-start; align-items: stretch; flex-direction: column; width: 730px;">
         <ui:VisualElement name="LevelSelect" data-source="project://database/Assets/ScriptableObjects/LevelSelect.asset?fileID=11400000&amp;guid=f82a01b6847b8164ba318a2cad3f076a&amp;type=2#LevelSelect" style="flex-grow: 1; width: 308px; height: 452px; justify-content: center; align-items: center; align-self: center; align-content: center; flex-direction: column; position: absolute;">
             <ui:Button text="Play" name="btnlvl1" style="height: 10%; width: 30%;" />
             <ui:Button text="Settings&#10;" enable-rich-text="true" name="btnsettings" style="width: 30%; height: 10%;" />
