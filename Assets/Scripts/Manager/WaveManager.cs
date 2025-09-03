@@ -13,9 +13,8 @@ public class WaveManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if(Wave1 == null || Wave2 == null || Wave3 == null || Wave4 == null || Wave5 == null)
+        if (Wave1 == null || Wave2 == null || Wave3 == null || Wave4 == null || Wave5 == null)
         {
-            Debug.LogError("One or more waves are not assigned");
             return;
         }
         Wave1.SetActive(false);
@@ -49,7 +48,6 @@ public class WaveManager : MonoBehaviour
                         enemyScript.enabled = true;
                     }
                 }
-                Debug.Log("Wave 1 started");
                 break;
             case 2:
                 Wave2.SetActive(true);
@@ -61,7 +59,6 @@ public class WaveManager : MonoBehaviour
                         enemyScript.enabled = true;
                     }
                 }
-                Debug.Log("Wave 2 started");
                 break;
             case 3:
                 Wave3.SetActive(true);
@@ -73,7 +70,6 @@ public class WaveManager : MonoBehaviour
                         enemyScript.enabled = true;
                     }
                 }
-                Debug.Log("Wave 3 started");
                 break;
             case 4:
                 Wave4.SetActive(true);
@@ -85,7 +81,6 @@ public class WaveManager : MonoBehaviour
                         enemyScript.enabled = true;
                     }
                 }
-                Debug.Log("Wave 4 started");
                 break;
             case 5:
                 Wave5.SetActive(true);
@@ -97,7 +92,6 @@ public class WaveManager : MonoBehaviour
                         enemyScript.enabled = true;
                     }
                 }
-                Debug.Log("Wave 5 started");
                 break;
             default:
                 break;
