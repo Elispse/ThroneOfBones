@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 577310
+--- !u!114 &-8233851253669152193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Dark Magic/DarkMagic6
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Dark Magic/DarkMagic6
+  Guid:
+    Data1: 1569039054
+    Data2: 1332426902
+    Data3: -1940019291
+    Data4: 481043051
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2070
 --- !u!114 &-8107617103955404989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,10 +123,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638924489925786285
+  lastModified: 638924511519224877
   FileSizes:
   - Name: Desktop
-    Value: 2312
+    Value: 2596
   Exists: 1
 --- !u!114 &-6711110273718673508
 MonoBehaviour:
@@ -249,6 +276,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 13743008
   Exists: 1
+--- !u!114 &-4556084550262722657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Dark Magic/DarkMagic4
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Dark Magic/DarkMagic4
+  Guid:
+    Data1: 1309029724
+    Data2: 1156862628
+    Data3: 1155513230
+    Data4: 202505298
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1592
 --- !u!114 &-4526035076884237158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,6 +377,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 180256
+--- !u!114 &-4069119794155108011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Necromancer/NecromancerAttack
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Necromancer/NecromancerAttack
+  Guid:
+    Data1: 1912896098
+    Data2: 1195168200
+    Data3: -246130011
+    Data4: -462633036
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2070
 --- !u!114 &-3338888776435263336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,6 +458,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 719
+--- !u!114 &-1041990051592345561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Dark Magic/DarkMagic5
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Dark Magic/DarkMagic5
+  Guid:
+    Data1: 2053869366
+    Data2: 1135787154
+    Data3: -1969158996
+    Data4: 1389187518
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1555
 --- !u!114 &-661828920737891035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -498,13 +606,20 @@ MonoBehaviour:
   - {fileID: -8107617103955404989}
   - {fileID: 5307487977124273534}
   - {fileID: -2960342216946729200}
+  - {fileID: 5393568278344794542}
+  - {fileID: -1041990051592345561}
+  - {fileID: -4556084550262722657}
+  - {fileID: 8529061339594821671}
+  - {fileID: 4960988621930545220}
+  - {fileID: -8233851253669152193}
+  - {fileID: -4069119794155108011}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3037067889015032689}
   StringsBanks:
   - {fileID: -7707472834049543520}
   cacheVersion: 131848
-  cacheTime: 638924489926602368
+  cacheTime: 638924511519706778
   SerializableEventsDict:
   - key: event:/Ambience/Forest Ambience
     index: 0
@@ -562,6 +677,18 @@ MonoBehaviour:
     index: 26
   - key: event:/SFX/Freak/FreakDeath
     index: 27
+  - key: event:/SFX/Dark Magic/DarkMagic3
+    index: 28
+  - key: event:/SFX/Dark Magic/DarkMagic5
+    index: 29
+  - key: event:/SFX/Dark Magic/DarkMagic4
+    index: 30
+  - key: event:/SFX/Dark Magic/DarkMagic1
+    index: 31
+  - key: event:/SFX/Dark Magic/DarkMagic2
+    index: 32
+  - key: event:/SFX/Dark Magic/DarkMagic6
+    index: 33
 --- !u!114 &360092067355563068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -806,7 +933,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638924489925776602
+  lastModified: 638924511519215179
   FileSizes:
   - Name: Desktop
     Value: 1524
@@ -880,10 +1007,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638924489926602368
+  lastModified: 638924511519706778
   FileSizes:
   - Name: Desktop
-    Value: 333920
+    Value: 448928
   Exists: 1
 --- !u!114 &4752320171984449503
 MonoBehaviour:
@@ -932,6 +1059,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &4960988621930545220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Dark Magic/DarkMagic2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Dark Magic/DarkMagic2
+  Guid:
+    Data1: -219464513
+    Data2: 1279342047
+    Data3: 1226192555
+    Data4: 115365251
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1570
 --- !u!114 &5229187838689318177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -986,6 +1140,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 666
+--- !u!114 &5393568278344794542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Dark Magic/DarkMagic3
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Dark Magic/DarkMagic3
+  Guid:
+    Data1: 1170484233
+    Data2: 1221038017
+    Data3: -1048746079
+    Data4: 1202827700
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1578
 --- !u!114 &6261220201751276143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1094,3 +1275,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 460
+--- !u!114 &8529061339594821671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Dark Magic/DarkMagic1
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Dark Magic/DarkMagic1
+  Guid:
+    Data1: -585344408
+    Data2: 1301080664
+    Data3: -2013774437
+    Data4: -1147835959
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1578
