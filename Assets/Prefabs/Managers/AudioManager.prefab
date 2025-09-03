@@ -156,21 +156,21 @@ MonoBehaviour:
       Data3: -764217961
       Data4: 932808343
     Path: event:/SFX/Wizard/WizardHurt
-  <skeletonAttack>k__BackingField:
+  <SkeletonKnightAttack>k__BackingField:
     Guid:
       Data1: 1878831753
       Data2: 1185503962
       Data3: -851602773
       Data4: 1729057058
     Path: event:/SFX/Skeleton/SkeletonAttack
-  <skeletonDeath>k__BackingField:
+  <SkeletonKnightDeath>k__BackingField:
     Guid:
       Data1: -1087584596
       Data2: 1279091887
       Data3: -199119712
       Data4: 94147149
     Path: event:/SFX/Skeleton/SkeletonDeath
-  <skeletonHit>k__BackingField:
+  <SkeletonKnightHit>k__BackingField:
     Guid:
       Data1: -2127350859
       Data2: 1145328850
@@ -186,39 +186,123 @@ MonoBehaviour:
     Path: event:/SFX/Knight/SwordSwing
   <GoblinDeath>k__BackingField:
     Guid:
-      Data1: -1087584596
-      Data2: 1279091887
-      Data3: -199119712
-      Data4: 94147149
-    Path: event:/SFX/Skeleton/SkeletonDeath
+      Data1: 1697371162
+      Data2: 1203066417
+      Data3: 1038187435
+      Data4: -343440179
+    Path: event:/SFX/Goblin/Goblin Death
   <GoblinHit>k__BackingField:
     Guid:
-      Data1: -2127350859
-      Data2: 1145328850
-      Data3: -117463654
-      Data4: 1893323053
-    Path: event:/SFX/Skeleton/SkeletonHit
+      Data1: -1874440784
+      Data2: 1208776595
+      Data3: -2024163905
+      Data4: -2022623020
+    Path: event:/SFX/Goblin/Goblin Hurt
   <EyebatAttack>k__BackingField:
     Guid:
-      Data1: 1878831753
-      Data2: 1185503962
-      Data3: -851602773
-      Data4: 1729057058
-    Path: event:/SFX/Skeleton/SkeletonAttack
+      Data1: 896717192
+      Data2: 1316746136
+      Data3: -847533159
+      Data4: 1089099315
+    Path: event:/SFX/EyeBat/BatAttack
   <EyebatDeath>k__BackingField:
+    Guid:
+      Data1: 2036044617
+      Data2: 1280544130
+      Data3: 517816244
+      Data4: 1778231805
+    Path: event:/SFX/EyeBat/BatDead
+  <EyebatHit>k__BackingField:
+    Guid:
+      Data1: 622685626
+      Data2: 1301447832
+      Data3: -1109698428
+      Data4: 864541514
+    Path: event:/SFX/EyeBat/BatHurt
+  <FreakAttack>k__BackingField:
+    Guid:
+      Data1: 1904475050
+      Data2: 1163166095
+      Data3: -1264444269
+      Data4: -1661972933
+    Path: event:/SFX/Freak/FreakAttack
+  <FreakDeath>k__BackingField:
+    Guid:
+      Data1: -808016913
+      Data2: 1317446117
+      Data3: -577831516
+      Data4: 1506759887
+    Path: event:/SFX/Freak/FreakDeath
+  <FreakHit>k__BackingField:
+    Guid:
+      Data1: -349065722
+      Data2: 1281029763
+      Data3: -1644006503
+      Data4: 812683844
+    Path: event:/SFX/Freak/FreakHit
+  <SkeletonWizardAttack>k__BackingField:
+    Guid:
+      Data1: 1569039054
+      Data2: 1332426902
+      Data3: -1940019291
+      Data4: 481043051
+    Path: event:/SFX/Dark Magic/DarkMagic6
+  <SkeletonWizardDeath>k__BackingField:
     Guid:
       Data1: -1087584596
       Data2: 1279091887
       Data3: -199119712
       Data4: 94147149
     Path: event:/SFX/Skeleton/SkeletonDeath
-  <EyebatHit>k__BackingField:
+  <SkeletonWizardHit>k__BackingField:
     Guid:
       Data1: -2127350859
       Data2: 1145328850
       Data3: -117463654
       Data4: 1893323053
     Path: event:/SFX/Skeleton/SkeletonHit
+  <EvilKnightAttack>k__BackingField:
+    Guid:
+      Data1: -55746713
+      Data2: 1322153916
+      Data3: -1811914582
+      Data4: -1024658723
+    Path: event:/SFX/DarkKnight/DarkKnightAttack
+  <EvilKnightDeath>k__BackingField:
+    Guid:
+      Data1: -1195278340
+      Data2: 1278628083
+      Data3: 1611282579
+      Data4: -100119977
+    Path: event:/SFX/DarkKnight/DarkKnightDeath
+  <EvilKnightHit>k__BackingField:
+    Guid:
+      Data1: -1195278340
+      Data2: 1278628083
+      Data3: 1611282579
+      Data4: -100119977
+    Path: event:/SFX/DarkKnight/DarkKnightDeath
+  <NecromancerAttack>k__BackingField:
+    Guid:
+      Data1: 1912896098
+      Data2: 1195168200
+      Data3: -246130011
+      Data4: -462633036
+    Path: event:/SFX/Necromancer/NecromancerAttack
+  <NecromancerDeath>k__BackingField:
+    Guid:
+      Data1: -569983435
+      Data2: 1297881464
+      Data3: 1911839379
+      Data4: -2070019679
+    Path: event:/SFX/Necromancer/NecromancerDeath
+  <NecromancerHit>k__BackingField:
+    Guid:
+      Data1: -1035279518
+      Data2: 1229791261
+      Data3: -786912361
+      Data4: 673587268
+    Path: event:/SFX/Necromancer/NecromancerHit
   <UIClick>k__BackingField:
     Guid:
       Data1: -1474254523
@@ -249,11 +333,11 @@ MonoBehaviour:
     Path: event:/Ambience/Forest Ambience
   <castleAmbience>k__BackingField:
     Guid:
-      Data1: -1192136865
-      Data2: 1101274566
-      Data3: -1531220308
-      Data4: -1008006372
-    Path: event:/Ambience/Forest Ambience
+      Data1: -175254360
+      Data2: 1303978622
+      Data3: 1252959878
+      Data4: -1995728245
+    Path: event:/Ambience/Castle Ambience
   <forestMusic>k__BackingField:
     Guid:
       Data1: 1835527863
