@@ -69,10 +69,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638924432981183503
+  lastModified: 638924475212327781
   FileSizes:
   - Name: Desktop
-    Value: 2124
+    Value: 2182
   Exists: 1
 --- !u!114 &-6711110273718673508
 MonoBehaviour:
@@ -155,6 +155,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 171305
+--- !u!114 &-5111151302877458895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Castle Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Castle Ambience
+  Guid:
+    Data1: -175254360
+    Data2: 1303978622
+    Data3: 1252959878
+    Data4: -1995728245
+  Banks:
+  - {fileID: -4579064627366816421}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 535580
 --- !u!114 &-4954629376807046201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,10 +217,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Ambient.bank
   Name: Ambient
   StudioPath: bank:/Ambient
-  lastModified: 638924432981144703
+  lastModified: 638924475212249830
   FileSizes:
   - Name: Desktop
-    Value: 6206816
+    Value: 13743008
   Exists: 1
 --- !u!114 &-4526035076884237158
 MonoBehaviour:
@@ -413,13 +440,14 @@ MonoBehaviour:
   - {fileID: -521551425245564447}
   - {fileID: 7808210332915323871}
   - {fileID: 1665188604492588745}
+  - {fileID: -5111151302877458895}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3037067889015032689}
   StringsBanks:
   - {fileID: -7707472834049543520}
   cacheVersion: 131848
-  cacheTime: 638924432996383698
+  cacheTime: 638924484038206933
   SerializableEventsDict:
   - key: event:/Ambience/Forest Ambience
     index: 0
@@ -469,6 +497,8 @@ MonoBehaviour:
     index: 22
   - key: event:/SFX/EyeBat/BatHurt
     index: 23
+  - key: event:/Ambience/Castle Ambience
+    index: 24
 --- !u!114 &360092067355563068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -713,7 +743,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638924432981173802
+  lastModified: 638924475212327781
   FileSizes:
   - Name: Desktop
     Value: 1524
@@ -787,7 +817,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638924432996383698
+  lastModified: 638924484038206933
   FileSizes:
   - Name: Desktop
     Value: 307520

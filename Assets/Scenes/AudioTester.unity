@@ -262,6 +262,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &937529860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8248267054242992538, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
+  m_PrefabInstance: {fileID: 1185822830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &937529864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937529860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ae889629ec44274085d1eaa311cc51d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1185822830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -276,7 +293,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4675112536438087972, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6661506390532572142, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -321,7 +338,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8248267054242992538, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 937529864}
   m_SourcePrefab: {fileID: 100100000, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
 --- !u!1001 &1475921045
 PrefabInstance:
@@ -345,7 +365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4675112536438087972, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6661506390532572142, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -390,8 +410,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 515320144406344010, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1487849539}
   m_SourcePrefab: {fileID: 100100000, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
+--- !u!1 &1487849535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 515320144406344010, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
+  m_PrefabInstance: {fileID: 1475921045}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1487849539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487849535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8fe368bf4a82f4db6133fab3f0994a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1748016871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -400,6 +440,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4474377302974515767, guid: 5d3ebf5f87adbcc44b1f4ce2e16ba378, type: 3}
+      propertyPath: enemyType
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4675112536438087972, guid: 5d3ebf5f87adbcc44b1f4ce2e16ba378, type: 3}
       propertyPath: m_Name
       value: DireWolf
@@ -608,6 +652,10 @@ PrefabInstance:
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <wizardPrimary>k__BackingField.Path
       value: event:/SFX/Wizard/WizardPrimary
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <castleAmbience>k__BackingField.Path
+      value: event:/Ambience/Castle Ambience
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <forestAmbience>k__BackingField.Path
@@ -912,6 +960,22 @@ PrefabInstance:
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <wizardPrimary>k__BackingField.Guid.Data4
       value: 1030210555
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <castleAmbience>k__BackingField.Guid.Data1
+      value: -175254360
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <castleAmbience>k__BackingField.Guid.Data2
+      value: 1303978622
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <castleAmbience>k__BackingField.Guid.Data3
+      value: 1252959878
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <castleAmbience>k__BackingField.Guid.Data4
+      value: -1995728245
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <forestAmbience>k__BackingField.Guid.Data1
