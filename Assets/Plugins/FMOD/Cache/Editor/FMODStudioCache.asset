@@ -387,7 +387,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -7707472834049543520}
   cacheVersion: 131848
-  cacheTime: 638924237336607328
+  cacheTime: 638924285782201994
   SerializableEventsDict:
   - key: event:/Ambience/Forest Ambience
     index: 0
@@ -664,10 +664,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638924237336607328
+  lastModified: 638924285782201994
   FileSizes:
   - Name: Desktop
-    Value: 220064
+    Value: 251168
   Exists: 1
 --- !u!114 &4752320171984449503
 MonoBehaviour:
@@ -823,4 +823,4 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 680
+  Length: 460
