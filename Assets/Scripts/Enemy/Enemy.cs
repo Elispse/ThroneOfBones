@@ -158,8 +158,8 @@ public class Enemy : MonoBehaviour, IDamagable
             deathSound.start();
             animator.SetTrigger("Death");
             SpawnDrops();
-            GameManager.Instance.AddScore(10);
             Destroy(gameObject, 0.2f);
+            GameManager.Instance.AddScore(10);
         }
         else
         {

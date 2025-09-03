@@ -235,7 +235,7 @@ MonoBehaviour:
   AIType: 2
   AttackDelay: 120
   attackTime: 1.5
-  fleeDistance: 2.5
+  fleeDistance: 20
   animator: {fileID: 995509736662836898}
   flipOffset: 0
   spriteRenderer: {fileID: 1695039557224326954}

@@ -8,11 +8,7 @@
                         <ui:DataBinding property="value" data-source-path="p1Health" binding-mode="ToTarget" />
                     </Bindings>
                 </ui:ProgressBar>
-                <ui:Label text="Score: 0" name="Score" class="scoreText" style="align-items: center; justify-content: space-around; align-self: stretch; align-content: center; color: rgb(255, 255, 255);">
-                    <Bindings>
-                        <ui:DataBinding property="text" data-source-path="Score" binding-mode="ToTarget" />
-                    </Bindings>
-                </ui:Label>
+                <ui:Label text="Score: 0" name="Score" class="scoreText" />
                 <ui:ProgressBar value="100" name="HealthBar2" class="healthBar">
                     <Bindings>
                         <ui:DataBinding property="value" data-source-path="p2Health" binding-mode="ToTarget" />
@@ -20,13 +16,13 @@
                 </ui:ProgressBar>
             </ui:VisualElement>
             <ui:VisualElement name="ComboBox" class="comboBox">
-                <ui:Label text="0 Combo" name="ComboTxt1" class="comboText" style="visibility: hidden; color: rgb(255, 255, 255); font-size: 58px; display: flex;">
+                <ui:Label text="0 Combo" name="ComboTxt1" class="comboText" style="visibility: hidden;">
                     <Bindings>
                         <ui:DataBinding property="text" data-source-path="p1Combo" binding-mode="ToTarget" />
                     </Bindings>
                 </ui:Label>
                 <ui:VisualElement name="ComboSpacer" style="flex-grow: 1; max-width: 50%; min-width: 64%;" />
-                <ui:Label text="0 Combo" name="ComboTxt2" class="comboText" style="visibility: hidden; color: rgb(255, 255, 255);">
+                <ui:Label text="0 Combo" name="ComboTxt2" class="comboText" style="visibility: hidden;">
                     <Bindings>
                         <ui:DataBinding property="text" data-source-path="p2Combo" binding-mode="ToTarget" />
                     </Bindings>
