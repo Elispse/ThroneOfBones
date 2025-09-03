@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 577310
+--- !u!114 &-8363826273401074738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Necromancer/NecromancerDeath
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Necromancer/NecromancerDeath
+  Guid:
+    Data1: -569983435
+    Data2: 1297881464
+    Data3: 1911839379
+    Data4: -2070019679
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2963
 --- !u!114 &-8233851253669152193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,10 +150,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638924522731509626
+  lastModified: 638924546359406826
   FileSizes:
   - Name: Desktop
-    Value: 2596
+    Value: 2678
   Exists: 1
 --- !u!114 &-6711110273718673508
 MonoBehaviour:
@@ -271,7 +298,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Ambient.bank
   Name: Ambient
   StudioPath: bank:/Ambient
-  lastModified: 638924522731509626
+  lastModified: 638924475212249830
   FileSizes:
   - Name: Desktop
     Value: 13743008
@@ -613,13 +640,15 @@ MonoBehaviour:
   - {fileID: 4960988621930545220}
   - {fileID: -8233851253669152193}
   - {fileID: -4069119794155108011}
+  - {fileID: -8363826273401074738}
+  - {fileID: 8454610315096490259}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3037067889015032689}
   StringsBanks:
   - {fileID: -7707472834049543520}
   cacheVersion: 131848
-  cacheTime: 638924522731529626
+  cacheTime: 638924546360532749
   SerializableEventsDict:
   - key: event:/Ambience/Forest Ambience
     index: 0
@@ -691,6 +720,10 @@ MonoBehaviour:
     index: 33
   - key: event:/SFX/Necromancer/NecromancerAttack
     index: 34
+  - key: event:/SFX/Necromancer/NecromancerDeath
+    index: 35
+  - key: event:/SFX/Necromancer/NecromancerHit
+    index: 36
 --- !u!114 &360092067355563068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -787,7 +820,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638924478447431573
+  lastModified: 638924432989768182
   FileSizes:
   - Name: Desktop
     Value: 13726432
@@ -935,7 +968,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638924478446951580
+  lastModified: 638924546359406826
   FileSizes:
   - Name: Desktop
     Value: 1524
@@ -1009,10 +1042,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638924522731529626
+  lastModified: 638924546360532749
   FileSizes:
   - Name: Desktop
-    Value: 448928
+    Value: 504608
   Exists: 1
 --- !u!114 &4752320171984449503
 MonoBehaviour:
@@ -1250,6 +1283,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 653
+--- !u!114 &8454610315096490259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Necromancer/NecromancerHit
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Necromancer/NecromancerHit
+  Guid:
+    Data1: -1035279518
+    Data2: 1229791261
+    Data3: -786912361
+    Data4: 673587268
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1446
 --- !u!114 &8521473199267800797
 MonoBehaviour:
   m_ObjectHideFlags: 0
