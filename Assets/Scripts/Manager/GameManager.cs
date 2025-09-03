@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -15,6 +16,8 @@ public class GameManager : MonoBehaviour
     public float Timer { get; set; }
     public IPlayer Player1 { get; set; }
     public IPlayer Player2 { get; set; }
+
+    [SerializeField] public PlayerInputManager playerInputManager;
 
     [SerializeField] public UIVariables uiVariables;
 

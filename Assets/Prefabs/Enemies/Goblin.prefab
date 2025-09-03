@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalAttack: {fileID: 5818295537129569490, guid: e1de7ac51b64a3b45b08390bf6fa626b, type: 3}
-  AIType: 0
+  AIType: 1
   AttackDelay: 90
   attackTime: 1
   fleeDistance: 20

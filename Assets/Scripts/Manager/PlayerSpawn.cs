@@ -13,5 +13,17 @@ public class PlayerSpawn : MonoBehaviour
 				Instantiate(GameManager.Instance.Characters[1]);
 				break;
 		}
-	}
+		if(GameManager.Instance.selectedCharacter2 != null)
+        {
+            switch (GameManager.Instance.selectedCharacter2)
+            {
+                case "KnightPrefab":
+                    Instantiate(GameManager.Instance.Characters[0]);
+                    break;
+                case "MagePrefab":
+                    Instantiate(GameManager.Instance.Characters[1]);
+                    break;
+            }
+        }
+    }
 }
