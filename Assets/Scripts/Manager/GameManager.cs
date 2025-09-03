@@ -5,11 +5,15 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+    
+    public int selectedLevel { get; set; }
+    public string selectedCharacter1 { get; set; }
+    public string selectedCharacter2 { get; set; }
+    [SerializeField] public GameObject[] Characters;
     public int Score { get; set; }
     public int Lives { get; set; }
     public Scene Level { get; set; }
     public float Timer { get; set; }
-
     public IPlayer Player1 { get; set; }
     public IPlayer Player2 { get; set; }
 
@@ -26,6 +30,9 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
+
+    
     }
     void Start()
     {
@@ -77,5 +84,5 @@ public class GameManager : MonoBehaviour
         string sceneName = SceneUtility.GetScenePathByBuildIndex(level);
         sceneName = System.IO.Path.GetFileNameWithoutExtension(sceneName);
         SceneManager.LoadScene(sceneName);
-    }
+	}
 }
