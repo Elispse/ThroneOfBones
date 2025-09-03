@@ -9,8 +9,8 @@ public class UIVariables : ScriptableObject
 
 	public IPlayer player1;
 	public IPlayer player2;
-	public int p1Health = 100;
-	public int p2Health = 100;
+	public float p1Health = 100;
+	public float p2Health = 100;
 	public string p1Combo = "0 combo";
 	public string p2Combo = "0 combo";
 	public void UpdateVars()
