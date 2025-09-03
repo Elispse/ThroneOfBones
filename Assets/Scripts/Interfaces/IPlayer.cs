@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 using UnityEngine.Windows;
 
-public abstract class IPlayer : MonoBehaviour, IDamagable
+public abstract class IPlayer : MonoBehaviour, IDamagable, IHealable
 {
     [Header("Movement Settings")]
     [SerializeField] protected float hSpeed = 10f;
@@ -32,7 +32,10 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
 
     [SerializeField] public Animator animator;
 
-    public int Health = 100;
+    [SerializeField]
+    private float maxHealth = 100;
+
+    public float Health = 100;
 
     public int Combo = 0;
 
@@ -55,7 +58,7 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
 
     public virtual void Start()
     {
-        Health = 100;
+        Health = maxHealth;
     
         HUD = GameObject.FindAnyObjectByType<UIDocument>();
     }
@@ -158,4 +161,13 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
         HUD.GetComponent<HUDscript>().Settings();
     }
 
+    public void Heal(float health)
+    {
+        Debug.Log("Players current health" + Health);
+        if (Health <= maxHealth)
+        {
+            Health = Mathf.Min(Health + health, maxHealth);
+        }
+        Debug.Log("Player after Health healed" + Health);
+    }
 }

@@ -1,5 +1,7 @@
 using FMOD.Studio;
+using NUnit.Framework;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -50,6 +52,9 @@ public class Enemy : MonoBehaviour, IDamagable
 
     [SerializeField]
     private EnemyType enemyType;
+
+    [SerializeField]
+    private List<GameObject> Drops;
 
     private EventInstance deathSound;
     private EventInstance hurtSound;
@@ -152,6 +157,7 @@ public class Enemy : MonoBehaviour, IDamagable
         {
             deathSound.start();
             animator.SetTrigger("Death");
+            SpawnDrops();
             Destroy(gameObject, 0.2f);
             GameManager.Instance.AddScore(10);
         }
@@ -318,6 +324,20 @@ public class Enemy : MonoBehaviour, IDamagable
             StartCoroutine(DelayedNormalAttack(attackTime));
         }
     }
+
+    private void SpawnDrops()
+    {
+        if (Drops.Count > 0)
+        {
+            int rand = Random.Range(1, 100);
+            if (rand <= 25)
+            {
+                GameObject newObject = Instantiate(Drops[0]);
+                newObject.transform.position = gameObject.transform.position;
+            }
+        }
+    }
+
     private IEnumerator DelayedNormalAttack(float delay)
     {
         isAttacking = true;

@@ -244,6 +244,8 @@ MonoBehaviour:
   enemyObject: {fileID: 1106343294229786024}
   shadow: {fileID: 8728967235390638041}
   enemyType: 2
+  Drops:
+  - {fileID: 8310808774439294431, guid: 9e8b6ca8f059d2646ba77cb95f059d09, type: 3}
 --- !u!1 &7385500254613368200
 GameObject:
   m_ObjectHideFlags: 0
