@@ -12,9 +12,8 @@ public class CameraBound : MonoBehaviour
         }
     }
 
-    public void OnTriggerStay2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Camera Bound Triggered");
         if (collision.gameObject.CompareTag("Player") && !used)
         {
             cameraManager.NextSection();

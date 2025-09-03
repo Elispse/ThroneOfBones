@@ -19,7 +19,7 @@ public class CameraManager : MonoBehaviour
 
     public void NextSection()
     {
-        if (currentSection < sections.Length - 1)
+        if (currentSection < sections.Length)
         {
             currentSection++;
         }
