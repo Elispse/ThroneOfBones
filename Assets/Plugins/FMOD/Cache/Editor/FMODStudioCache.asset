@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 577310
+--- !u!114 &-8363826273401074738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Necromancer/NecromancerDeath
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Necromancer/NecromancerDeath
+  Guid:
+    Data1: -569983435
+    Data2: 1297881464
+    Data3: 1911839379
+    Data4: -2070019679
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2963
 --- !u!114 &-8233851253669152193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,11 +150,38 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638924524932219695
+  lastModified: 638924563972596786
   FileSizes:
   - Name: Desktop
-    Value: 2596
+    Value: 2826
   Exists: 1
+--- !u!114 &-7637565624060240200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/DarkKnight/DarkKnightHit
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/DarkKnight/DarkKnightHit
+  Guid:
+    Data1: 1440823411
+    Data2: 1209733815
+    Data3: 1805846967
+    Data4: 1319620775
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 706
 --- !u!114 &-6711110273718673508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,7 +325,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Ambient.bank
   Name: Ambient
   StudioPath: bank:/Ambient
-  lastModified: 638924488430515648
+  lastModified: 638924563972567686
   FileSizes:
   - Name: Desktop
     Value: 13743008
@@ -404,6 +458,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2070
+--- !u!114 &-3592794989758659754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/DarkKnight/DarkKnightDeath
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/DarkKnight/DarkKnightDeath
+  Guid:
+    Data1: -1195278340
+    Data2: 1278628083
+    Data3: 1611282579
+    Data4: -100119977
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1921
 --- !u!114 &-3338888776435263336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,13 +694,18 @@ MonoBehaviour:
   - {fileID: 4960988621930545220}
   - {fileID: -8233851253669152193}
   - {fileID: -4069119794155108011}
+  - {fileID: -8363826273401074738}
+  - {fileID: 8454610315096490259}
+  - {fileID: 4536660965988938827}
+  - {fileID: -7637565624060240200}
+  - {fileID: -3592794989758659754}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3037067889015032689}
   StringsBanks:
   - {fileID: -7707472834049543520}
   cacheVersion: 131848
-  cacheTime: 638924524932230699
+  cacheTime: 638924564050481097
   SerializableEventsDict:
   - key: event:/Ambience/Forest Ambience
     index: 0
@@ -689,6 +775,18 @@ MonoBehaviour:
     index: 32
   - key: event:/SFX/Dark Magic/DarkMagic6
     index: 33
+  - key: event:/SFX/Necromancer/NecromancerAttack
+    index: 34
+  - key: event:/SFX/Necromancer/NecromancerDeath
+    index: 35
+  - key: event:/SFX/Necromancer/NecromancerHit
+    index: 36
+  - key: event:/SFX/DarkKnight/DarkKnightAttack
+    index: 37
+  - key: event:/SFX/DarkKnight/DarkKnightHit
+    index: 38
+  - key: event:/SFX/DarkKnight/DarkKnightDeath
+    index: 39
 --- !u!114 &360092067355563068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -785,7 +883,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638924327640806879
+  lastModified: 638924564048658365
   FileSizes:
   - Name: Desktop
     Value: 13726432
@@ -933,7 +1031,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638924327639657310
+  lastModified: 638924563972596786
   FileSizes:
   - Name: Desktop
     Value: 1524
@@ -992,6 +1090,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &4536660965988938827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/DarkKnight/DarkKnightAttack
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/DarkKnight/DarkKnightAttack
+  Guid:
+    Data1: -55746713
+    Data2: 1322153916
+    Data3: -1811914582
+    Data4: -1024658723
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 840
 --- !u!114 &4565676149254333236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1007,10 +1132,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638924524932230699
+  lastModified: 638924564050481097
   FileSizes:
   - Name: Desktop
-    Value: 448928
+    Value: 532800
   Exists: 1
 --- !u!114 &4752320171984449503
 MonoBehaviour:
@@ -1248,6 +1373,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 653
+--- !u!114 &8454610315096490259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Necromancer/NecromancerHit
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Necromancer/NecromancerHit
+  Guid:
+    Data1: -1035279518
+    Data2: 1229791261
+    Data3: -786912361
+    Data4: 673587268
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1446
 --- !u!114 &8521473199267800797
 MonoBehaviour:
   m_ObjectHideFlags: 0
