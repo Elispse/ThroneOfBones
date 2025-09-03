@@ -243,6 +243,7 @@ MonoBehaviour:
   gravity: 30
   enemyObject: {fileID: 1106343294229786024}
   shadow: {fileID: 8728967235390638041}
+  enemyType: 3
 --- !u!1 &7385500254613368200
 GameObject:
   m_ObjectHideFlags: 0
