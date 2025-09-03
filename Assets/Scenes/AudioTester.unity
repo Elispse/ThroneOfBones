@@ -506,6 +506,14 @@ PrefabInstance:
       value: event:/SFX/UI/UIPause
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatHit>k__BackingField.Path
+      value: event:/SFX/EyeBat/BatHurt
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinHit>k__BackingField.Path
+      value: event:/SFX/Goblin/Goblin Hurt
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <menuMusic>k__BackingField.Path
       value: event:/Music/Menu Music
       objectReference: {fileID: 0}
@@ -526,6 +534,14 @@ PrefabInstance:
       value: event:/SFX/Wizard/WizardWalk
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatDeath>k__BackingField.Path
+      value: event:/SFX/EyeBat/BatDead
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinDeath>k__BackingField.Path
+      value: event:/SFX/Goblin/Goblin Death
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <castleMusic>k__BackingField.Path
       value: event:/Music/Castle Music Backup
       objectReference: {fileID: 0}
@@ -540,6 +556,10 @@ PrefabInstance:
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <skeletonHit>k__BackingField.Path
       value: event:/SFX/Skeleton/SkeletonHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatAttack>k__BackingField.Path
+      value: event:/SFX/EyeBat/BatAttack
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <UIPlayButton>k__BackingField.Path
@@ -596,6 +616,38 @@ PrefabInstance:
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <skeletonAttack>k__BackingField.Path
       value: event:/SFX/Skeleton/SkeletonAttack
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatHit>k__BackingField.Guid.Data1
+      value: 622685626
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatHit>k__BackingField.Guid.Data2
+      value: 1301447832
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatHit>k__BackingField.Guid.Data3
+      value: -1109698428
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatHit>k__BackingField.Guid.Data4
+      value: 864541514
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinHit>k__BackingField.Guid.Data1
+      value: -1874440784
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinHit>k__BackingField.Guid.Data2
+      value: 1208776595
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinHit>k__BackingField.Guid.Data3
+      value: -2024163905
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinHit>k__BackingField.Guid.Data4
+      value: -2022623020
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <menuMusic>k__BackingField.Guid.Data1
@@ -686,6 +738,38 @@ PrefabInstance:
       value: 154803203
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatDeath>k__BackingField.Guid.Data1
+      value: 2036044617
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatDeath>k__BackingField.Guid.Data2
+      value: 1280544130
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatDeath>k__BackingField.Guid.Data3
+      value: 517816244
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatDeath>k__BackingField.Guid.Data4
+      value: 1778231805
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinDeath>k__BackingField.Guid.Data1
+      value: 1697371162
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinDeath>k__BackingField.Guid.Data2
+      value: 1203066417
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinDeath>k__BackingField.Guid.Data3
+      value: 1038187435
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinDeath>k__BackingField.Guid.Data4
+      value: -343440179
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <castleMusic>k__BackingField.Guid.Data1
       value: -1013304216
       objectReference: {fileID: 0}
@@ -748,6 +832,22 @@ PrefabInstance:
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <skeletonHit>k__BackingField.Guid.Data4
       value: 1893323053
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatAttack>k__BackingField.Guid.Data1
+      value: 896717192
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatAttack>k__BackingField.Guid.Data2
+      value: 1316746136
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatAttack>k__BackingField.Guid.Data3
+      value: -847533159
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatAttack>k__BackingField.Guid.Data4
+      value: 1089099315
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <UIPlayButton>k__BackingField.Guid.Data1
