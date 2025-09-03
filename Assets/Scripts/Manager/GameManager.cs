@@ -5,10 +5,16 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+
+    public int selectedLevel { get; set; }
+    public string selectedCharacter1 { get; set; }
+    public string selectedCharacter2 { get; set; }
+    [SerializeField] public GameObject[] Characters;
     public int Score { get; set; }
-    public int Lives { get; set; }
     public Scene Level { get; set; }
     public float Timer { get; set; }
+    public IPlayer Player1 { get; set; }
+    public IPlayer Player2 { get; set; }
 
     [SerializeField] public UIVariables uiVariables;
 
@@ -23,12 +29,14 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+
+
     }
     void Start()
     {
         Level = UnityEditor.SceneManagement.EditorSceneManager.GetActiveScene();
         Score = 0;
-        Lives = 3;
         Timer = 0f;
     }
 
@@ -45,23 +53,9 @@ public class GameManager : MonoBehaviour
 
     public void Death()
     {
-        Lives--;
-        if (Lives <= 0)
-        {   
-            Score = 0;
-            Lives = 3;
-            Timer = 0f;
-            Level = UnityEditor.SceneManagement.EditorSceneManager.GetActiveScene();
-            SceneManager.LoadScene(Level.name);
-            Debug.Log("dead");
-            GoToLevel(0);
-        }
-        else
-        {
-            Score = (int)(Score * 0.75f);
-            GoToLevel(SceneManager.GetActiveScene().buildIndex);
-            Debug.Log("respawn, lives: " + Lives);
-        }
+        Destroy(this);
+        SceneManager.LoadScene(Level.name);
+
     }
 
     public void GoToLevel(int level)
@@ -75,4 +69,14 @@ public class GameManager : MonoBehaviour
         sceneName = System.IO.Path.GetFileNameWithoutExtension(sceneName);
         SceneManager.LoadScene(sceneName);
     }
+
+    public void Pause()
+    {
+        Time.timeScale = 0;
+    }
+    public void Unpause()
+    {
+        Time.timeScale = 1;
+    }
+
 }

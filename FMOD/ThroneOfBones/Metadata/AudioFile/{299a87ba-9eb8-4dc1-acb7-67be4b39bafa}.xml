@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{299a87ba-9eb8-4dc1-acb7-67be4b39bafa}">
+		<property name="assetPath">
+			<value>fire-magic.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.0634999999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{1f14b0de-9299-4197-a08b-53c6ce5acc80}</destination>
+		</relationship>
+	</object>
+</objects>

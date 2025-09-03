@@ -1,0 +1,361 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5325122485673823143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1503035647597486198}
+  - component: {fileID: 4594517668801998998}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1503035647597486198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5325122485673823143}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6086279991355257663}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4594517668801998998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5325122485673823143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e5cbc113e70bed44b9da5561aa4e0af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masterVolume: 1
+  musicVolume: 1
+  ambienceVolume: 1
+  SFXVolume: 1
+--- !u!1 &5905500557708740783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6086279991355257663}
+  - component: {fileID: 3289460014997535711}
+  m_Layer: 0
+  m_Name: FMODEvents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6086279991355257663
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5905500557708740783}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1503035647597486198}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3289460014997535711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5905500557708740783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a1d384fd5225a04baaae9dc29292ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <knightSwordSwing>k__BackingField:
+    Guid:
+      Data1: 1397469684
+      Data2: 1167592028
+      Data3: 2105519796
+      Data4: 450993801
+    Path: event:/SFX/Knight/SwordSwing
+  <knightWalk>k__BackingField:
+    Guid:
+      Data1: -1387641527
+      Data2: 1183273922
+      Data3: 761285815
+      Data4: -2112544430
+    Path: event:/SFX/Knight/KnightWalk
+  <knightShield>k__BackingField:
+    Guid:
+      Data1: 2038892480
+      Data2: 1299945822
+      Data3: 118572179
+      Data4: -442060080
+    Path: event:/SFX/Equip
+  <knightBlock>k__BackingField:
+    Guid:
+      Data1: 1772882035
+      Data2: 1293294183
+      Data3: -1814528597
+      Data4: -736528864
+    Path: event:/SFX/Knight/ShieldBlock
+  <knightHurt>k__BackingField:
+    Guid:
+      Data1: 162849545
+      Data2: 1230268859
+      Data3: 1622864783
+      Data4: 65911784
+    Path: event:/SFX/Knight/KnightHurt
+  <wizardPrimary>k__BackingField:
+    Guid:
+      Data1: -480391681
+      Data2: 1336524991
+      Data3: 1953061803
+      Data4: 1030210555
+    Path: event:/SFX/Wizard/WizardPrimary
+  <wizardWalk>k__BackingField:
+    Guid:
+      Data1: 296572246
+      Data2: 1179616063
+      Data3: 1437463231
+      Data4: 154803203
+    Path: event:/SFX/Wizard/WizardWalk
+  <wizardSecondary>k__BackingField:
+    Guid:
+      Data1: 734807519
+      Data2: 1336581627
+      Data3: 193206707
+      Data4: -198537073
+    Path: event:/SFX/Wizard/WizardSecondary
+  <wizardHurt>k__BackingField:
+    Guid:
+      Data1: -512103618
+      Data2: 1211781640
+      Data3: -764217961
+      Data4: 932808343
+    Path: event:/SFX/Wizard/WizardHurt
+  <SkeletonKnightAttack>k__BackingField:
+    Guid:
+      Data1: 1878831753
+      Data2: 1185503962
+      Data3: -851602773
+      Data4: 1729057058
+    Path: event:/SFX/Skeleton/SkeletonAttack
+  <SkeletonKnightDeath>k__BackingField:
+    Guid:
+      Data1: -1087584596
+      Data2: 1279091887
+      Data3: -199119712
+      Data4: 94147149
+    Path: event:/SFX/Skeleton/SkeletonDeath
+  <SkeletonKnightHit>k__BackingField:
+    Guid:
+      Data1: -2127350859
+      Data2: 1145328850
+      Data3: -117463654
+      Data4: 1893323053
+    Path: event:/SFX/Skeleton/SkeletonHit
+  <GoblinAttack>k__BackingField:
+    Guid:
+      Data1: 1397469684
+      Data2: 1167592028
+      Data3: 2105519796
+      Data4: 450993801
+    Path: event:/SFX/Knight/SwordSwing
+  <GoblinDeath>k__BackingField:
+    Guid:
+      Data1: 1697371162
+      Data2: 1203066417
+      Data3: 1038187435
+      Data4: -343440179
+    Path: event:/SFX/Goblin/Goblin Death
+  <GoblinHit>k__BackingField:
+    Guid:
+      Data1: -1874440784
+      Data2: 1208776595
+      Data3: -2024163905
+      Data4: -2022623020
+    Path: event:/SFX/Goblin/Goblin Hurt
+  <EyebatAttack>k__BackingField:
+    Guid:
+      Data1: 896717192
+      Data2: 1316746136
+      Data3: -847533159
+      Data4: 1089099315
+    Path: event:/SFX/EyeBat/BatAttack
+  <EyebatDeath>k__BackingField:
+    Guid:
+      Data1: 2036044617
+      Data2: 1280544130
+      Data3: 517816244
+      Data4: 1778231805
+    Path: event:/SFX/EyeBat/BatDead
+  <EyebatHit>k__BackingField:
+    Guid:
+      Data1: 622685626
+      Data2: 1301447832
+      Data3: -1109698428
+      Data4: 864541514
+    Path: event:/SFX/EyeBat/BatHurt
+  <FreakAttack>k__BackingField:
+    Guid:
+      Data1: 1904475050
+      Data2: 1163166095
+      Data3: -1264444269
+      Data4: -1661972933
+    Path: event:/SFX/Freak/FreakAttack
+  <FreakDeath>k__BackingField:
+    Guid:
+      Data1: -808016913
+      Data2: 1317446117
+      Data3: -577831516
+      Data4: 1506759887
+    Path: event:/SFX/Freak/FreakDeath
+  <FreakHit>k__BackingField:
+    Guid:
+      Data1: -349065722
+      Data2: 1281029763
+      Data3: -1644006503
+      Data4: 812683844
+    Path: event:/SFX/Freak/FreakHit
+  <SkeletonWizardAttack>k__BackingField:
+    Guid:
+      Data1: 1569039054
+      Data2: 1332426902
+      Data3: -1940019291
+      Data4: 481043051
+    Path: event:/SFX/Dark Magic/DarkMagic6
+  <SkeletonWizardDeath>k__BackingField:
+    Guid:
+      Data1: -1087584596
+      Data2: 1279091887
+      Data3: -199119712
+      Data4: 94147149
+    Path: event:/SFX/Skeleton/SkeletonDeath
+  <SkeletonWizardHit>k__BackingField:
+    Guid:
+      Data1: -2127350859
+      Data2: 1145328850
+      Data3: -117463654
+      Data4: 1893323053
+    Path: event:/SFX/Skeleton/SkeletonHit
+  <EvilKnightAttack>k__BackingField:
+    Guid:
+      Data1: -55746713
+      Data2: 1322153916
+      Data3: -1811914582
+      Data4: -1024658723
+    Path: event:/SFX/DarkKnight/DarkKnightAttack
+  <EvilKnightDeath>k__BackingField:
+    Guid:
+      Data1: -1195278340
+      Data2: 1278628083
+      Data3: 1611282579
+      Data4: -100119977
+    Path: event:/SFX/DarkKnight/DarkKnightDeath
+  <EvilKnightHit>k__BackingField:
+    Guid:
+      Data1: -1195278340
+      Data2: 1278628083
+      Data3: 1611282579
+      Data4: -100119977
+    Path: event:/SFX/DarkKnight/DarkKnightDeath
+  <NecromancerAttack>k__BackingField:
+    Guid:
+      Data1: 1912896098
+      Data2: 1195168200
+      Data3: -246130011
+      Data4: -462633036
+    Path: event:/SFX/Necromancer/NecromancerAttack
+  <NecromancerDeath>k__BackingField:
+    Guid:
+      Data1: -569983435
+      Data2: 1297881464
+      Data3: 1911839379
+      Data4: -2070019679
+    Path: event:/SFX/Necromancer/NecromancerDeath
+  <NecromancerHit>k__BackingField:
+    Guid:
+      Data1: -1035279518
+      Data2: 1229791261
+      Data3: -786912361
+      Data4: 673587268
+    Path: event:/SFX/Necromancer/NecromancerHit
+  <UIClick>k__BackingField:
+    Guid:
+      Data1: -1474254523
+      Data2: 1199384022
+      Data3: -1029743972
+      Data4: -1394848225
+    Path: event:/SFX/UI/UIButton
+  <UIPlayButton>k__BackingField:
+    Guid:
+      Data1: 1301389538
+      Data2: 1338368292
+      Data3: -304952919
+      Data4: 1871251588
+    Path: event:/SFX/UI/UIPlay
+  <UIPause>k__BackingField:
+    Guid:
+      Data1: -1050417758
+      Data2: 1204105084
+      Data3: 1375683487
+      Data4: 2141847054
+    Path: event:/SFX/UI/UIPause
+  <forestAmbience>k__BackingField:
+    Guid:
+      Data1: -1192136865
+      Data2: 1101274566
+      Data3: -1531220308
+      Data4: -1008006372
+    Path: event:/Ambience/Forest Ambience
+  <castleAmbience>k__BackingField:
+    Guid:
+      Data1: -175254360
+      Data2: 1303978622
+      Data3: 1252959878
+      Data4: -1995728245
+    Path: event:/Ambience/Castle Ambience
+  <forestMusic>k__BackingField:
+    Guid:
+      Data1: 1835527863
+      Data2: 1081891521
+      Data3: -1353324902
+      Data4: 1094024521
+    Path: event:/Music/Forest Music
+  <castleMusic>k__BackingField:
+    Guid:
+      Data1: -1013304216
+      Data2: 1228660281
+      Data3: 481906111
+      Data4: -1870961513
+    Path: event:/Music/Castle Music Backup
+  <menuMusic>k__BackingField:
+    Guid:
+      Data1: -951820681
+      Data2: 1308361717
+      Data3: 564706185
+      Data4: 1797267348
+    Path: event:/Music/Menu Music

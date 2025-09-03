@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1367624301239100543}
   - component: {fileID: 7245786815265140943}
+  - component: {fileID: 3286921085978491501}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -44,4 +45,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 356c4d2e64adf704aac9a413c404e2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Characters:
+  - {fileID: 4675112536438087972, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
+  - {fileID: 4675112536438087972, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
   uiVariables: {fileID: 11400000, guid: d400d26409fe6864c8a4826410af83e0, type: 2}
+--- !u!114 &3286921085978491501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7961213021331879591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff4c43b68cf16e47b4b11e43314fa6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wave1: []
+  Wave2: []
+  Wave3: []
+  Wave4: []
+  Wave5: []

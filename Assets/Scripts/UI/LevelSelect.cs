@@ -1,28 +1,84 @@
+using FMOD.Studio;
+using FMODUnity;
+using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class LevelSelect : MonoBehaviour
 {
     private UIDocument uiDocument;
-    private Button leveltestButton;
     private Button level1Button;
-    private Button fivehundredwolvesButton;
-    void Start()
+    private Button CloseButton;
+    private Button SettingsButton;
+    private Button SettingsCloseButton;
+    private VisualElement settings;
+
+    private Slider masterSlider;
+    private Slider ambientSlider;
+    private Slider musicSlider;
+    private Slider soundSlider;
+
+
+    private bool settingsOpen = false;
+
+	void Start()
     {
         uiDocument = GetComponent<UIDocument>();
-        leveltestButton = uiDocument.rootVisualElement.Q<Button>("btnlvltest");
         level1Button = uiDocument.rootVisualElement.Q<Button>("btnlvl1");
-        fivehundredwolvesButton = uiDocument.rootVisualElement.Q<Button>("btnlvlwolf");
+        CloseButton = uiDocument.rootVisualElement.Q<Button>("btnclose");
+        settings = uiDocument.rootVisualElement.Q<VisualElement>("Settings");
+        SettingsButton = uiDocument.rootVisualElement.Q<Button>("btnsettings");
+        SettingsCloseButton = uiDocument.rootVisualElement.Q<Button>("btnsettingsclose");
 
-        leveltestButton.clicked += () => GoToLevel("SampleScene");
-        level1Button.clicked += () => GoToLevel("Level1");
-        fivehundredwolvesButton.clicked += () => GoToLevel("500Wolves");
+        masterSlider = uiDocument.rootVisualElement.Q<Slider>("sldMaster");
+        ambientSlider = uiDocument.rootVisualElement.Q<Slider>("sldAmbient");
+        musicSlider = uiDocument.rootVisualElement.Q<Slider>("sldMusic");
+        soundSlider = uiDocument.rootVisualElement.Q<Slider>("sldSoundEffects");
 
 
+
+        level1Button.clicked += () => GoToLevel(3);
+        CloseButton.clicked += () => Close();
+        SettingsButton.clicked += () => Settings();
+        SettingsCloseButton.clicked += () => Settings();
+
+
+        settings.style.visibility = Visibility.Hidden;
     }
-    public void GoToLevel(string name)
+
+	private void Update()
+	{
+
+		AudioManager.instance.masterVolume = masterSlider.value;
+		AudioManager.instance.ambienceVolume = ambientSlider.value;
+		AudioManager.instance.musicVolume = musicSlider.value;
+		AudioManager.instance.SFXVolume = soundSlider.value;
+	}
+
+	public void GoToLevel(int index)
     {
-        Debug.Log("Loading level: " + name);
-        UnityEngine.SceneManagement.SceneManager.LoadScene(name);
+        GameManager.Instance.selectedLevel = index;
+        //Debug.Log("Loading level: " + name);
+        GameManager.Instance.GoToLevel(1);
+    }
+
+    public void Close()
+    {
+        Application.Quit();
+    }
+
+    public void Settings()
+    {
+        if (settingsOpen)
+        {
+            settings.style.visibility = Visibility.Hidden;
+            settingsOpen = false;
+        }
+        else
+        {
+            settings.style.visibility = Visibility.Visible;
+            settingsOpen = true;
+        }
     }
 }

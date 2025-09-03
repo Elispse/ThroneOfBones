@@ -1,0 +1,77 @@
+using FMODUnity;
+using UnityEngine;
+
+public class FMODEvents : MonoBehaviour
+{
+    [field: Header("Knight SFX")]
+    [field: SerializeField] public EventReference knightSwordSwing { get; private set; }
+    [field: SerializeField] public EventReference knightWalk { get; private set; }
+    [field: SerializeField] public EventReference knightShield { get; private set; }
+    [field: SerializeField] public EventReference knightBlock { get; private set; }
+    [field: SerializeField] public EventReference knightHurt { get; private set; }
+
+    [field: Header("Wizard SFX")]
+    [field: SerializeField] public EventReference wizardPrimary { get; private set; }
+    [field: SerializeField] public EventReference wizardWalk { get; private set; }
+    [field: SerializeField] public EventReference wizardSecondary { get; private set; }
+    [field: SerializeField] public EventReference wizardHurt { get; private set; }
+
+    [field: Header("SkeletonKnight SFX")]
+    [field: SerializeField] public EventReference SkeletonKnightAttack { get; private set; }
+    [field: SerializeField] public EventReference SkeletonKnightDeath { get; private set; }
+    [field: SerializeField] public EventReference SkeletonKnightHit { get; private set; }
+
+    [field: Header("Goblin Enemy SFX")]
+    [field: SerializeField] public EventReference GoblinAttack { get; private set; }
+    [field: SerializeField] public EventReference GoblinDeath { get; private set; }
+    [field: SerializeField] public EventReference GoblinHit { get; private set; }
+
+    [field: Header("Eyebat Enemy SFX")]
+    [field: SerializeField] public EventReference EyebatAttack { get; private set; }
+    [field: SerializeField] public EventReference EyebatDeath { get; private set; }
+    [field: SerializeField] public EventReference EyebatHit { get; private set; }
+
+    [field: Header("Freak Enemy SFX")]
+    [field: SerializeField] public EventReference FreakAttack { get; private set; }
+    [field: SerializeField] public EventReference FreakDeath { get; private set; }
+    [field: SerializeField] public EventReference FreakHit { get; private set; }
+
+    [field: Header("SkeletonWizard SFX")]
+    [field: SerializeField] public EventReference SkeletonWizardAttack { get; private set; }
+    [field: SerializeField] public EventReference SkeletonWizardDeath { get; private set; }
+    [field: SerializeField] public EventReference SkeletonWizardHit { get; private set; }
+
+    [field: Header("EvilKnight SFX")]
+    [field: SerializeField] public EventReference EvilKnightAttack { get; private set; }
+    [field: SerializeField] public EventReference EvilKnightDeath { get; private set; }
+    [field: SerializeField] public EventReference EvilKnightHit { get; private set; }
+
+    [field: Header("Necromancer SFX")]
+    [field: SerializeField] public EventReference NecromancerAttack { get; private set; }
+    [field: SerializeField] public EventReference NecromancerDeath { get; private set; }
+    [field: SerializeField] public EventReference NecromancerHit { get; private set; }
+
+    [field: Header("Menu SFX")]
+    [field: SerializeField] public EventReference UIClick {  get; private set; }
+    [field: SerializeField] public EventReference UIPlayButton {  get; private set; }
+    [field: SerializeField] public EventReference UIPause {  get; private set; }
+
+    [field: Header("Ambience")]
+    [field: SerializeField] public EventReference forestAmbience { get; private set; }
+    [field: SerializeField] public EventReference castleAmbience { get; private set; }
+
+    [field: Header("Music")]
+    [field: SerializeField] public EventReference forestMusic { get; private set; }
+    [field: SerializeField] public EventReference castleMusic { get; private set; }
+    [field: SerializeField] public EventReference menuMusic { get; private set; }
+    public static FMODEvents instance { get; private set; }
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogError("Found more that one FMOD Events instance in the scene.");
+        }
+        instance = this;
+    }
+}

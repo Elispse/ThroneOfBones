@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{c1855dff-7d39-49a0-a359-971bc908e521}">
+		<property name="assetPath">
+			<value>item-equip-6904.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>24</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.81599999999999995</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{1f14b0de-9299-4197-a08b-53c6ce5acc80}</destination>
+		</relationship>
+	</object>
+</objects>

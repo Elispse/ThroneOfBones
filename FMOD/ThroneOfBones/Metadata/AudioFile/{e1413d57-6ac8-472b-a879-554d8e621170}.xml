@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{e1413d57-6ac8-472b-a879-554d8e621170}">
+		<property name="assetPath">
+			<value>DnD Calm Fantasy Music for Adventure and Exploration _ 3 Hour Mix for Dungeons _ Dragons Crushed.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>577.31092970521547</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{1f14b0de-9299-4197-a08b-53c6ce5acc80}</destination>
+		</relationship>
+	</object>
+</objects>

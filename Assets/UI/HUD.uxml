@@ -1,12 +1,45 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/Timer.uss?fileID=7433441132597879392&amp;guid=b1e723b3d34de58489ba2e394e5f8f3a&amp;type=3#Timer" />
-    <ui:VisualElement data-source="project://database/Assets/ScriptableObjects/UIVariables.asset?fileID=11400000&amp;guid=d400d26409fe6864c8a4826410af83e0&amp;type=2#UIVariables" style="flex-grow: 1; align-items: center; align-content: center; height: 10px; justify-content: center;">
-        <ui:VisualElement name="Timer" style="flex-grow: 1; align-self: center; align-content: flex-start; width: 10%; height: 10%; align-items: stretch;">
-            <ui:FloatField focusable="false" class="Timer" style="align-items: center; justify-content: center; align-self: center; align-content: center;">
-                <Bindings>
-                    <ui:DataBinding property="value" data-source-path="Timer" binding-mode="ToTarget" />
-                </Bindings>
-            </ui:FloatField>
+    <Style src="project://database/Assets/UI/HUD.uss?fileID=7433441132597879392&amp;guid=5a47b972325c1664bb76a8bba8e8382b&amp;type=3#HUD" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:VisualElement data-source="project://database/Assets/ScriptableObjects/UIVariables.asset?fileID=11400000&amp;guid=d400d26409fe6864c8a4826410af83e0&amp;type=2#UIVariables" name="Background" class="background" style="flex-grow: 1; min-height: 7px;">
+            <ui:VisualElement name="HealthBox" class="healthBox">
+                <ui:ProgressBar value="100" name="HealthBar1" class="healthBar">
+                    <Bindings>
+                        <ui:DataBinding property="value" data-source-path="p1Health" binding-mode="ToTarget" />
+                    </Bindings>
+                </ui:ProgressBar>
+                <ui:Label text="Score: 0" name="Score" class="scoreText" />
+                <ui:ProgressBar value="100" name="HealthBar2" class="healthBar">
+                    <Bindings>
+                        <ui:DataBinding property="value" data-source-path="p2Health" binding-mode="ToTarget" />
+                    </Bindings>
+                </ui:ProgressBar>
+            </ui:VisualElement>
+            <ui:VisualElement name="ComboBox" class="comboBox">
+                <ui:Label text="0 Combo" name="ComboTxt1" class="comboText" style="visibility: hidden;">
+                    <Bindings>
+                        <ui:DataBinding property="text" data-source-path="p1Combo" binding-mode="ToTarget" />
+                    </Bindings>
+                </ui:Label>
+                <ui:VisualElement name="ComboSpacer" style="flex-grow: 1; max-width: 50%; min-width: 64%;" />
+                <ui:Label text="0 Combo" name="ComboTxt2" class="comboText" style="visibility: hidden;">
+                    <Bindings>
+                        <ui:DataBinding property="text" data-source-path="p2Combo" binding-mode="ToTarget" />
+                    </Bindings>
+                </ui:Label>
+            </ui:VisualElement>
+            <ui:VisualElement name="ArrowBox" class="arrowBox" style="max-height: 30%; min-height: 30%; margin-top: 10%; visibility: hidden;">
+                <ui:VisualElement name="Arrow" class="arrow" />
+                <ui:Label text="GO" name="ArrowTxt" class="arrowText" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement enabled="true" name="Settings" style="flex-grow: 1; position: absolute; height: 354px; width: 233px; opacity: 1; align-items: flex-start; justify-content: space-between; top: 83px; left: auto; background-color: rgb(156, 45, 126); align-self: center; display: flex; background-image: url(&quot;project://database/Assets/UI/Textures/brick.png?fileID=2800000&amp;guid=6937131f2543eb34db8e6a4428a4926c&amp;type=3#brick&quot;); -unity-background-image-tint-color: rgb(255, 0, 239);">
+            <ui:Button text="X" name="btnsettingsclose" style="position: relative; top: 0; left: 0; right: 0; bottom: 0; width: 5%; height: 5%; background-color: rgb(255, 0, 0);" />
+            <ui:Slider label="Master" value="42" high-value="1" name="sldMaster" fill="false" page-size="0" show-input-field="false" inverted="false" style="align-items: stretch; width: 95%; justify-content: space-around; align-self: flex-end; flex-direction: column; background-color: rgba(255, 255, 255, 0); color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/UI/Fonts/John%20Bones.ttf?fileID=12800000&amp;guid=a4a61f322c5c1734fbcb840534f24da5&amp;type=3#John Bones&quot;); font-size: 25px;" />
+            <ui:Slider label="Ambient" value="1" high-value="1" name="sldAmbient" style="align-items: stretch; width: 95%; align-self: flex-end; flex-direction: column; justify-content: space-around; color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/UI/Fonts/John%20Bones.ttf?fileID=12800000&amp;guid=a4a61f322c5c1734fbcb840534f24da5&amp;type=3#John Bones&quot;); font-size: 25px;" />
+            <ui:Slider label="Sound" value="1" high-value="1" name="sldSoundEffects" style="align-items: stretch; width: 95%; flex-direction: column; align-self: flex-end; justify-content: space-around; color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/UI/Fonts/John%20Bones.ttf?fileID=12800000&amp;guid=a4a61f322c5c1734fbcb840534f24da5&amp;type=3#John Bones&quot;); font-size: 25px;" />
+            <ui:Slider label="Music" value="1" high-value="1" name="sldMusic" style="align-items: stretch; width: 95%; flex-direction: column; align-self: flex-end; justify-content: space-around; color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/UI/Fonts/John%20Bones.ttf?fileID=12800000&amp;guid=a4a61f322c5c1734fbcb840534f24da5&amp;type=3#John Bones&quot;); font-size: 25px;" />
+            <ui:Button text="Exit To Menu" name="btnexit" style="white-space: nowrap; -unity-text-align: middle-center; -unity-font-definition: url(&quot;project://database/Assets/UI/Fonts/John%20Bones.ttf?fileID=12800000&amp;guid=a4a61f322c5c1734fbcb840534f24da5&amp;type=3#John Bones&quot;); font-size: 25px; color: rgb(255, 255, 255); background-image: url(&quot;project://database/Assets/UI/Textures/brick.png?fileID=2800000&amp;guid=6937131f2543eb34db8e6a4428a4926c&amp;type=3#brick&quot;); -unity-background-image-tint-color: rgb(255, 0, 239); left: 20%;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
