@@ -1,32 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8899338590643316644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Menu Music
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Menu Music
-  Guid:
-    Data1: -951820681
-    Data2: 1308361717
-    Data3: 564706185
-    Data4: 1797267348
-  Banks:
-  - {fileID: 600913413862493494}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 577310
 --- !u!114 &-8363826273401074738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,7 +123,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638924635825172844
+  lastModified: 638924718458667806
   FileSizes:
   - Name: Desktop
     Value: 2864
@@ -236,60 +209,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 432
---- !u!114 &-6028927622257618068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Castle Music Backup
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Castle Music Backup
-  Guid:
-    Data1: -1013304216
-    Data2: 1228660281
-    Data3: 481906111
-    Data4: -1870961513
-  Banks:
-  - {fileID: 600913413862493494}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 171305
---- !u!114 &-5111151302877458895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience/Castle Ambience
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience/Castle Ambience
-  Guid:
-    Data1: -175254360
-    Data2: 1303978622
-    Data3: 1252959878
-    Data4: -1995728245
-  Banks:
-  - {fileID: -4579064627366816421}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 535580
 --- !u!114 &-4954629376807046201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,6 +229,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1016
   Exists: 1
+--- !u!114 &-4793671447977999387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Forest Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Forest Ambience
+  Guid:
+    Data1: -1192136865
+    Data2: 1101274566
+    Data3: -1531220308
+    Data4: -1008006372
+  Banks:
+  - {fileID: -4579064627366816421}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 518990
 --- !u!114 &-4579064627366816421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,7 +271,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Ambient.bank
   Name: Ambient
   StudioPath: bank:/Ambient
-  lastModified: 638924635825112846
+  lastModified: 638924718458590132
   FileSizes:
   - Name: Desktop
     Value: 13743008
@@ -404,33 +350,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 506
   Exists: 1
---- !u!114 &-4323130651508199510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Forest Music
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Forest Music
-  Guid:
-    Data1: 1835527863
-    Data2: 1081891521
-    Data3: -1353324902
-    Data4: 1094024521
-  Banks:
-  - {fileID: 600913413862493494}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 180256
 --- !u!114 &-4069119794155108011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -485,6 +404,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1921
+--- !u!114 &-3586601161818969040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Menu Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Menu Music
+  Guid:
+    Data1: -951820681
+    Data2: 1308361717
+    Data3: 564706185
+    Data4: 1797267348
+  Banks:
+  - {fileID: 600913413862493494}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 577310
 --- !u!114 &-3338888776435263336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -659,10 +605,6 @@ MonoBehaviour:
   - {fileID: 600913413862493494}
   - {fileID: 4565676149254333236}
   EditorEvents:
-  - {fileID: 7442366376709209167}
-  - {fileID: -6028927622257618068}
-  - {fileID: -8899338590643316644}
-  - {fileID: -4323130651508199510}
   - {fileID: -6711110273718673508}
   - {fileID: 6261220201751276143}
   - {fileID: 360092067355563068}
@@ -683,7 +625,6 @@ MonoBehaviour:
   - {fileID: -521551425245564447}
   - {fileID: 7808210332915323871}
   - {fileID: 1665188604492588745}
-  - {fileID: -5111151302877458895}
   - {fileID: -8107617103955404989}
   - {fileID: 5307487977124273534}
   - {fileID: -2960342216946729200}
@@ -700,96 +641,97 @@ MonoBehaviour:
   - {fileID: -7637565624060240200}
   - {fileID: -3592794989758659754}
   - {fileID: 4987017183923572117}
+  - {fileID: -4793671447977999387}
+  - {fileID: 1073866292810838040}
+  - {fileID: 8421059408218036705}
+  - {fileID: -3586601161818969040}
+  - {fileID: 9135879779017880738}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3037067889015032689}
   StringsBanks:
   - {fileID: -7707472834049543520}
   cacheVersion: 131848
-  cacheTime: 638924635826123187
+  cacheTime: 638924718733229261
   SerializableEventsDict:
-  - key: event:/Ambience/Forest Ambience
-    index: 0
   - key: event:/Music/Castle Music Backup
-    index: 1
+    index: 0
   - key: event:/Music/Menu Music
-    index: 2
+    index: 1
   - key: event:/Music/Forest Music
-    index: 3
+    index: 2
   - key: event:/SFX/Knight/KnightHurt
-    index: 4
+    index: 3
   - key: event:/SFX/Skeleton/SkeletonAttack
-    index: 5
+    index: 4
   - key: event:/SFX/Skeleton/SkeletonDeath
-    index: 6
+    index: 5
   - key: event:/SFX/Skeleton/SkeletonHit
-    index: 7
+    index: 6
   - key: event:/SFX/Equip
-    index: 8
+    index: 7
   - key: event:/SFX/Knight/SwordSwing
-    index: 9
+    index: 8
   - key: event:/SFX/Wizard/WizardHurt
-    index: 10
+    index: 9
   - key: event:/SFX/UI/UIButton
-    index: 11
+    index: 10
   - key: event:/SFX/UI/UIPause
-    index: 12
+    index: 11
   - key: event:/SFX/Wizard/WizardSecondary
-    index: 13
+    index: 12
   - key: event:/SFX/UI/UIPlay
-    index: 14
+    index: 13
   - key: event:/SFX/Wizard/WizardPrimary
-    index: 15
+    index: 14
   - key: event:/SFX/Knight/ShieldBlock
-    index: 16
+    index: 15
   - key: event:/SFX/Wizard/WizardWalk
-    index: 17
+    index: 16
   - key: event:/SFX/Knight/KnightWalk
-    index: 18
+    index: 17
   - key: event:/SFX/Goblin/Goblin Death
-    index: 19
+    index: 18
   - key: event:/SFX/Goblin/Goblin Hurt
-    index: 20
+    index: 19
   - key: event:/SFX/EyeBat/BatDead
-    index: 21
+    index: 20
   - key: event:/SFX/EyeBat/BatAttack
-    index: 22
+    index: 21
   - key: event:/SFX/EyeBat/BatHurt
-    index: 23
-  - key: event:/Ambience/Castle Ambience
-    index: 24
+    index: 22
   - key: event:/SFX/Freak/FreakHit
-    index: 25
+    index: 23
   - key: event:/SFX/Freak/FreakAttack
-    index: 26
+    index: 24
   - key: event:/SFX/Freak/FreakDeath
-    index: 27
+    index: 25
   - key: event:/SFX/Dark Magic/DarkMagic3
-    index: 28
+    index: 26
   - key: event:/SFX/Dark Magic/DarkMagic5
-    index: 29
+    index: 27
   - key: event:/SFX/Dark Magic/DarkMagic4
-    index: 30
+    index: 28
   - key: event:/SFX/Dark Magic/DarkMagic1
-    index: 31
+    index: 29
   - key: event:/SFX/Dark Magic/DarkMagic2
-    index: 32
+    index: 30
   - key: event:/SFX/Dark Magic/DarkMagic6
-    index: 33
+    index: 31
   - key: event:/SFX/Necromancer/NecromancerAttack
-    index: 34
+    index: 32
   - key: event:/SFX/Necromancer/NecromancerDeath
-    index: 35
+    index: 33
   - key: event:/SFX/Necromancer/NecromancerHit
-    index: 36
+    index: 34
   - key: event:/SFX/DarkKnight/DarkKnightAttack
-    index: 37
+    index: 35
   - key: event:/SFX/DarkKnight/DarkKnightHit
-    index: 38
+    index: 36
   - key: event:/SFX/DarkKnight/DarkKnightDeath
-    index: 39
+    index: 37
   - key: event:/SFX/Goblin/Goblin Attack
-    index: 40
+    index: 38
 --- !u!114 &360092067355563068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -886,11 +828,38 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638924635826083168
+  lastModified: 638924718733229261
   FileSizes:
   - Name: Desktop
     Value: 13726432
   Exists: 1
+--- !u!114 &1073866292810838040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Castle Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Castle Ambience
+  Guid:
+    Data1: -175254360
+    Data2: 1303978622
+    Data3: 1252959878
+    Data4: -1995728245
+  Banks:
+  - {fileID: -4579064627366816421}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 535580
 --- !u!114 &1665188604492588745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1034,7 +1003,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638924635825162842
+  lastModified: 638924718458658103
   FileSizes:
   - Name: Desktop
     Value: 1524
@@ -1135,7 +1104,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638924635826123187
+  lastModified: 638924718706455258
   FileSizes:
   - Name: Desktop
     Value: 533664
@@ -1349,33 +1318,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &7442366376709209167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience/Forest Ambience
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience/Forest Ambience
-  Guid:
-    Data1: -1192136865
-    Data2: 1101274566
-    Data3: -1531220308
-    Data4: -1008006372
-  Banks:
-  - {fileID: -4579064627366816421}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 518990
 --- !u!114 &7808210332915323871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1403,6 +1345,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 653
+--- !u!114 &8421059408218036705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Castle Music Backup
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Castle Music Backup
+  Guid:
+    Data1: -1013304216
+    Data2: 1228660281
+    Data3: 481906111
+    Data4: -1870961513
+  Banks:
+  - {fileID: 600913413862493494}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 171305
 --- !u!114 &8454610315096490259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1484,3 +1453,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1578
+--- !u!114 &9135879779017880738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Forest Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Forest Music
+  Guid:
+    Data1: 1835527863
+    Data2: 1081891521
+    Data3: -1353324902
+    Data4: 1094024521
+  Banks:
+  - {fileID: 600913413862493494}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 180256
