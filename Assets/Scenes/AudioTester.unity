@@ -262,6 +262,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &937529860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8248267054242992538, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
+  m_PrefabInstance: {fileID: 1185822830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &937529864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937529860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ae889629ec44274085d1eaa311cc51d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1185822830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -321,7 +338,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8248267054242992538, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 937529864}
   m_SourcePrefab: {fileID: 100100000, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
 --- !u!1001 &1475921045
 PrefabInstance:
@@ -390,8 +410,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 515320144406344010, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1487849539}
   m_SourcePrefab: {fileID: 100100000, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
+--- !u!1 &1487849535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 515320144406344010, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
+  m_PrefabInstance: {fileID: 1475921045}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1487849539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487849535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8fe368bf4a82f4db6133fab3f0994a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1748016871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -400,6 +440,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4474377302974515767, guid: 5d3ebf5f87adbcc44b1f4ce2e16ba378, type: 3}
+      propertyPath: enemyType
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4675112536438087972, guid: 5d3ebf5f87adbcc44b1f4ce2e16ba378, type: 3}
       propertyPath: m_Name
       value: DireWolf
@@ -506,8 +550,24 @@ PrefabInstance:
       value: event:/SFX/UI/UIPause
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <FreakHit>k__BackingField.Path
+      value: event:/SFX/Freak/FreakHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatHit>k__BackingField.Path
+      value: event:/SFX/EyeBat/BatHurt
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinHit>k__BackingField.Path
+      value: event:/SFX/Goblin/Goblin Hurt
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <menuMusic>k__BackingField.Path
       value: event:/Music/Menu Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <FreakDeath>k__BackingField.Path
+      value: event:/SFX/Freak/FreakDeath
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <knightHurt>k__BackingField.Path
@@ -526,6 +586,18 @@ PrefabInstance:
       value: event:/SFX/Wizard/WizardWalk
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatDeath>k__BackingField.Path
+      value: event:/SFX/EyeBat/BatDead
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <FreakAttack>k__BackingField.Path
+      value: event:/SFX/Freak/FreakAttack
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinDeath>k__BackingField.Path
+      value: event:/SFX/Goblin/Goblin Death
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <castleMusic>k__BackingField.Path
       value: event:/Music/Castle Music Backup
       objectReference: {fileID: 0}
@@ -540,6 +612,10 @@ PrefabInstance:
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <skeletonHit>k__BackingField.Path
       value: event:/SFX/Skeleton/SkeletonHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatAttack>k__BackingField.Path
+      value: event:/SFX/EyeBat/BatAttack
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <UIPlayButton>k__BackingField.Path
@@ -590,12 +666,64 @@ PrefabInstance:
       value: event:/SFX/Wizard/WizardPrimary
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <FreakHit>k__BackingField.Guid.Data1
+      value: -349065722
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <FreakHit>k__BackingField.Guid.Data2
+      value: 1281029763
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <FreakHit>k__BackingField.Guid.Data3
+      value: -1644006503
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <FreakHit>k__BackingField.Guid.Data4
+      value: 812683844
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <castleAmbience>k__BackingField.Path
+      value: event:/Ambience/Castle Ambience
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <forestAmbience>k__BackingField.Path
       value: event:/Ambience/Forest Ambience
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <skeletonAttack>k__BackingField.Path
       value: event:/SFX/Skeleton/SkeletonAttack
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatHit>k__BackingField.Guid.Data1
+      value: 622685626
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatHit>k__BackingField.Guid.Data2
+      value: 1301447832
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatHit>k__BackingField.Guid.Data3
+      value: -1109698428
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatHit>k__BackingField.Guid.Data4
+      value: 864541514
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinHit>k__BackingField.Guid.Data1
+      value: -1874440784
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinHit>k__BackingField.Guid.Data2
+      value: 1208776595
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinHit>k__BackingField.Guid.Data3
+      value: -2024163905
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinHit>k__BackingField.Guid.Data4
+      value: -2022623020
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <menuMusic>k__BackingField.Guid.Data1
@@ -616,6 +744,22 @@ PrefabInstance:
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <wizardSecondary>k__BackingField.Path
       value: event:/SFX/Wizard/WizardSecondary
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <FreakDeath>k__BackingField.Guid.Data1
+      value: -808016913
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <FreakDeath>k__BackingField.Guid.Data2
+      value: 1317446117
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <FreakDeath>k__BackingField.Guid.Data3
+      value: -577831516
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <FreakDeath>k__BackingField.Guid.Data4
+      value: 1506759887
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <knightHurt>k__BackingField.Guid.Data1
@@ -686,6 +830,66 @@ PrefabInstance:
       value: 154803203
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatDeath>k__BackingField.Guid.Data1
+      value: 2036044617
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatDeath>k__BackingField.Guid.Data2
+      value: 1280544130
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatDeath>k__BackingField.Guid.Data3
+      value: 517816244
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatDeath>k__BackingField.Guid.Data4
+      value: 1778231805
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <FreakAttack>k__BackingField.Guid.Data1
+      value: 1904475050
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <FreakAttack>k__BackingField.Guid.Data2
+      value: 1163166095
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <FreakAttack>k__BackingField.Guid.Data3
+      value: -1264444269
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <FreakAttack>k__BackingField.Guid.Data4
+      value: -1661972933
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinDeath>k__BackingField.Guid.Data1
+      value: 1697371162
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinDeath>k__BackingField.Guid.Data2
+      value: 1203066417
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinDeath>k__BackingField.Guid.Data3
+      value: 1038187435
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <GoblinDeath>k__BackingField.Guid.Data4
+      value: -343440179
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <NecromancerAttack>k__BackingField.Path
+      value: event:/SFX/Necromancer/NecromancerAttack
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonKnightHit>k__BackingField.Path
+      value: event:/SFX/Skeleton/SkeletonHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonWizardHit>k__BackingField.Path
+      value: event:/SFX/Skeleton/SkeletonHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <castleMusic>k__BackingField.Guid.Data1
       value: -1013304216
       objectReference: {fileID: 0}
@@ -750,6 +954,22 @@ PrefabInstance:
       value: 1893323053
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatAttack>k__BackingField.Guid.Data1
+      value: 896717192
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatAttack>k__BackingField.Guid.Data2
+      value: 1316746136
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatAttack>k__BackingField.Guid.Data3
+      value: -847533159
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EyebatAttack>k__BackingField.Guid.Data4
+      value: 1089099315
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <UIPlayButton>k__BackingField.Guid.Data1
       value: 1301389538
       objectReference: {fileID: 0}
@@ -782,6 +1002,14 @@ PrefabInstance:
       value: -442060080
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonKnightDeath>k__BackingField.Path
+      value: event:/SFX/Skeleton/SkeletonDeath
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonWizardDeath>k__BackingField.Path
+      value: event:/SFX/Skeleton/SkeletonDeath
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <skeletonDeath>k__BackingField.Guid.Data1
       value: -1087584596
       objectReference: {fileID: 0}
@@ -812,6 +1040,30 @@ PrefabInstance:
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <wizardPrimary>k__BackingField.Guid.Data4
       value: 1030210555
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonKnightAttack>k__BackingField.Path
+      value: event:/SFX/Skeleton/SkeletonAttack
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonWizardAttack>k__BackingField.Path
+      value: event:/SFX/Dark Magic/DarkMagic6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <castleAmbience>k__BackingField.Guid.Data1
+      value: -175254360
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <castleAmbience>k__BackingField.Guid.Data2
+      value: 1303978622
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <castleAmbience>k__BackingField.Guid.Data3
+      value: 1252959878
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <castleAmbience>k__BackingField.Guid.Data4
+      value: -1995728245
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <forestAmbience>k__BackingField.Guid.Data1
@@ -876,6 +1128,118 @@ PrefabInstance:
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <knightSwordSwing>k__BackingField.Guid.Data4
       value: 450993801
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <NecromancerAttack>k__BackingField.Guid.Data1
+      value: 1912896098
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <NecromancerAttack>k__BackingField.Guid.Data2
+      value: 1195168200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <NecromancerAttack>k__BackingField.Guid.Data3
+      value: -246130011
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <NecromancerAttack>k__BackingField.Guid.Data4
+      value: -462633036
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonKnightHit>k__BackingField.Guid.Data1
+      value: -2127350859
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonKnightHit>k__BackingField.Guid.Data2
+      value: 1145328850
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonKnightHit>k__BackingField.Guid.Data3
+      value: -117463654
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonKnightHit>k__BackingField.Guid.Data4
+      value: 1893323053
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonWizardHit>k__BackingField.Guid.Data1
+      value: -2127350859
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonWizardHit>k__BackingField.Guid.Data2
+      value: 1145328850
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonWizardHit>k__BackingField.Guid.Data3
+      value: -117463654
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonWizardHit>k__BackingField.Guid.Data4
+      value: 1893323053
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonKnightDeath>k__BackingField.Guid.Data1
+      value: -1087584596
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonKnightDeath>k__BackingField.Guid.Data2
+      value: 1279091887
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonKnightDeath>k__BackingField.Guid.Data3
+      value: -199119712
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonKnightDeath>k__BackingField.Guid.Data4
+      value: 94147149
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonWizardDeath>k__BackingField.Guid.Data1
+      value: -1087584596
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonWizardDeath>k__BackingField.Guid.Data2
+      value: 1279091887
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonWizardDeath>k__BackingField.Guid.Data3
+      value: -199119712
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonWizardDeath>k__BackingField.Guid.Data4
+      value: 94147149
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonKnightAttack>k__BackingField.Guid.Data1
+      value: 1878831753
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonKnightAttack>k__BackingField.Guid.Data2
+      value: 1185503962
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonKnightAttack>k__BackingField.Guid.Data3
+      value: -851602773
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonKnightAttack>k__BackingField.Guid.Data4
+      value: 1729057058
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonWizardAttack>k__BackingField.Guid.Data1
+      value: 1569039054
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonWizardAttack>k__BackingField.Guid.Data2
+      value: 1332426902
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonWizardAttack>k__BackingField.Guid.Data3
+      value: -1940019291
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <SkeletonWizardAttack>k__BackingField.Guid.Data4
+      value: 481043051
       objectReference: {fileID: 0}
     - target: {fileID: 5325122485673823143, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: m_Name

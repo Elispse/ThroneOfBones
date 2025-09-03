@@ -1,7 +1,19 @@
+using FMOD.Studio;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+
+enum EnemyType
+{
+    EVILKNIGHT,
+    EYEBAT,
+    FREAK,
+    GOBLIN,
+    NECROMANCER,
+    SKELETONKNIGHT,
+    SKELETONWIZARD
+}
 
 public class Enemy : MonoBehaviour, IDamagable
 {
@@ -36,9 +48,46 @@ public class Enemy : MonoBehaviour, IDamagable
     [SerializeField] public Transform enemyObject;
     [SerializeField] public Transform shadow;
 
+    [SerializeField]
+    private EnemyType enemyType;
+
+    private EventInstance deathSound;
+    private EventInstance hurtSound;
+
     public void Awake()
     {
-        spriteRenderer = GetComponentInChildren<SpriteRenderer>(); 
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        switch (enemyType)
+        {
+            case EnemyType.EVILKNIGHT:
+                deathSound = AudioManager.instance.CreateInstance(FMODEvents.instance.EvilKnightDeath);
+                hurtSound = AudioManager.instance.CreateInstance(FMODEvents.instance.EvilKnightHit);
+                break;
+            case EnemyType.EYEBAT:
+                deathSound = AudioManager.instance.CreateInstance(FMODEvents.instance.EyebatDeath);
+                hurtSound = AudioManager.instance.CreateInstance(FMODEvents.instance.EyebatHit);
+                break;
+            case EnemyType.FREAK:
+                deathSound = AudioManager.instance.CreateInstance(FMODEvents.instance.FreakDeath);
+                hurtSound = AudioManager.instance.CreateInstance(FMODEvents.instance.FreakHit);
+                break;
+            case EnemyType.GOBLIN:
+                deathSound = AudioManager.instance.CreateInstance(FMODEvents.instance.GoblinDeath);
+                hurtSound = AudioManager.instance.CreateInstance(FMODEvents.instance.GoblinHit);
+                break;
+            case EnemyType.NECROMANCER:
+                deathSound = AudioManager.instance.CreateInstance(FMODEvents.instance.NecromancerDeath);
+                hurtSound = AudioManager.instance.CreateInstance(FMODEvents.instance.NecromancerHit);
+                break;
+            case EnemyType.SKELETONKNIGHT:
+                deathSound = AudioManager.instance.CreateInstance(FMODEvents.instance.SkeletonKnightDeath);
+                hurtSound = AudioManager.instance.CreateInstance(FMODEvents.instance.SkeletonKnightHit);
+                break;
+            case EnemyType.SKELETONWIZARD:
+                deathSound = AudioManager.instance.CreateInstance(FMODEvents.instance.SkeletonWizardDeath);
+                hurtSound = AudioManager.instance.CreateInstance(FMODEvents.instance.SkeletonWizardHit);
+                break;
+        }
     }
 
     void Start()
@@ -102,12 +151,18 @@ public class Enemy : MonoBehaviour, IDamagable
         Health -= (int)damage;
         if (Health <= 0)
         {
+            deathSound.start();
             animator.SetTrigger("Death");
             Destroy(gameObject, 0.2f);
             GameManager.Instance.AddScore(10);
         }
-        else animator.SetTrigger("Hurt");
+        else
+        {
+            animator.SetTrigger("Hurt");
+            hurtSound.start();
+        }
     }
+
     public virtual void Jump(InputAction.CallbackContext context)
     {
         if (context.performed && !isJumping)
@@ -121,15 +176,12 @@ public class Enemy : MonoBehaviour, IDamagable
     {
         if (!isJumping) return;
 
-        animator.SetBool("Airborne", true);
         jumpVelocity -= gravity * Time.deltaTime;
         jumpHeight += jumpVelocity * Time.deltaTime;
 
 
         if (jumpHeight <= 0f)
         {
-            animator.SetBool("Airborne", false);
-
             jumpHeight = 0f;
             isJumping = false;
         }
@@ -181,7 +233,7 @@ public class Enemy : MonoBehaviour, IDamagable
         if (nearestPlayer != null)
         {
             Vector2 direction = (nearestPlayer.transform.position - transform.position).normalized;
-            if(minDistance > 2f)
+            if (minDistance > 2f)
             {
                 Move(direction, 3f);
             }
@@ -231,12 +283,12 @@ public class Enemy : MonoBehaviour, IDamagable
     {
         StartCoroutine(FleeAndAttack(fleeDistance));
     }
-    
+
     public void rush()
     {
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         if (players.Length == 0) return;
-        
+
         GameObject nearestPlayer = null;
         float minDistance = float.MaxValue;
         foreach (var player in players)
@@ -248,7 +300,7 @@ public class Enemy : MonoBehaviour, IDamagable
                 nearestPlayer = player;
             }
         }
-        
+
         if (nearestPlayer != null)
         {
             Vector2 direction = (nearestPlayer.transform.position - transform.position).normalized;
