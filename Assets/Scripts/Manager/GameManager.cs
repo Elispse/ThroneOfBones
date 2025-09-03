@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public int selectedLevel { get; set; }
-    public string selectedCharacter1 { get; set; }
-    public string selectedCharacter2 { get; set; }
+    public string selectedCharacter1 { get; set; } = null;
+    public string selectedCharacter2 { get; set; } = null;
     [SerializeField] public GameObject[] Characters;
     public int Score { get; set; }
     public Scene Level { get; set; }
