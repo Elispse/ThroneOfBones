@@ -69,10 +69,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638924327639749871
+  lastModified: 638924475212327781
   FileSizes:
   - Name: Desktop
-    Value: 1888
+    Value: 2182
   Exists: 1
 --- !u!114 &-6711110273718673508
 MonoBehaviour:
@@ -155,6 +155,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 171305
+--- !u!114 &-5111151302877458895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Castle Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Castle Ambience
+  Guid:
+    Data1: -175254360
+    Data2: 1303978622
+    Data3: 1252959878
+    Data4: -1995728245
+  Banks:
+  - {fileID: -4579064627366816421}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 535580
 --- !u!114 &-4954629376807046201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,10 +217,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Ambient.bank
   Name: Ambient
   StudioPath: bank:/Ambient
-  lastModified: 638924327639564985
+  lastModified: 638924475212249830
   FileSizes:
   - Name: Desktop
-    Value: 6206816
+    Value: 13743008
   Exists: 1
 --- !u!114 &-4526035076884237158
 MonoBehaviour:
@@ -323,6 +350,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 468
+--- !u!114 &-521551425245564447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/EyeBat/BatDead
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/EyeBat/BatDead
+  Guid:
+    Data1: 2036044617
+    Data2: 1280544130
+    Data3: 517816244
+    Data4: 1778231805
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 829
 --- !u!114 &-92760632051058008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,13 +435,19 @@ MonoBehaviour:
   - {fileID: 8521473199267800797}
   - {fileID: 5229187838689318177}
   - {fileID: -8065547336645033870}
+  - {fileID: 511517324512006524}
+  - {fileID: 3457438781138182392}
+  - {fileID: -521551425245564447}
+  - {fileID: 7808210332915323871}
+  - {fileID: 1665188604492588745}
+  - {fileID: -5111151302877458895}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3037067889015032689}
   StringsBanks:
   - {fileID: -7707472834049543520}
   cacheVersion: 131848
-  cacheTime: 638924327640960648
+  cacheTime: 638924484038206933
   SerializableEventsDict:
   - key: event:/Ambience/Forest Ambience
     index: 0
@@ -427,6 +487,18 @@ MonoBehaviour:
     index: 17
   - key: event:/SFX/Knight/KnightWalk
     index: 18
+  - key: event:/SFX/Goblin/Goblin Death
+    index: 19
+  - key: event:/SFX/Goblin/Goblin Hurt
+    index: 20
+  - key: event:/SFX/EyeBat/BatDead
+    index: 21
+  - key: event:/SFX/EyeBat/BatAttack
+    index: 22
+  - key: event:/SFX/EyeBat/BatHurt
+    index: 23
+  - key: event:/Ambience/Castle Ambience
+    index: 24
 --- !u!114 &360092067355563068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,6 +526,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &511517324512006524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Goblin/Goblin Death
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Goblin/Goblin Death
+  Guid:
+    Data1: 1697371162
+    Data2: 1203066417
+    Data3: 1038187435
+    Data4: -343440179
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1100
 --- !u!114 &532342860859190231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,11 +595,38 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638924327640806879
+  lastModified: 638924432989768182
   FileSizes:
   - Name: Desktop
     Value: 13726432
   Exists: 1
+--- !u!114 &1665188604492588745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/EyeBat/BatHurt
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/EyeBat/BatHurt
+  Guid:
+    Data1: 622685626
+    Data2: 1301447832
+    Data3: -1109698428
+    Data4: 864541514
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 375
 --- !u!114 &1855866501160341833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,11 +743,38 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638924327639657310
+  lastModified: 638924475212327781
   FileSizes:
   - Name: Desktop
     Value: 1524
   Exists: 1
+--- !u!114 &3457438781138182392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Goblin/Goblin Hurt
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Goblin/Goblin Hurt
+  Guid:
+    Data1: -1874440784
+    Data2: 1208776595
+    Data3: -2024163905
+    Data4: -2022623020
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 697
 --- !u!114 &3631058388203709447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,10 +817,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638924327640960648
+  lastModified: 638924484038206933
   FileSizes:
   - Name: Desktop
-    Value: 220064
+    Value: 307520
   Exists: 1
 --- !u!114 &4752320171984449503
 MonoBehaviour:
@@ -797,6 +950,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 518990
+--- !u!114 &7808210332915323871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/EyeBat/BatAttack
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/EyeBat/BatAttack
+  Guid:
+    Data1: 896717192
+    Data2: 1316746136
+    Data3: -847533159
+    Data4: 1089099315
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 653
 --- !u!114 &8521473199267800797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -823,4 +1003,4 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 680
+  Length: 460
