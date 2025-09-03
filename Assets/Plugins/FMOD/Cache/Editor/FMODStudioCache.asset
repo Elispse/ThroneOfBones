@@ -706,7 +706,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -7707472834049543520}
   cacheVersion: 131848
-  cacheTime: 638924743921936159
+  cacheTime: 638924745843504531
   SerializableEventsDict:
   - key: event:/Ambience/Forest Ambience
     index: 0
@@ -886,7 +886,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638924743921936159
+  lastModified: 638924745843198454
   FileSizes:
   - Name: Desktop
     Value: 13726432
@@ -1135,7 +1135,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638924740638870723
+  lastModified: 638924745843504531
   FileSizes:
   - Name: Desktop
     Value: 533664
