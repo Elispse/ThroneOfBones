@@ -30,6 +30,32 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference EyebatAttack { get; private set; }
     [field: SerializeField] public EventReference EyebatDeath { get; private set; }
     [field: SerializeField] public EventReference EyebatHit { get; private set; }
+    [field: SerializeField] public EventReference EyebatFlight {  get; private set; }
+
+    [field: Header("Freak Enemy SFX")]
+    [field: SerializeField] public EventReference FreakAttack { get; private set; }
+    [field: SerializeField] public EventReference FreakDeath { get; private set; }
+    [field: SerializeField] public EventReference FreakHit { get; private set; }
+
+    [field: Header("SkeletonKnight SFX")]
+    [field: SerializeField] public EventReference SkeletonKnightAttack { get; private set; }
+    [field: SerializeField] public EventReference SkeletonKnightDeath { get; private set; }
+    [field: SerializeField] public EventReference SkeletonKnightHit { get; private set; }
+
+    [field: Header("SkeletonWizard SFX")]
+    [field: SerializeField] public EventReference SkeletonWizardAttack { get; private set; }
+    [field: SerializeField] public EventReference SkeletonWizardDeath { get; private set; }
+    [field: SerializeField] public EventReference SkeletonWizardHit { get; private set; }
+
+    [field: Header("EvilKnight SFX")]
+    [field: SerializeField] public EventReference EvilKnightAttack { get; private set; }
+    [field: SerializeField] public EventReference EvilKnightDeath { get; private set; }
+    [field: SerializeField] public EventReference EvilKnightHit { get; private set; }
+
+    [field: Header("Necromancer SFX")]
+    [field: SerializeField] public EventReference NecromancerAttack { get; private set; }
+    [field: SerializeField] public EventReference NecromancerDeath { get; private set; }
+    [field: SerializeField] public EventReference NecromancerHit { get; private set; }
 
     [field: Header("Menu SFX")]
     [field: SerializeField] public EventReference UIClick {  get; private set; }
