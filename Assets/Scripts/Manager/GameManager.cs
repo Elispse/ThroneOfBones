@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        Level = UnityEditor.SceneManagement.EditorSceneManager.GetActiveScene();
+        Level = SceneManager.GetActiveScene();
         Score = 0;
         Timer = 0f;
         pauseSFX = AudioManager.instance.CreateInstance(FMODEvents.instance.UIPause);
