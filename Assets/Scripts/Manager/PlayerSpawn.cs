@@ -7,23 +7,29 @@ public class PlayerSpawn : MonoBehaviour
 		switch (GameManager.Instance.selectedCharacter1)
 		{
 			case "KnightPrefab":
-				Instantiate(GameManager.Instance.Characters[0]);
-				break;
+				var p1k = Instantiate(GameManager.Instance.Characters[0]);
+                GameManager.Instance.Player1 = p1k.GetComponent<IPlayer>();
+                break;
 			case "MagePrefab":
-				Instantiate(GameManager.Instance.Characters[1]);
-				break;
+				var p1m = Instantiate(GameManager.Instance.Characters[1]);
+                GameManager.Instance.Player1 = p1m.GetComponent<IPlayer>();
+                break;
 		}
-		if(GameManager.Instance.selectedCharacter2 != null)
+        GameManager.Instance.playerInputManager.JoinPlayer(0);
+        if (GameManager.Instance.selectedCharacter2 != null)
         {
             switch (GameManager.Instance.selectedCharacter2)
             {
                 case "KnightPrefab":
-                    Instantiate(GameManager.Instance.Characters[0]);
+                    var p2k = Instantiate(GameManager.Instance.Characters[0]);
+                    GameManager.Instance.Player1 = p2k.GetComponent<IPlayer>();
                     break;
                 case "MagePrefab":
-                    Instantiate(GameManager.Instance.Characters[1]);
+                    var p2m = Instantiate(GameManager.Instance.Characters[1]);
+                    GameManager.Instance.Player1 = p2m.GetComponent<IPlayer>();
                     break;
             }
+            GameManager.Instance.playerInputManager.JoinPlayer(1);
         }
     }
 }
