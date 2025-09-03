@@ -1,3 +1,5 @@
+using FMOD.Studio;
+using FMODUnity;
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -5,7 +7,6 @@ using UnityEngine.UIElements;
 
 public class LevelSelect : MonoBehaviour
 {
-
     private UIDocument uiDocument;
     private Button level1Button;
     private Button CloseButton;
@@ -13,9 +14,15 @@ public class LevelSelect : MonoBehaviour
     private Button SettingsCloseButton;
     private VisualElement settings;
 
+    private Slider masterSlider;
+    private Slider ambientSlider;
+    private Slider musicSlider;
+    private Slider soundSlider;
+
+
     private bool settingsOpen = false;
 
-    void Start()
+	void Start()
     {
         uiDocument = GetComponent<UIDocument>();
         level1Button = uiDocument.rootVisualElement.Q<Button>("btnlvl1");
@@ -23,6 +30,13 @@ public class LevelSelect : MonoBehaviour
         settings = uiDocument.rootVisualElement.Q<VisualElement>("Settings");
         SettingsButton = uiDocument.rootVisualElement.Q<Button>("btnsettings");
         SettingsCloseButton = uiDocument.rootVisualElement.Q<Button>("btnsettingsclose");
+
+        masterSlider = uiDocument.rootVisualElement.Q<Slider>("sldMaster");
+        ambientSlider = uiDocument.rootVisualElement.Q<Slider>("sldAmbient");
+        musicSlider = uiDocument.rootVisualElement.Q<Slider>("sldMusic");
+        soundSlider = uiDocument.rootVisualElement.Q<Slider>("sldSoundEffects");
+
+
 
         level1Button.clicked += () => GoToLevel(3);
         CloseButton.clicked += () => Close();
@@ -32,7 +46,17 @@ public class LevelSelect : MonoBehaviour
 
         settings.style.visibility = Visibility.Hidden;
     }
-    public void GoToLevel(int index)
+
+	private void Update()
+	{
+
+		AudioManager.instance.masterVolume = masterSlider.value;
+		AudioManager.instance.ambienceVolume = ambientSlider.value;
+		AudioManager.instance.musicVolume = musicSlider.value;
+		AudioManager.instance.SFXVolume = soundSlider.value;
+	}
+
+	public void GoToLevel(int index)
     {
         GameManager.Instance.selectedLevel = index;
         //Debug.Log("Loading level: " + name);
