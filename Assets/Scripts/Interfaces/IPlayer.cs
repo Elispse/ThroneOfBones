@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 using UnityEngine.Windows;
 
 public abstract class IPlayer : MonoBehaviour, IDamagable
@@ -40,6 +41,8 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
     public bool facingRight = true;
     protected Vector3 targetVelocity = Vector3.zero;
 
+    private UIDocument HUD;
+
     protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -53,6 +56,8 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
     public virtual void Start()
     {
         Health = 100;
+    
+        HUD = GameObject.FindAnyObjectByType<UIDocument>();
     }
 
     public virtual void Update()
@@ -146,4 +151,11 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
     {
         Combo++;
     }
+
+    public virtual void OpenSettings()
+    {
+        GameManager.Instance.Pause();
+        HUD.GetComponent<HUDscript>().Settings();
+    }
+
 }
