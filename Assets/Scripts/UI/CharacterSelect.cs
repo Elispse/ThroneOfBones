@@ -4,22 +4,53 @@ using UnityEngine.UIElements;
 public class CharacterSelect : MonoBehaviour
 {
 	private UIDocument uiDocument;
-    private Button fighterButton;
-    private Button wizardButton;
+    private Button submitButton;
+
+	private RadioButtonGroup rbgplayer1;
+	private RadioButtonGroup rbgplayer2;
+
 	void Start()
     {
 		uiDocument = GetComponent<UIDocument>();
-		fighterButton = uiDocument.rootVisualElement.Q<Button>("btnfighter");
-		wizardButton = uiDocument.rootVisualElement.Q<Button>("btnwizard");
+		submitButton = uiDocument.rootVisualElement.Q<Button>("btnsubmit");
 
-		fighterButton.clicked += () => GoToLevel("KnightPrefab");
-		wizardButton.clicked += () => GoToLevel("MagePrefab");
+		rbgplayer1 = uiDocument.rootVisualElement.Q<RadioButtonGroup>("rbgplayer1");
+		rbgplayer2 = uiDocument.rootVisualElement.Q<RadioButtonGroup>("rbgplayer2");
+
+		submitButton.clicked += () => GoToLevel();
 	}
 
-	public void GoToLevel(string name)
+	public void GoToLevel()
 	{
-		GameManager.Instance.selectedCharacter1 = name;
-		Debug.Log("Loading Character: " + name);
+		Debug.Log(rbgplayer1.value);
+
+
+
+
+		switch (rbgplayer1.value)
+		{
+			case 0:
+				GameManager.Instance.selectedCharacter1 = "KnightPrefab";
+				break;
+			case 1:
+				GameManager.Instance.selectedCharacter1 = "MagePrefab";
+				break;
+			default:
+				return;
+		}
+
+		switch (rbgplayer2.value)
+		{
+			case 0:
+				GameManager.Instance.selectedCharacter2 = "KnightPrefab";
+				break;
+			case 1:
+				GameManager.Instance.selectedCharacter2 = "MagePrefab";
+				break;
+			default:
+				break;
+		}
+
 		GameManager.Instance.GoToLevel(GameManager.Instance.selectedLevel);
 	}
 }

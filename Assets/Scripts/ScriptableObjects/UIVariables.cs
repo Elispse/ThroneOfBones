@@ -16,7 +16,9 @@ public class UIVariables : ScriptableObject
 	{
 		Score = GameManager.Instance.Score;
 		Timer = (int)GameManager.Instance.Timer;
-		if (player1)
+        player1 = GameManager.Instance.Player1;
+        player2 = GameManager.Instance.Player2;
+        if (player1)
 		{
 			p1Health = GameManager.Instance.Player1.Health;
 			p1Combo = GameManager.Instance.Player1.Combo + " combo";

@@ -1,6 +1,7 @@
 using FMOD.Studio;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -8,14 +9,16 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public int selectedLevel { get; set; }
-    public string selectedCharacter1 { get; set; }
-    public string selectedCharacter2 { get; set; }
+    public string selectedCharacter1 { get; set; } = null;
+    public string selectedCharacter2 { get; set; } = null;
     [SerializeField] public GameObject[] Characters;
     public int Score { get; set; }
     public Scene Level { get; set; }
     public float Timer { get; set; }
     public IPlayer Player1 { get; set; }
     public IPlayer Player2 { get; set; }
+
+    [SerializeField] public PlayerInputManager playerInputManager;
 
     [SerializeField] public UIVariables uiVariables;
 
