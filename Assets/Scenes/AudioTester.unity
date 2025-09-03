@@ -626,6 +626,10 @@ PrefabInstance:
       value: event:/SFX/Equip
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EvilKnightHit>k__BackingField.Path
+      value: event:/SFX/DarkKnight/DarkKnightDeath
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <UIClick>k__BackingField.Guid.Data1
       value: -1474254523
       objectReference: {fileID: 0}
@@ -698,6 +702,10 @@ PrefabInstance:
       value: event:/SFX/Skeleton/SkeletonAttack
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EvilKnightDeath>k__BackingField.Path
+      value: event:/SFX/DarkKnight/DarkKnightDeath
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <EyebatHit>k__BackingField.Guid.Data1
       value: 622685626
       objectReference: {fileID: 0}
@@ -748,6 +756,10 @@ PrefabInstance:
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <wizardSecondary>k__BackingField.Path
       value: event:/SFX/Wizard/WizardSecondary
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EvilKnightAttack>k__BackingField.Path
+      value: event:/SFX/DarkKnight/DarkKnightAttack
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <FreakDeath>k__BackingField.Guid.Data1
@@ -1010,6 +1022,22 @@ PrefabInstance:
       value: -442060080
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EvilKnightHit>k__BackingField.Guid.Data1
+      value: -1195278340
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EvilKnightHit>k__BackingField.Guid.Data2
+      value: 1278628083
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EvilKnightHit>k__BackingField.Guid.Data3
+      value: 1611282579
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EvilKnightHit>k__BackingField.Guid.Data4
+      value: -100119977
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <SkeletonKnightDeath>k__BackingField.Path
       value: event:/SFX/Skeleton/SkeletonDeath
       objectReference: {fileID: 0}
@@ -1122,6 +1150,22 @@ PrefabInstance:
       value: 1729057058
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EvilKnightDeath>k__BackingField.Guid.Data1
+      value: -1195278340
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EvilKnightDeath>k__BackingField.Guid.Data2
+      value: 1278628083
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EvilKnightDeath>k__BackingField.Guid.Data3
+      value: 1611282579
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EvilKnightDeath>k__BackingField.Guid.Data4
+      value: -100119977
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <wizardSecondary>k__BackingField.Guid.Data1
       value: 734807519
       objectReference: {fileID: 0}
@@ -1136,6 +1180,22 @@ PrefabInstance:
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <wizardSecondary>k__BackingField.Guid.Data4
       value: -198537073
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EvilKnightAttack>k__BackingField.Guid.Data1
+      value: -55746713
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EvilKnightAttack>k__BackingField.Guid.Data2
+      value: 1322153916
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EvilKnightAttack>k__BackingField.Guid.Data3
+      value: -1811914582
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
+      propertyPath: <EvilKnightAttack>k__BackingField.Guid.Data4
+      value: -1024658723
       objectReference: {fileID: 0}
     - target: {fileID: 3289460014997535711, guid: 88fcbcb841e379b4a85bf1d64024d9d0, type: 3}
       propertyPath: <NecromancerDeath>k__BackingField.Guid.Data1
