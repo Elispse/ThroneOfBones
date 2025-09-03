@@ -16,14 +16,14 @@ public class CameraBound : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player") && !used)
         {
-            cameraManager.NextSection();
+            GetComponent<Collider2D>().isTrigger = false;
             used = true;
             var players = FindObjectsByType<IPlayer>(FindObjectsSortMode.None);
             foreach (var player in players)
             {
                 player.transform.position = transform.position + new Vector3(2, 0, 0);
             }
-            GetComponent<Collider2D>().isTrigger = false;
+            cameraManager.NextSection();
         }
     }
 }

@@ -19,11 +19,11 @@ public class CameraManager : MonoBehaviour
 
     public void NextSection()
     {
-        if (currentSection < sections.Length)
+        if (currentSection < sections.Length - 1)
         {
             currentSection++;
         }
         transform.position = new Vector3(sections[currentSection].position.x, sections[currentSection].position.y, gameObject.transform.position.z);
-        waveManager.StartCoroutine(waveManager.StartNewWave());
+        waveManager.StartNewWave();
     }
 }

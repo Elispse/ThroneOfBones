@@ -6,7 +6,6 @@ public class UIVariables : ScriptableObject
 {
 	public float Timer = 0f;
 	public int Score = 0;
-	public int lives = 3;
 
 	public IPlayer player1;
 	public IPlayer player2;
@@ -18,7 +17,6 @@ public class UIVariables : ScriptableObject
 	{
 		Score = GameManager.Instance.Score;
 		Timer = (int)GameManager.Instance.Timer;
-		lives = GameManager.Instance.Lives;
 		if (player1)
 		{
 			p1Health = GameManager.Instance.Player1.Health;

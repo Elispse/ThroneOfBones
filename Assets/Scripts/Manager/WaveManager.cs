@@ -60,16 +60,14 @@ public class WaveManager : MonoBehaviour
                 if (allDead)
                 {
                     waveNumber++;
-                    StartCoroutine(StartNewWave());
+                    StartNewWave();
                 }
             }
         }
     }
 
-    public IEnumerator StartNewWave()
+    public void StartNewWave()
     {
-        yield return new WaitForSeconds(0.5f);
-
         nextWave();
     }
     public void nextWave()
@@ -87,6 +85,7 @@ public class WaveManager : MonoBehaviour
                         enemyScript.enabled = true;
                     }
                 }
+                Debug.Log("Wave 1 started");
                 break;
             case 2:
                 Wave2.SetActive(true);
@@ -98,6 +97,7 @@ public class WaveManager : MonoBehaviour
                         enemyScript.enabled = true;
                     }
                 }
+                Debug.Log("Wave 2 started");
                 break;
             case 3:
                 Wave3.SetActive(true);
@@ -109,6 +109,7 @@ public class WaveManager : MonoBehaviour
                         enemyScript.enabled = true;
                     }
                 }
+                Debug.Log("Wave 3 started");
                 break;
             case 4:
                 Wave4.SetActive(true);
@@ -120,6 +121,7 @@ public class WaveManager : MonoBehaviour
                         enemyScript.enabled = true;
                     }
                 }
+                Debug.Log("Wave 4 started");
                 break;
             case 5:
                 Wave5.SetActive(true);
@@ -131,6 +133,7 @@ public class WaveManager : MonoBehaviour
                         enemyScript.enabled = true;
                     }
                 }
+                Debug.Log("Wave 5 started");
                 break;
             default:
                 break;
