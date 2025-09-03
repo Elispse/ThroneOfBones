@@ -1,3 +1,4 @@
+using FMOD.Studio;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -18,6 +19,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] public UIVariables uiVariables;
 
+    private EventInstance pauseSFX;
+
     private void Awake()
     {
         if (Instance == null)
@@ -29,15 +32,13 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-
-
     }
     void Start()
     {
         Level = UnityEditor.SceneManagement.EditorSceneManager.GetActiveScene();
         Score = 0;
         Timer = 0f;
+        pauseSFX = AudioManager.instance.CreateInstance(FMODEvents.instance.UIPause);
     }
 
     void Update()
@@ -72,11 +73,11 @@ public class GameManager : MonoBehaviour
 
     public void Pause()
     {
+        pauseSFX.start();
         Time.timeScale = 0;
     }
     public void Unpause()
     {
         Time.timeScale = 1;
     }
-
 }
