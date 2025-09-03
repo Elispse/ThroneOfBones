@@ -51,7 +51,7 @@ public class EnemyNormal : IAttack
                 sound.start();
                 break;
             case EnemyType.SKELETONKNIGHT:
-                sound = AudioManager.instance.CreateInstance(FMODEvents.instance.skeletonAttack);
+                sound = AudioManager.instance.CreateInstance(FMODEvents.instance.SkeletonKnightAttack);
                 sound.start();
                 break;
             case EnemyType.SKELETONWIZARD:

@@ -16,10 +16,10 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference wizardSecondary { get; private set; }
     [field: SerializeField] public EventReference wizardHurt { get; private set; }
 
-    [field: Header("Skeleton Enemy SFX")]
-    [field: SerializeField] public EventReference skeletonAttack { get; private set; }
-    [field: SerializeField] public EventReference skeletonDeath { get; private set; }
-    [field: SerializeField] public EventReference skeletonHit { get; private set; }
+    [field: Header("SkeletonKnight SFX")]
+    [field: SerializeField] public EventReference SkeletonKnightAttack { get; private set; }
+    [field: SerializeField] public EventReference SkeletonKnightDeath { get; private set; }
+    [field: SerializeField] public EventReference SkeletonKnightHit { get; private set; }
 
     [field: Header("Goblin Enemy SFX")]
     [field: SerializeField] public EventReference GoblinAttack { get; private set; }
@@ -36,11 +36,6 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference FreakAttack { get; private set; }
     [field: SerializeField] public EventReference FreakDeath { get; private set; }
     [field: SerializeField] public EventReference FreakHit { get; private set; }
-
-    [field: Header("SkeletonKnight SFX")]
-    [field: SerializeField] public EventReference SkeletonKnightAttack { get; private set; }
-    [field: SerializeField] public EventReference SkeletonKnightDeath { get; private set; }
-    [field: SerializeField] public EventReference SkeletonKnightHit { get; private set; }
 
     [field: Header("SkeletonWizard SFX")]
     [field: SerializeField] public EventReference SkeletonWizardAttack { get; private set; }
