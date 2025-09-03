@@ -16,6 +16,7 @@ public class CameraBound : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player") && !used)
         {
+            Debug.Log("Next section!");
             GetComponent<Collider2D>().isTrigger = false;
             used = true;
             var players = FindObjectsByType<IPlayer>(FindObjectsSortMode.None);

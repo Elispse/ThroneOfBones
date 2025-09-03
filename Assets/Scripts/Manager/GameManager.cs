@@ -69,4 +69,14 @@ public class GameManager : MonoBehaviour
         sceneName = System.IO.Path.GetFileNameWithoutExtension(sceneName);
         SceneManager.LoadScene(sceneName);
     }
+
+    public void Pause()
+    {
+        Time.timeScale = 0;
+    }
+    public void Unpause()
+    {
+        Time.timeScale = 1;
+    }
+
 }

@@ -23,47 +23,6 @@ public class WaveManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (waveNumber > 0)
-        {
-            GameObject currentWave = null;
-            switch (waveNumber)
-            {
-                case 1:
-                    currentWave = Wave1;                
-                    break;
-                case 2:
-                    currentWave = Wave2;
-                    break;
-                case 3:
-                    currentWave = Wave3;
-                    break;
-                case 4:
-                    currentWave = Wave4;
-                    break;
-                case 5:
-                    currentWave = Wave5;
-                    break;
-                default:
-                    break;
-            }
-            if (currentWave != null)
-            {
-                bool allDead = true;
-                foreach (Transform enemy in currentWave.transform)
-                {
-                    if (enemy.gameObject.activeInHierarchy)
-                    {
-                        allDead = false;
-                        break;
-                    }
-                }
-                if (allDead)
-                {
-                    waveNumber++;
-                    StartNewWave();
-                }
-            }
-        }
     }
 
     public void StartNewWave()
