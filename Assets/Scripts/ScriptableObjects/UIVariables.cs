@@ -1,4 +1,3 @@
-using UnityEditor.SearchService;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "UIVariables", menuName = "Scriptable Objects/UIVariables")]

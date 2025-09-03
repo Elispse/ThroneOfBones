@@ -44,8 +44,7 @@ public class LevelSelect : MonoBehaviour
         buttonsfx = AudioManager.instance.CreateInstance(FMODEvents.instance.UIClick);
 
 
-
-		level1Button.clicked += () => GoToLevel(2);
+        level1Button.clicked += () => GoToLevel(2);
         CloseButton.clicked += () => Close();
         SettingsButton.clicked += () => Settings();
         SettingsCloseButton.clicked += () => Settings();
