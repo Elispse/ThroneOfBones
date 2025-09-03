@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 577310
+--- !u!114 &-8107617103955404989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Freak/FreakHit
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Freak/FreakHit
+  Guid:
+    Data1: -349065722
+    Data2: 1281029763
+    Data3: -1644006503
+    Data4: 812683844
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 533
 --- !u!114 &-8065547336645033870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,10 +96,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638924475212327781
+  lastModified: 638924489925786285
   FileSizes:
   - Name: Desktop
-    Value: 2182
+    Value: 2312
   Exists: 1
 --- !u!114 &-6711110273718673508
 MonoBehaviour:
@@ -323,6 +350,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2500
+--- !u!114 &-2960342216946729200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Freak/FreakDeath
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Freak/FreakDeath
+  Guid:
+    Data1: -808016913
+    Data2: 1317446117
+    Data3: -577831516
+    Data4: 1506759887
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 719
 --- !u!114 &-661828920737891035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,13 +495,16 @@ MonoBehaviour:
   - {fileID: 7808210332915323871}
   - {fileID: 1665188604492588745}
   - {fileID: -5111151302877458895}
+  - {fileID: -8107617103955404989}
+  - {fileID: 5307487977124273534}
+  - {fileID: -2960342216946729200}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3037067889015032689}
   StringsBanks:
   - {fileID: -7707472834049543520}
   cacheVersion: 131848
-  cacheTime: 638924484038206933
+  cacheTime: 638924489926602368
   SerializableEventsDict:
   - key: event:/Ambience/Forest Ambience
     index: 0
@@ -499,6 +556,12 @@ MonoBehaviour:
     index: 23
   - key: event:/Ambience/Castle Ambience
     index: 24
+  - key: event:/SFX/Freak/FreakHit
+    index: 25
+  - key: event:/SFX/Freak/FreakAttack
+    index: 26
+  - key: event:/SFX/Freak/FreakDeath
+    index: 27
 --- !u!114 &360092067355563068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,7 +806,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638924475212327781
+  lastModified: 638924489925776602
   FileSizes:
   - Name: Desktop
     Value: 1524
@@ -817,10 +880,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638924484038206933
+  lastModified: 638924489926602368
   FileSizes:
   - Name: Desktop
-    Value: 307520
+    Value: 333920
   Exists: 1
 --- !u!114 &4752320171984449503
 MonoBehaviour:
@@ -896,6 +959,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 95
+--- !u!114 &5307487977124273534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Freak/FreakAttack
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Freak/FreakAttack
+  Guid:
+    Data1: 1904475050
+    Data2: 1163166095
+    Data3: -1264444269
+    Data4: -1661972933
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 666
 --- !u!114 &6261220201751276143
 MonoBehaviour:
   m_ObjectHideFlags: 0
