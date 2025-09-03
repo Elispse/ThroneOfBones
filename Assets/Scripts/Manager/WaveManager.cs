@@ -13,6 +13,11 @@ public class WaveManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if(Wave1 == null || Wave2 == null || Wave3 == null || Wave4 == null || Wave5 == null)
+        {
+            Debug.LogError("One or more waves are not assigned");
+            return;
+        }
         Wave1.SetActive(false);
         Wave2.SetActive(false);
         Wave3.SetActive(false);
