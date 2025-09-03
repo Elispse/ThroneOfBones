@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      OldDungeon320X180_0: -4073584762617490414
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
