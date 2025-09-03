@@ -4,7 +4,7 @@ using UnityEngine;
 public class UIVariables : ScriptableObject
 {
 	public float Timer = 0f;
-	public int Score = 0;
+	public string Score = "Score: 0";
 
 	public IPlayer player1;
 	public IPlayer player2;
@@ -14,7 +14,7 @@ public class UIVariables : ScriptableObject
 	public string p2Combo = "0 combo";
 	public void UpdateVars()
 	{
-		Score = GameManager.Instance.Score;
+		Score = "Score: " + GameManager.Instance.Score;
 		Timer = (int)GameManager.Instance.Timer;
         player1 = GameManager.Instance.Player1;
         player2 = GameManager.Instance.Player2;
