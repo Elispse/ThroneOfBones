@@ -49,6 +49,7 @@ MonoBehaviour:
   Characters:
   - {fileID: 4675112536438087972, guid: 39aa8a29c5a5a3f40b7b54614eb649f2, type: 3}
   - {fileID: 4675112536438087972, guid: 4bcbdf8493a8a0748a3b182ff678f73c, type: 3}
+  DeathScreen: {fileID: 7007164781425092235, guid: cb3c70aa3a9ce234eb4182c72fa427db, type: 3}
   playerInputManager: {fileID: 0}
   uiVariables: {fileID: 11400000, guid: d400d26409fe6864c8a4826410af83e0, type: 2}
 --- !u!114 &3286921085978491501

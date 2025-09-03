@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public string selectedCharacter1 { get; set; } = null;
     public string selectedCharacter2 { get; set; } = null;
     [SerializeField] public GameObject[] Characters;
+    [SerializeField] public GameObject DeathScreen;
     public int Score { get; set; }
     public Scene Level { get; set; }
     public float Timer { get; set; }
@@ -57,9 +58,15 @@ public class GameManager : MonoBehaviour
 
     public void Death()
     {
-        Destroy(this);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        GameObject.Instantiate(DeathScreen);
+        Time.timeScale = 0;
     }
+
+    public void Respawn()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		Time.timeScale = 1;
+	}
 
     public void GoToLevel(int level)
     {

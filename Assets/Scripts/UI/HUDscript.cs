@@ -1,8 +1,12 @@
+using FMOD.Studio;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class HUDscript : MonoBehaviour
 {
+	private EventInstance buttonsfx;
+
+
 	private UIDocument uiDocument;
 
 	private VisualElement settings;
@@ -32,6 +36,8 @@ public class HUDscript : MonoBehaviour
 		musicSlider = uiDocument.rootVisualElement.Q<Slider>("sldMusic");
 		soundSlider = uiDocument.rootVisualElement.Q<Slider>("sldSoundEffects");
 
+		buttonsfx = AudioManager.instance.CreateInstance(FMODEvents.instance.UIClick);
+
 		SettingsCloseButton.clicked += () => Settings();
 		ExitButton.clicked += () => GoToLevel(0);
 
@@ -47,11 +53,13 @@ public class HUDscript : MonoBehaviour
 
 	public void GoToLevel(int index)
 	{
+		buttonsfx.start();
 		GameManager.Instance.GoToLevel(index);
 	}
 
 	public void Settings()
 	{
+		buttonsfx.start();
 		if (settingsOpen)
 		{
 			GameManager.Instance.Unpause();
