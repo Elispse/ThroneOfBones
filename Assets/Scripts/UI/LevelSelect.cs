@@ -38,7 +38,7 @@ public class LevelSelect : MonoBehaviour
 
 
 
-        level1Button.clicked += () => GoToLevel(3);
+        level1Button.clicked += () => GoToLevel(2);
         CloseButton.clicked += () => Close();
         SettingsButton.clicked += () => Settings();
         SettingsCloseButton.clicked += () => Settings();

@@ -58,8 +58,7 @@ public class GameManager : MonoBehaviour
     public void Death()
     {
         Destroy(this);
-        SceneManager.LoadScene(Level.name);
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void GoToLevel(int level)
