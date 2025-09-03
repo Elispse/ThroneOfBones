@@ -74,7 +74,12 @@ public class KnightPlayer : IPlayer
             }
         }
     }
-
+    public override void ApplyDamage(float damage)
+    {
+        if(shieldActive) return;
+        Health -= (int)damage;
+        if (Health <= 0) GameManager.Instance.Death();
+    }
     private IEnumerator NormalDelay(float attackCooldown)
     {
         normalCDComplete = false;

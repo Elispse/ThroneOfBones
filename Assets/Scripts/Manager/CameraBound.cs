@@ -3,6 +3,7 @@ using UnityEngine;
 public class CameraBound : MonoBehaviour
 {
     [SerializeField] CameraManager cameraManager;
+    private bool used = false;
     void Start()
     {
         if (cameraManager == null)
@@ -11,11 +12,13 @@ public class CameraBound : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        Debug.Log("Camera Bound Triggered");
+        if (collision.gameObject.CompareTag("Player") && !used)
         {
             cameraManager.NextSection();
+            used = true;
         }
     }
 }

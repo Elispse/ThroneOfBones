@@ -1,0 +1,2782 @@
+fileFormatVersion: 2
+guid: fb7446451fe14724c945375db7bbe7dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5856209669763129854
+    second: Dungeon_Tileset_Decorations_v2_0
+  - first:
+      213: -6453047877111911813
+    second: Dungeon_Tileset_Decorations_v2_1
+  - first:
+      213: 5018053639635506694
+    second: Dungeon_Tileset_Decorations_v2_2
+  - first:
+      213: 4922645374509849811
+    second: Dungeon_Tileset_Decorations_v2_3
+  - first:
+      213: -8734689659149237676
+    second: Dungeon_Tileset_Decorations_v2_4
+  - first:
+      213: 1210938039112335523
+    second: Dungeon_Tileset_Decorations_v2_5
+  - first:
+      213: -1214667490576079995
+    second: Dungeon_Tileset_Decorations_v2_6
+  - first:
+      213: 4936774799882689570
+    second: Dungeon_Tileset_Decorations_v2_7
+  - first:
+      213: -5288080437850618626
+    second: Dungeon_Tileset_Decorations_v2_8
+  - first:
+      213: -5470465914613794254
+    second: Dungeon_Tileset_Decorations_v2_9
+  - first:
+      213: 983435064742712349
+    second: Dungeon_Tileset_Decorations_v2_10
+  - first:
+      213: -5890240184997864489
+    second: Dungeon_Tileset_Decorations_v2_11
+  - first:
+      213: -1663797912053507849
+    second: Dungeon_Tileset_Decorations_v2_12
+  - first:
+      213: 7394723016247306704
+    second: Dungeon_Tileset_Decorations_v2_13
+  - first:
+      213: -1881950185887963469
+    second: Dungeon_Tileset_Decorations_v2_14
+  - first:
+      213: -2843178523869302630
+    second: Dungeon_Tileset_Decorations_v2_15
+  - first:
+      213: -7457471620496525457
+    second: Dungeon_Tileset_Decorations_v2_16
+  - first:
+      213: 992493683456039253
+    second: Dungeon_Tileset_Decorations_v2_17
+  - first:
+      213: 2041112292609040092
+    second: Dungeon_Tileset_Decorations_v2_18
+  - first:
+      213: 4541897464804551154
+    second: Dungeon_Tileset_Decorations_v2_19
+  - first:
+      213: -4638083002268921005
+    second: Dungeon_Tileset_Decorations_v2_20
+  - first:
+      213: -6453471206931698213
+    second: Dungeon_Tileset_Decorations_v2_21
+  - first:
+      213: -5376504022516420553
+    second: Dungeon_Tileset_Decorations_v2_22
+  - first:
+      213: -7678667089418851994
+    second: Dungeon_Tileset_Decorations_v2_23
+  - first:
+      213: 3307371079671710387
+    second: Dungeon_Tileset_Decorations_v2_24
+  - first:
+      213: 1684766607073858713
+    second: Dungeon_Tileset_Decorations_v2_25
+  - first:
+      213: 1421336877336338838
+    second: Dungeon_Tileset_Decorations_v2_26
+  - first:
+      213: 1286655319715106506
+    second: Dungeon_Tileset_Decorations_v2_27
+  - first:
+      213: 6862751724004368256
+    second: Dungeon_Tileset_Decorations_v2_28
+  - first:
+      213: -3596732891555196565
+    second: Dungeon_Tileset_Decorations_v2_29
+  - first:
+      213: 9155160216669790080
+    second: Dungeon_Tileset_Decorations_v2_30
+  - first:
+      213: -1040810267886105932
+    second: Dungeon_Tileset_Decorations_v2_31
+  - first:
+      213: 1317089086395558762
+    second: Dungeon_Tileset_Decorations_v2_32
+  - first:
+      213: -4366289530620390872
+    second: Dungeon_Tileset_Decorations_v2_33
+  - first:
+      213: -8057307954170705421
+    second: Dungeon_Tileset_Decorations_v2_34
+  - first:
+      213: -1323346018192029157
+    second: Dungeon_Tileset_Decorations_v2_35
+  - first:
+      213: -1654743701596935267
+    second: Dungeon_Tileset_Decorations_v2_36
+  - first:
+      213: -3686006499227258955
+    second: Dungeon_Tileset_Decorations_v2_37
+  - first:
+      213: 6218355417178955948
+    second: Dungeon_Tileset_Decorations_v2_38
+  - first:
+      213: 8581813856143536720
+    second: Dungeon_Tileset_Decorations_v2_39
+  - first:
+      213: 7827222167177848164
+    second: Dungeon_Tileset_Decorations_v2_40
+  - first:
+      213: -7004128607850720629
+    second: Dungeon_Tileset_Decorations_v2_41
+  - first:
+      213: 5115566763474813638
+    second: Dungeon_Tileset_Decorations_v2_42
+  - first:
+      213: 3218089930812734184
+    second: Dungeon_Tileset_Decorations_v2_43
+  - first:
+      213: 759781808148870646
+    second: Dungeon_Tileset_Decorations_v2_44
+  - first:
+      213: -6737387820948912513
+    second: Dungeon_Tileset_Decorations_v2_45
+  - first:
+      213: 5476356683356910279
+    second: Dungeon_Tileset_Decorations_v2_46
+  - first:
+      213: 6230413927803196022
+    second: Dungeon_Tileset_Decorations_v2_47
+  - first:
+      213: -6709940420476971662
+    second: Dungeon_Tileset_Decorations_v2_48
+  - first:
+      213: -5203712103227783271
+    second: Dungeon_Tileset_Decorations_v2_49
+  - first:
+      213: -1048844101735452444
+    second: Dungeon_Tileset_Decorations_v2_50
+  - first:
+      213: 2281698450601677418
+    second: Dungeon_Tileset_Decorations_v2_51
+  - first:
+      213: 5402966243028109594
+    second: Dungeon_Tileset_Decorations_v2_52
+  - first:
+      213: 6129528340011952877
+    second: Dungeon_Tileset_Decorations_v2_53
+  - first:
+      213: 6449291589631410304
+    second: Dungeon_Tileset_Decorations_v2_54
+  - first:
+      213: 1128609758851741625
+    second: Dungeon_Tileset_Decorations_v2_55
+  - first:
+      213: 1852891474431083903
+    second: Dungeon_Tileset_Decorations_v2_56
+  - first:
+      213: 6027978484895603330
+    second: Dungeon_Tileset_Decorations_v2_57
+  - first:
+      213: 1772956680234507934
+    second: Dungeon_Tileset_Decorations_v2_58
+  - first:
+      213: -7916783843901319214
+    second: Dungeon_Tileset_Decorations_v2_59
+  - first:
+      213: 7250024869420214532
+    second: Dungeon_Tileset_Decorations_v2_60
+  - first:
+      213: 8534772196925768476
+    second: Dungeon_Tileset_Decorations_v2_61
+  - first:
+      213: 586229847211756851
+    second: Dungeon_Tileset_Decorations_v2_62
+  - first:
+      213: 3396594418105190156
+    second: Dungeon_Tileset_Decorations_v2_63
+  - first:
+      213: -656359744946422922
+    second: Dungeon_Tileset_Decorations_v2_64
+  - first:
+      213: 3485880007177668490
+    second: Dungeon_Tileset_Decorations_v2_65
+  - first:
+      213: 1760822305945642828
+    second: Dungeon_Tileset_Decorations_v2_66
+  - first:
+      213: -4425814771225616194
+    second: Dungeon_Tileset_Decorations_v2_67
+  - first:
+      213: 8762515578707878009
+    second: Dungeon_Tileset_Decorations_v2_68
+  - first:
+      213: 4547343879160033391
+    second: Dungeon_Tileset_Decorations_v2_69
+  - first:
+      213: -6069480544106943642
+    second: Dungeon_Tileset_Decorations_v2_70
+  - first:
+      213: 8826489618751339154
+    second: Dungeon_Tileset_Decorations_v2_71
+  - first:
+      213: -3546692385683016611
+    second: Dungeon_Tileset_Decorations_v2_72
+  - first:
+      213: -5989520837213240805
+    second: Dungeon_Tileset_Decorations_v2_73
+  - first:
+      213: -4900900376818896309
+    second: Dungeon_Tileset_Decorations_v2_74
+  - first:
+      213: 2601791722699355190
+    second: Dungeon_Tileset_Decorations_v2_75
+  - first:
+      213: 6726372067378276521
+    second: Dungeon_Tileset_Decorations_v2_76
+  - first:
+      213: 2201452320913873377
+    second: Dungeon_Tileset_Decorations_v2_77
+  - first:
+      213: 2510029244254589401
+    second: Dungeon_Tileset_Decorations_v2_78
+  - first:
+      213: -6749657428911569247
+    second: Dungeon_Tileset_Decorations_v2_79
+  - first:
+      213: -6744845785788786046
+    second: Dungeon_Tileset_Decorations_v2_80
+  - first:
+      213: 3928960893376357500
+    second: Dungeon_Tileset_Decorations_v2_81
+  - first:
+      213: -6613982544877826193
+    second: Dungeon_Tileset_Decorations_v2_82
+  - first:
+      213: 9148845630992033187
+    second: Dungeon_Tileset_Decorations_v2_83
+  - first:
+      213: 520531931457368460
+    second: Dungeon_Tileset_Decorations_v2_84
+  - first:
+      213: -3301461529074839351
+    second: Dungeon_Tileset_Decorations_v2_85
+  - first:
+      213: 4282592479535314242
+    second: Dungeon_Tileset_Decorations_v2_86
+  - first:
+      213: 695949868961924046
+    second: Dungeon_Tileset_Decorations_v2_87
+  - first:
+      213: 6281715327736667647
+    second: Dungeon_Tileset_Decorations_v2_88
+  - first:
+      213: 5956488341973326252
+    second: Dungeon_Tileset_Decorations_v2_89
+  - first:
+      213: 8915298411715230059
+    second: Dungeon_Tileset_Decorations_v2_90
+  - first:
+      213: -5612168094552862154
+    second: Dungeon_Tileset_Decorations_v2_91
+  - first:
+      213: 6578549182195258101
+    second: Dungeon_Tileset_Decorations_v2_92
+  - first:
+      213: -4686250515026600140
+    second: Dungeon_Tileset_Decorations_v2_93
+  - first:
+      213: 4623746597119231313
+    second: Dungeon_Tileset_Decorations_v2_94
+  - first:
+      213: 5284775569646276655
+    second: Dungeon_Tileset_Decorations_v2_95
+  - first:
+      213: 7197197311779383775
+    second: Dungeon_Tileset_Decorations_v2_96
+  - first:
+      213: 947911701508476704
+    second: Dungeon_Tileset_Decorations_v2_97
+  - first:
+      213: -2553806505282250334
+    second: Dungeon_Tileset_Decorations_v2_98
+  - first:
+      213: -4034090817754197645
+    second: Dungeon_Tileset_Decorations_v2_99
+  - first:
+      213: 6305598925085671992
+    second: Dungeon_Tileset_Decorations_v2_100
+  - first:
+      213: 4094581506926077474
+    second: Dungeon_Tileset_Decorations_v2_101
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 217
+        width: 161
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e9f8735509abea0800000000000000
+      internalID: -5856209669763129854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_1
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 242
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ae72e352b2276a0800000000000000
+      internalID: -6453047877111911813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_2
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 242
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 606945ec235b3a540800000000000000
+      internalID: 5018053639635506694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_3
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 242
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc11e603efb05440800000000000000
+      internalID: 4922645374509849811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_4
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 242
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 452c12b880628c680800000000000000
+      internalID: -8734689659149237676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_5
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 226
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a08c421bbd1ec010800000000000000
+      internalID: 1210938039112335523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_6
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 226
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5836ff75a52a42fe0800000000000000
+      internalID: -1214667490576079995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_7
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 226
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c9b1b3682f28440800000000000000
+      internalID: 4936774799882689570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_8
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 226
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef4c836fbd6fc96b0800000000000000
+      internalID: -5288080437850618626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_9
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 214
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23aff830c300514b0800000000000000
+      internalID: -5470465914613794254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_10
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 214
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1417ad1bfcd5ad00800000000000000
+      internalID: 983435064742712349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_11
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 214
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db987372c9a14ea0800000000000000
+      internalID: -5890240184997864489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_12
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 213
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f8930a3d9009e8e0800000000000000
+      internalID: -1663797912053507849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 185
+        width: 145
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d963d387655f9660800000000000000
+      internalID: 7394723016247306704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_14
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 192
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b6ea25e648f1e5e0800000000000000
+      internalID: -1881950185887963469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_15
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 192
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9030c342300b88d0800000000000000
+      internalID: -2843178523869302630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_16
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 192
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f677fb1921db18890800000000000000
+      internalID: -7457471620496525457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_17
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 192
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55957342fbb06cd00800000000000000
+      internalID: 992493683456039253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 153
+        width: 145
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde15abd0dc735c10800000000000000
+      internalID: 2041112292609040092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_19
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 159
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f92ce32eaf080f30800000000000000
+      internalID: 4541897464804551154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_20
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 159
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 353dbf2451832afb0800000000000000
+      internalID: -4638083002268921005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_21
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 159
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bddef96112aa076a0800000000000000
+      internalID: -6453471206931698213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_22
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 159
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7303374d312d265b0800000000000000
+      internalID: -5376504022516420553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_23
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 159
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 669e4ba27f4ef6590800000000000000
+      internalID: -7678667089418851994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 121
+        width: 145
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b28b38497426ed20800000000000000
+      internalID: 3307371079671710387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_25
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 135
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 994d3188d4e716710800000000000000
+      internalID: 1684766607073858713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_26
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 128
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 691abcffb5a99b310800000000000000
+      internalID: 1421336877336338838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_27
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 128
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace4cff323e1bd110800000000000000
+      internalID: 1286655319715106506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_28
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 129
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08fdaf225546d3f50800000000000000
+      internalID: 6862751724004368256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 106
+        width: 48
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6193eecd76d51ec0800000000000000
+      internalID: -3596732891555196565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_30
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 106
+        width: 50
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08f146006b9ad0f70800000000000000
+      internalID: 9155160216669790080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_31
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 101
+        width: 36
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bac118639c4e81f0800000000000000
+      internalID: -1040810267886105932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_32
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 95
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ba62cbb8d374210800000000000000
+      internalID: 1317089086395558762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_33
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 112
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8225dd43ec2d763c0800000000000000
+      internalID: -4366289530620390872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_34
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 112
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9c9b9ea11be2090800000000000000
+      internalID: -8057307954170705421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_35
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 95
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a8cbecec782ade0800000000000000
+      internalID: -1323346018192029157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_36
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 112
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9befffde5b2909e0800000000000000
+      internalID: -1654743701596935267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 91
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bf27c54e9ca8dcc0800000000000000
+      internalID: -3686006499227258955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_38
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 92
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca0e3104e490c4650800000000000000
+      internalID: 6218355417178955948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_39
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 91
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 052f5f7db3ab81770800000000000000
+      internalID: 8581813856143536720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_40
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 91
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 465e2b43711ef9c60800000000000000
+      internalID: 7827222167177848164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_41
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 79
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8218eff3265cce90800000000000000
+      internalID: -7004128607850720629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_42
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 95
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c206b13ed42ef640800000000000000
+      internalID: 5115566763474813638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eaba5dedb3f8ac20800000000000000
+      internalID: 3218089930812734184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_44
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f5748d67894b8a00800000000000000
+      internalID: 759781808148870646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_45
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f760c4a197dff72a0800000000000000
+      internalID: -6737387820948912513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_46
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c233d6736deffb40800000000000000
+      internalID: 5476356683356910279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_47
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6721b5a0570e67650800000000000000
+      internalID: 6230413927803196022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_48
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2755f650db081e2a0800000000000000
+      internalID: -6709940420476971662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_49
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 79
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99705bd9963b8c7b0800000000000000
+      internalID: -5203712103227783271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_50
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 79
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e07b43b8d1c171f0800000000000000
+      internalID: -1048844101735452444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a621ca0e6a83aaf10800000000000000
+      internalID: 2281698450601677418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_52
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a190e110c213bfa40800000000000000
+      internalID: 5402966243028109594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_53
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea2a13bc85701550800000000000000
+      internalID: 6129528340011952877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_54
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08005ece78c708950800000000000000
+      internalID: 6449291589631410304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_55
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7b5669890a9af00800000000000000
+      internalID: 1128609758851741625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_56
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 48
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7580dc9afac6b910800000000000000
+      internalID: 1852891474431083903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_57
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 50
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a56e19e7ea7a350800000000000000
+      internalID: 6027978484895603330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_58
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 49
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e988705beca9810800000000000000
+      internalID: 1772956680234507934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_59
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 32
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7d5b4f90fe12290800000000000000
+      internalID: -7916783843901319214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_60
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 31
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4092a8ad4334d9460800000000000000
+      internalID: 7250024869420214532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_61
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 34
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1304ac081a917670800000000000000
+      internalID: 8534772196925768476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_62
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 32
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33dc9c7a0f4b22800800000000000000
+      internalID: 586229847211756851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_63
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 33
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c070c3990a0232f20800000000000000
+      internalID: 3396594418105190156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_64
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 34
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67b3a9d1a4424e6f0800000000000000
+      internalID: -656359744946422922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_65
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 32
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a870675c565506030800000000000000
+      internalID: 3485880007177668490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_66
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 36
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c47697ade82bf6810800000000000000
+      internalID: 1760822305945642828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_67
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 40
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0ab6f1ae85492c0800000000000000
+      internalID: -4425814771225616194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_68
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 33
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970a5b73e75ba9970800000000000000
+      internalID: 8762515578707878009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_69
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 40
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6071ec4a296b1f30800000000000000
+      internalID: 4547343879160033391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_70
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 34
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b6c554a9fd4cba0800000000000000
+      internalID: -6069480544106943642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_71
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 17
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ab8532b8dfd7a70800000000000000
+      internalID: 8826489618751339154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_72
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 15
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d54f7cff01e97cec0800000000000000
+      internalID: -3546692385683016611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_73
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12ca1b4882f0eca0800000000000000
+      internalID: -5989520837213240805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_74
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 16
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b42b128c2118cfbb0800000000000000
+      internalID: -4900900376818896309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_75
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 17
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634fb0379cb6b1420800000000000000
+      internalID: 2601791722699355190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_76
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 16
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a82137e1cfd85d50800000000000000
+      internalID: 6726372067378276521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_77
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 17
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e9d70ad8312d8e10800000000000000
+      internalID: 2201452320913873377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_78
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 17
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d113a78c4a65d220800000000000000
+      internalID: 2510029244254589401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_79
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 17
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a6462264566452a0800000000000000
+      internalID: -6749657428911569247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_80
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 19
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28ad4495e7e7562a0800000000000000
+      internalID: -6744845785788786046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_81
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 17
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c746912bd19768630800000000000000
+      internalID: 3928960893376357500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_82
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 16
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f4ce5fae96634a0800000000000000
+      internalID: -6613982544877826193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_83
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 16
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a52a24f0aa37fe70800000000000000
+      internalID: 9148845630992033187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_84
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 15
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c81b3c4a80d493700800000000000000
+      internalID: 520531931457368460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_85
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 16
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c050ef2b3ade22d0800000000000000
+      internalID: -3301461529074839351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_86
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 16
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24536748b23de6b30800000000000000
+      internalID: 4282592479535314242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_87
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 16
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec384f0f7b288a900800000000000000
+      internalID: 695949868961924046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_88
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffdded10fc22d2750800000000000000
+      internalID: 6281715327736667647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_89
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca953149692b9a250800000000000000
+      internalID: 5956488341973326252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_90
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b69f3e09ba089bb70800000000000000
+      internalID: 8915298411715230059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_91
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 0
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63255604ad29d12b0800000000000000
+      internalID: -5612168094552862154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_92
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f25f2660a3bb4b50800000000000000
+      internalID: 6578549182195258101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_93
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f19534cf717feb0800000000000000
+      internalID: -4686250515026600140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_94
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15586bc4809da2040800000000000000
+      internalID: 4623746597119231313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_95
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f20dd62716b475940800000000000000
+      internalID: 5284775569646276655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_96
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd9a10b92d491e360800000000000000
+      internalID: 7197197311779383775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_97
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 3
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02f49d69ba8a72d00800000000000000
+      internalID: 947911701508476704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_98
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a9d19b938e0f8cd0800000000000000
+      internalID: -2553806505282250334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_99
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 3
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371981856c70408c0800000000000000
+      internalID: -4034090817754197645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_100
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 3
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83201d950dcf18750800000000000000
+      internalID: 6305598925085671992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Tileset_Decorations_v2_101
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 3
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2266630cf20e2d830800000000000000
+      internalID: 4094581506926077474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Dungeon_Tileset_Decorations_v2_0: -5856209669763129854
+      Dungeon_Tileset_Decorations_v2_1: -6453047877111911813
+      Dungeon_Tileset_Decorations_v2_10: 983435064742712349
+      Dungeon_Tileset_Decorations_v2_100: 6305598925085671992
+      Dungeon_Tileset_Decorations_v2_101: 4094581506926077474
+      Dungeon_Tileset_Decorations_v2_11: -5890240184997864489
+      Dungeon_Tileset_Decorations_v2_12: -1663797912053507849
+      Dungeon_Tileset_Decorations_v2_13: 7394723016247306704
+      Dungeon_Tileset_Decorations_v2_14: -1881950185887963469
+      Dungeon_Tileset_Decorations_v2_15: -2843178523869302630
+      Dungeon_Tileset_Decorations_v2_16: -7457471620496525457
+      Dungeon_Tileset_Decorations_v2_17: 992493683456039253
+      Dungeon_Tileset_Decorations_v2_18: 2041112292609040092
+      Dungeon_Tileset_Decorations_v2_19: 4541897464804551154
+      Dungeon_Tileset_Decorations_v2_2: 5018053639635506694
+      Dungeon_Tileset_Decorations_v2_20: -4638083002268921005
+      Dungeon_Tileset_Decorations_v2_21: -6453471206931698213
+      Dungeon_Tileset_Decorations_v2_22: -5376504022516420553
+      Dungeon_Tileset_Decorations_v2_23: -7678667089418851994
+      Dungeon_Tileset_Decorations_v2_24: 3307371079671710387
+      Dungeon_Tileset_Decorations_v2_25: 1684766607073858713
+      Dungeon_Tileset_Decorations_v2_26: 1421336877336338838
+      Dungeon_Tileset_Decorations_v2_27: 1286655319715106506
+      Dungeon_Tileset_Decorations_v2_28: 6862751724004368256
+      Dungeon_Tileset_Decorations_v2_29: -3596732891555196565
+      Dungeon_Tileset_Decorations_v2_3: 4922645374509849811
+      Dungeon_Tileset_Decorations_v2_30: 9155160216669790080
+      Dungeon_Tileset_Decorations_v2_31: -1040810267886105932
+      Dungeon_Tileset_Decorations_v2_32: 1317089086395558762
+      Dungeon_Tileset_Decorations_v2_33: -4366289530620390872
+      Dungeon_Tileset_Decorations_v2_34: -8057307954170705421
+      Dungeon_Tileset_Decorations_v2_35: -1323346018192029157
+      Dungeon_Tileset_Decorations_v2_36: -1654743701596935267
+      Dungeon_Tileset_Decorations_v2_37: -3686006499227258955
+      Dungeon_Tileset_Decorations_v2_38: 6218355417178955948
+      Dungeon_Tileset_Decorations_v2_39: 8581813856143536720
+      Dungeon_Tileset_Decorations_v2_4: -8734689659149237676
+      Dungeon_Tileset_Decorations_v2_40: 7827222167177848164
+      Dungeon_Tileset_Decorations_v2_41: -7004128607850720629
+      Dungeon_Tileset_Decorations_v2_42: 5115566763474813638
+      Dungeon_Tileset_Decorations_v2_43: 3218089930812734184
+      Dungeon_Tileset_Decorations_v2_44: 759781808148870646
+      Dungeon_Tileset_Decorations_v2_45: -6737387820948912513
+      Dungeon_Tileset_Decorations_v2_46: 5476356683356910279
+      Dungeon_Tileset_Decorations_v2_47: 6230413927803196022
+      Dungeon_Tileset_Decorations_v2_48: -6709940420476971662
+      Dungeon_Tileset_Decorations_v2_49: -5203712103227783271
+      Dungeon_Tileset_Decorations_v2_5: 1210938039112335523
+      Dungeon_Tileset_Decorations_v2_50: -1048844101735452444
+      Dungeon_Tileset_Decorations_v2_51: 2281698450601677418
+      Dungeon_Tileset_Decorations_v2_52: 5402966243028109594
+      Dungeon_Tileset_Decorations_v2_53: 6129528340011952877
+      Dungeon_Tileset_Decorations_v2_54: 6449291589631410304
+      Dungeon_Tileset_Decorations_v2_55: 1128609758851741625
+      Dungeon_Tileset_Decorations_v2_56: 1852891474431083903
+      Dungeon_Tileset_Decorations_v2_57: 6027978484895603330
+      Dungeon_Tileset_Decorations_v2_58: 1772956680234507934
+      Dungeon_Tileset_Decorations_v2_59: -7916783843901319214
+      Dungeon_Tileset_Decorations_v2_6: -1214667490576079995
+      Dungeon_Tileset_Decorations_v2_60: 7250024869420214532
+      Dungeon_Tileset_Decorations_v2_61: 8534772196925768476
+      Dungeon_Tileset_Decorations_v2_62: 586229847211756851
+      Dungeon_Tileset_Decorations_v2_63: 3396594418105190156
+      Dungeon_Tileset_Decorations_v2_64: -656359744946422922
+      Dungeon_Tileset_Decorations_v2_65: 3485880007177668490
+      Dungeon_Tileset_Decorations_v2_66: 1760822305945642828
+      Dungeon_Tileset_Decorations_v2_67: -4425814771225616194
+      Dungeon_Tileset_Decorations_v2_68: 8762515578707878009
+      Dungeon_Tileset_Decorations_v2_69: 4547343879160033391
+      Dungeon_Tileset_Decorations_v2_7: 4936774799882689570
+      Dungeon_Tileset_Decorations_v2_70: -6069480544106943642
+      Dungeon_Tileset_Decorations_v2_71: 8826489618751339154
+      Dungeon_Tileset_Decorations_v2_72: -3546692385683016611
+      Dungeon_Tileset_Decorations_v2_73: -5989520837213240805
+      Dungeon_Tileset_Decorations_v2_74: -4900900376818896309
+      Dungeon_Tileset_Decorations_v2_75: 2601791722699355190
+      Dungeon_Tileset_Decorations_v2_76: 6726372067378276521
+      Dungeon_Tileset_Decorations_v2_77: 2201452320913873377
+      Dungeon_Tileset_Decorations_v2_78: 2510029244254589401
+      Dungeon_Tileset_Decorations_v2_79: -6749657428911569247
+      Dungeon_Tileset_Decorations_v2_8: -5288080437850618626
+      Dungeon_Tileset_Decorations_v2_80: -6744845785788786046
+      Dungeon_Tileset_Decorations_v2_81: 3928960893376357500
+      Dungeon_Tileset_Decorations_v2_82: -6613982544877826193
+      Dungeon_Tileset_Decorations_v2_83: 9148845630992033187
+      Dungeon_Tileset_Decorations_v2_84: 520531931457368460
+      Dungeon_Tileset_Decorations_v2_85: -3301461529074839351
+      Dungeon_Tileset_Decorations_v2_86: 4282592479535314242
+      Dungeon_Tileset_Decorations_v2_87: 695949868961924046
+      Dungeon_Tileset_Decorations_v2_88: 6281715327736667647
+      Dungeon_Tileset_Decorations_v2_89: 5956488341973326252
+      Dungeon_Tileset_Decorations_v2_9: -5470465914613794254
+      Dungeon_Tileset_Decorations_v2_90: 8915298411715230059
+      Dungeon_Tileset_Decorations_v2_91: -5612168094552862154
+      Dungeon_Tileset_Decorations_v2_92: 6578549182195258101
+      Dungeon_Tileset_Decorations_v2_93: -4686250515026600140
+      Dungeon_Tileset_Decorations_v2_94: 4623746597119231313
+      Dungeon_Tileset_Decorations_v2_95: 5284775569646276655
+      Dungeon_Tileset_Decorations_v2_96: 7197197311779383775
+      Dungeon_Tileset_Decorations_v2_97: 947911701508476704
+      Dungeon_Tileset_Decorations_v2_98: -2553806505282250334
+      Dungeon_Tileset_Decorations_v2_99: -4034090817754197645
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
