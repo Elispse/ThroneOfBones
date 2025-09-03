@@ -30,7 +30,6 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference EyebatAttack { get; private set; }
     [field: SerializeField] public EventReference EyebatDeath { get; private set; }
     [field: SerializeField] public EventReference EyebatHit { get; private set; }
-    [field: SerializeField] public EventReference EyebatFlight {  get; private set; }
 
     [field: Header("Freak Enemy SFX")]
     [field: SerializeField] public EventReference FreakAttack { get; private set; }

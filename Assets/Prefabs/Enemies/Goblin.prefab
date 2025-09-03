@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d095b0e95ec93c4f8e84a56bf5eba54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalAttack: {fileID: 5818295537129569490, guid: 988cb7957e0538c44906875dd4d0b5a8, type: 3}
+  normalAttack: {fileID: 5818295537129569490, guid: e1de7ac51b64a3b45b08390bf6fa626b, type: 3}
   AIType: 0
   AttackDelay: 90
   attackTime: 1

@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: 1
+  enemyType: 4
 --- !u!95 &230397494712542236
 Animator:
   serializedVersion: 7

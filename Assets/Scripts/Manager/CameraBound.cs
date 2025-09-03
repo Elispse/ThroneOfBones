@@ -19,6 +19,12 @@ public class CameraBound : MonoBehaviour
         {
             cameraManager.NextSection();
             used = true;
+            var players = FindObjectsByType<IPlayer>(FindObjectsSortMode.None);
+            foreach (var player in players)
+            {
+                player.transform.position = transform.position + new Vector3(2, 0, 0);
+            }
+            GetComponent<Collider2D>().isTrigger = false;
         }
     }
 }

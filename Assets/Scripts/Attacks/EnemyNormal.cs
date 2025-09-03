@@ -39,7 +39,7 @@ public class EnemyNormal : IAttack
                 sound.start();
                 break;
             case EnemyType.FREAK:
-                sound = AudioManager.instance.CreateInstance(FMODEvents.instance.knightSwordSwing);
+                sound = AudioManager.instance.CreateInstance(FMODEvents.instance.FreakAttack);
                 sound.start();
                 break;
             case EnemyType.GOBLIN:
@@ -47,7 +47,7 @@ public class EnemyNormal : IAttack
                 sound.start();
                 break;
             case EnemyType.NECROMANCER:
-                sound = AudioManager.instance.CreateInstance(FMODEvents.instance.knightSwordSwing);
+                sound = AudioManager.instance.CreateInstance(FMODEvents.instance.NecromancerAttack);
                 sound.start();
                 break;
             case EnemyType.SKELETONKNIGHT:
@@ -55,7 +55,7 @@ public class EnemyNormal : IAttack
                 sound.start();
                 break;
             case EnemyType.SKELETONWIZARD:
-                sound = AudioManager.instance.CreateInstance(FMODEvents.instance.wizardPrimary);
+                sound = AudioManager.instance.CreateInstance(FMODEvents.instance.SkeletonWizardAttack);
                 sound.start();
                 break;
         }
