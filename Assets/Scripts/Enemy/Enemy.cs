@@ -123,7 +123,6 @@ public class Enemy : MonoBehaviour, IDamagable
                 break;
         }
     }
-
     public void Move(Vector2 direction, float speed)
     {
         movement = direction.normalized * speed;
