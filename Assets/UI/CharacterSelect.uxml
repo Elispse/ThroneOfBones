@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; align-items: center; justify-content: center; flex-direction: row;">
+        <ui:Button text="Fighter" name="btnfighter" />
+        <ui:Button text="Wizard" name="btnwizard" />
+    </ui:VisualElement>
+</ui:UXML>

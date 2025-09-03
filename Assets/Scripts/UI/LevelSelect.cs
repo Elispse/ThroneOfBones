@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class LevelSelect : MonoBehaviour
 {
+
     private UIDocument uiDocument;
     private Button leveltestButton;
     private Button level1Button;
@@ -14,15 +16,15 @@ public class LevelSelect : MonoBehaviour
         level1Button = uiDocument.rootVisualElement.Q<Button>("btnlvl1");
         fivehundredwolvesButton = uiDocument.rootVisualElement.Q<Button>("btnlvlwolf");
 
-        leveltestButton.clicked += () => GoToLevel("SampleScene");
-        level1Button.clicked += () => GoToLevel("Level1");
-        fivehundredwolvesButton.clicked += () => GoToLevel("500Wolves");
-
+        leveltestButton.clicked += () => GoToLevel(2);
+        level1Button.clicked += () => GoToLevel(3);
+        fivehundredwolvesButton.clicked += () => GoToLevel(4);
 
     }
-    public void GoToLevel(string name)
+    public void GoToLevel(int index)
     {
-        Debug.Log("Loading level: " + name);
-        UnityEngine.SceneManagement.SceneManager.LoadScene(name);
+        GameManager.Instance.selectedLevel = index;
+        //Debug.Log("Loading level: " + name);
+        GameManager.Instance.GoToLevel(1);
     }
 }
