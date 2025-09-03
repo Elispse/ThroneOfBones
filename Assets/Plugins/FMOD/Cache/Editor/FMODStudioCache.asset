@@ -150,10 +150,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638924563972596786
+  lastModified: 638924600905818097
   FileSizes:
   - Name: Desktop
-    Value: 2826
+    Value: 2864
   Exists: 1
 --- !u!114 &-7637565624060240200
 MonoBehaviour:
@@ -699,13 +699,14 @@ MonoBehaviour:
   - {fileID: 4536660965988938827}
   - {fileID: -7637565624060240200}
   - {fileID: -3592794989758659754}
+  - {fileID: 4987017183923572117}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3037067889015032689}
   StringsBanks:
   - {fileID: -7707472834049543520}
   cacheVersion: 131848
-  cacheTime: 638924564050481097
+  cacheTime: 638924600906268153
   SerializableEventsDict:
   - key: event:/Ambience/Forest Ambience
     index: 0
@@ -787,6 +788,8 @@ MonoBehaviour:
     index: 38
   - key: event:/SFX/DarkKnight/DarkKnightDeath
     index: 39
+  - key: event:/SFX/Goblin/Goblin Attack
+    index: 40
 --- !u!114 &360092067355563068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1031,7 +1034,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638924563972596786
+  lastModified: 638924600905807599
   FileSizes:
   - Name: Desktop
     Value: 1524
@@ -1132,10 +1135,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638924564050481097
+  lastModified: 638924600906268153
   FileSizes:
   - Name: Desktop
-    Value: 532800
+    Value: 533664
   Exists: 1
 --- !u!114 &4752320171984449503
 MonoBehaviour:
@@ -1211,6 +1214,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1570
+--- !u!114 &4987017183923572117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Goblin/Goblin Attack
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Goblin/Goblin Attack
+  Guid:
+    Data1: 1768663936
+    Data2: 1341777711
+    Data3: -405124946
+    Data4: -197873432
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 840
 --- !u!114 &5229187838689318177
 MonoBehaviour:
   m_ObjectHideFlags: 0
