@@ -69,7 +69,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638924327639749871
+  lastModified: 638924478446961587
   FileSizes:
   - Name: Desktop
     Value: 1888
@@ -190,7 +190,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Ambient.bank
   Name: Ambient
   StudioPath: bank:/Ambient
-  lastModified: 638924327639564985
+  lastModified: 638924478446941586
   FileSizes:
   - Name: Desktop
     Value: 6206816
@@ -387,7 +387,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -7707472834049543520}
   cacheVersion: 131848
-  cacheTime: 638924327640960648
+  cacheTime: 638924478447441572
   SerializableEventsDict:
   - key: event:/Ambience/Forest Ambience
     index: 0
@@ -496,7 +496,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638924327640806879
+  lastModified: 638924478447431573
   FileSizes:
   - Name: Desktop
     Value: 13726432
@@ -617,7 +617,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638924327639657310
+  lastModified: 638924478446951580
   FileSizes:
   - Name: Desktop
     Value: 1524
@@ -664,7 +664,7 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638924327640960648
+  lastModified: 638924478447441572
   FileSizes:
   - Name: Desktop
     Value: 220064
