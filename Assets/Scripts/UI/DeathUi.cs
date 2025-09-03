@@ -13,12 +13,17 @@ public class DeathUi : MonoBehaviour
 
     void Start()
     {
-        
-    }
+		uiDocument = GetComponent<UIDocument>();
+		respawnButton = uiDocument.rootVisualElement.Q<Button>("btnrespawn");
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+		respawnButton.clicked += () => Respawn();
+	}
+
+
+	public void Respawn()
+	{
+		buttonsfx.start();
+		GameManager.Instance.Respawn();
+	}
+	
 }
