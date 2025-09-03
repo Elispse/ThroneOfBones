@@ -7,13 +7,13 @@ public class CameraManager : MonoBehaviour
     private int currentSection = 0;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void NextSection()
@@ -22,6 +22,6 @@ public class CameraManager : MonoBehaviour
         {
             currentSection++;
         }
-        gameObject.transform.position = new Vector3(sections[currentSection].position.x, sections[currentSection].position.y, gameObject.transform.position.z);
+        transform.position = new Vector3(sections[currentSection].position.x, sections[currentSection].position.y, gameObject.transform.position.z);
     }
 }
