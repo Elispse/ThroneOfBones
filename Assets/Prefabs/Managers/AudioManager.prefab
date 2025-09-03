@@ -99,60 +99,179 @@ MonoBehaviour:
       Data2: 1167592028
       Data3: 2105519796
       Data4: 450993801
-    Path: event:/SFX/SwordSwing
+    Path: event:/SFX/Knight/SwordSwing
   <knightWalk>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1387641527
+      Data2: 1183273922
+      Data3: 761285815
+      Data4: -2112544430
+    Path: event:/SFX/Knight/KnightWalk
+  <knightShield>k__BackingField:
+    Guid:
+      Data1: 2038892480
+      Data2: 1299945822
+      Data3: 118572179
+      Data4: -442060080
+    Path: event:/SFX/Equip
   <knightBlock>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1772882035
+      Data2: 1293294183
+      Data3: -1814528597
+      Data4: -736528864
+    Path: event:/SFX/Knight/ShieldBlock
+  <knightHurt>k__BackingField:
+    Guid:
+      Data1: 162849545
+      Data2: 1230268859
+      Data3: 1622864783
+      Data4: 65911784
+    Path: event:/SFX/Knight/KnightHurt
   <wizardPrimary>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -480391681
+      Data2: 1336524991
+      Data3: 1953061803
+      Data4: 1030210555
+    Path: event:/SFX/Wizard/WizardPrimary
   <wizardWalk>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 296572246
+      Data2: 1179616063
+      Data3: 1437463231
+      Data4: 154803203
+    Path: event:/SFX/Wizard/WizardWalk
   <wizardSecondary>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 734807519
+      Data2: 1336581627
+      Data3: 193206707
+      Data4: -198537073
+    Path: event:/SFX/Wizard/WizardSecondary
+  <wizardHurt>k__BackingField:
+    Guid:
+      Data1: -512103618
+      Data2: 1211781640
+      Data3: -764217961
+      Data4: 932808343
+    Path: event:/SFX/Wizard/WizardHurt
+  <skeletonAttack>k__BackingField:
+    Guid:
+      Data1: 1878831753
+      Data2: 1185503962
+      Data3: -851602773
+      Data4: 1729057058
+    Path: event:/SFX/Skeleton/SkeletonAttack
+  <skeletonDeath>k__BackingField:
+    Guid:
+      Data1: -1087584596
+      Data2: 1279091887
+      Data3: -199119712
+      Data4: 94147149
+    Path: event:/SFX/Skeleton/SkeletonDeath
+  <skeletonHit>k__BackingField:
+    Guid:
+      Data1: -2127350859
+      Data2: 1145328850
+      Data3: -117463654
+      Data4: 1893323053
+    Path: event:/SFX/Skeleton/SkeletonHit
+  <GoblinAttack>k__BackingField:
+    Guid:
+      Data1: 1397469684
+      Data2: 1167592028
+      Data3: 2105519796
+      Data4: 450993801
+    Path: event:/SFX/Knight/SwordSwing
+  <GoblinDeath>k__BackingField:
+    Guid:
+      Data1: -1087584596
+      Data2: 1279091887
+      Data3: -199119712
+      Data4: 94147149
+    Path: event:/SFX/Skeleton/SkeletonDeath
+  <GoblinHit>k__BackingField:
+    Guid:
+      Data1: -2127350859
+      Data2: 1145328850
+      Data3: -117463654
+      Data4: 1893323053
+    Path: event:/SFX/Skeleton/SkeletonHit
+  <EyebatAttack>k__BackingField:
+    Guid:
+      Data1: 1878831753
+      Data2: 1185503962
+      Data3: -851602773
+      Data4: 1729057058
+    Path: event:/SFX/Skeleton/SkeletonAttack
+  <EyebatDeath>k__BackingField:
+    Guid:
+      Data1: -1087584596
+      Data2: 1279091887
+      Data3: -199119712
+      Data4: 94147149
+    Path: event:/SFX/Skeleton/SkeletonDeath
+  <EyebatHit>k__BackingField:
+    Guid:
+      Data1: -2127350859
+      Data2: 1145328850
+      Data3: -117463654
+      Data4: 1893323053
+    Path: event:/SFX/Skeleton/SkeletonHit
   <UIClick>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <ambience>k__BackingField:
+      Data1: -1474254523
+      Data2: 1199384022
+      Data3: -1029743972
+      Data4: -1394848225
+    Path: event:/SFX/UI/UIButton
+  <UIPlayButton>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <primaryTrack>k__BackingField:
+      Data1: 1301389538
+      Data2: 1338368292
+      Data3: -304952919
+      Data4: 1871251588
+    Path: event:/SFX/UI/UIPlay
+  <UIPause>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1050417758
+      Data2: 1204105084
+      Data3: 1375683487
+      Data4: 2141847054
+    Path: event:/SFX/UI/UIPause
+  <forestAmbience>k__BackingField:
+    Guid:
+      Data1: -1192136865
+      Data2: 1101274566
+      Data3: -1531220308
+      Data4: -1008006372
+    Path: event:/Ambience/Forest Ambience
+  <castleAmbience>k__BackingField:
+    Guid:
+      Data1: -1192136865
+      Data2: 1101274566
+      Data3: -1531220308
+      Data4: -1008006372
+    Path: event:/Ambience/Forest Ambience
+  <forestMusic>k__BackingField:
+    Guid:
+      Data1: 1835527863
+      Data2: 1081891521
+      Data3: -1353324902
+      Data4: 1094024521
+    Path: event:/Music/Forest Music
+  <castleMusic>k__BackingField:
+    Guid:
+      Data1: -1013304216
+      Data2: 1228660281
+      Data3: 481906111
+      Data4: -1870961513
+    Path: event:/Music/Castle Music Backup
+  <menuMusic>k__BackingField:
+    Guid:
+      Data1: -951820681
+      Data2: 1308361717
+      Data3: 564706185
+      Data4: 1797267348
+    Path: event:/Music/Menu Music

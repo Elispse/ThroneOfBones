@@ -8,6 +8,7 @@ public class EnemyNormal : IAttack
     public override float destroyTime => 0.1f;
 
     public bool projectile = false;
+    public override bool facingRight { get; set; } = true;
     public override bool blocked { get; set; } = false;
     public override IPlayer owner { get; set; }
 
@@ -15,7 +16,7 @@ public class EnemyNormal : IAttack
     {
         if (projectile)
         {
-            transform.Translate(Vector3.right * 0.5f);
+            transform.Translate(Vector3.right * (facingRight? 1 : -1 )* 0.5f);
         }
     }
 }

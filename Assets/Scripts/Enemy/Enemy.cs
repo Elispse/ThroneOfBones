@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour, IDamagable
 {
     [SerializeField] GameObject normalAttack;
-    [SerializeField] int AIType = 0; // 0 is random, 1 is chase player, 2 is flee
+    [SerializeField] int AIType = 0; // 0 is random, 1 is chase player, 2 is flee, 3 is rush
 
     private Rigidbody2D rb;
     private int Health = 100;
@@ -14,7 +14,9 @@ public class Enemy : MonoBehaviour, IDamagable
     [SerializeField] public int AttackDelay = 90;
 
     [SerializeField] public float attackTime = 0.5f;
+    [SerializeField] public float fleeDistance = 20f;
     private bool facingRight = true;
+    private bool isAttacking = false;
     [SerializeField] public Animator animator;
 
     [SerializeField] public float flipOffset = 0;
@@ -31,15 +33,12 @@ public class Enemy : MonoBehaviour, IDamagable
     protected float jumpVelocity = 0f;
     protected bool isJumping = false;
 
-
     [SerializeField] public Transform enemyObject;
     [SerializeField] public Transform shadow;
 
     public void Awake()
     {
-        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        if (spriteRenderer == null)
-            Debug.LogError("SpriteRenderer not found on Player.");
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>(); 
     }
 
     void Start()
@@ -55,7 +54,7 @@ public class Enemy : MonoBehaviour, IDamagable
         HandleJump();
         rb.linearVelocity *= 0.9f;
         attackTimer++;
-        if (isJumping) return;
+        if (isJumping || isAttacking) return;
         switch (AIType)
         {
             case 0:
@@ -67,6 +66,9 @@ public class Enemy : MonoBehaviour, IDamagable
             case 2:
                 flee();
                 break;
+            case 3:
+                rush();
+                break;
             default:
                 randomMove();
                 break;
@@ -77,7 +79,7 @@ public class Enemy : MonoBehaviour, IDamagable
     {
         movement = direction.normalized * speed;
         rb.linearVelocity = movement;
-        animator.SetBool("Move", movement.magnitude > 0);
+        animator.SetBool("Move", movement.magnitude > 0.01);
         if (movement.x > 0 && !facingRight)
         {
             Flip();
@@ -92,7 +94,7 @@ public class Enemy : MonoBehaviour, IDamagable
     {
         enemyObject.localScale = new Vector3(-enemyObject.localScale.x, enemyObject.localScale.y, enemyObject.localScale.z);
         facingRight = !facingRight;
-        enemyObject.localPosition = new Vector3(facingRight? originalXPos : originalXPos - flipOffset, enemyObject.localPosition.y, enemyObject.localPosition.z);
+        //enemyObject.localPosition = new Vector3(facingRight? originalXPos : originalXPos - flipOffset, enemyObject.localPosition.y, enemyObject.localPosition.z);
     }
 
     public void ApplyDamage(float damage)
@@ -189,7 +191,7 @@ public class Enemy : MonoBehaviour, IDamagable
             }
         }
     }
-    private IEnumerator FleeAndAttack(float fleeDuration)
+    private IEnumerator FleeAndAttack(float targetFleeDistance)
     {
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         if (players.Length == 0) yield break;
@@ -208,12 +210,12 @@ public class Enemy : MonoBehaviour, IDamagable
 
         if (nearestPlayer == null) yield break;
 
-        float timer = 0f;
-        while (timer < fleeDuration)
+        float currentDistance = Vector2.Distance(transform.position, nearestPlayer.transform.position);
+        while (currentDistance < targetFleeDistance)
         {
             Vector2 fleeDirection = (transform.position - nearestPlayer.transform.position).normalized;
             Move(fleeDirection, 1.5f);
-            timer += Time.deltaTime;
+            currentDistance = Vector2.Distance(transform.position, nearestPlayer.transform.position);
             yield return null;
         }
 
@@ -227,21 +229,51 @@ public class Enemy : MonoBehaviour, IDamagable
     }
     public void flee()
     {
-        StartCoroutine(FleeAndAttack(.2f));
+        StartCoroutine(FleeAndAttack(fleeDistance));
+    }
+    
+    public void rush()
+    {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        if (players.Length == 0) return;
+        
+        GameObject nearestPlayer = null;
+        float minDistance = float.MaxValue;
+        foreach (var player in players)
+        {
+            float distance = Vector2.Distance(transform.position, player.transform.position);
+            if (distance < minDistance)
+            {
+                minDistance = distance;
+                nearestPlayer = player;
+            }
+        }
+        
+        if (nearestPlayer != null)
+        {
+            Vector2 direction = (nearestPlayer.transform.position - transform.position).normalized;
+            Move(direction, 5f);
+        }
+        if (minDistance <= 2f)
+        {
+            NormalAttack();
+        }
     }
     public void NormalAttack()
     {
-        if (attackTimer >= AttackDelay)
+        if (attackTimer >= AttackDelay && !isAttacking)
         {
             attackTimer = 0;
             StartCoroutine(DelayedNormalAttack(attackTime));
-            animator.SetTrigger("Attack");
         }
     }
     private IEnumerator DelayedNormalAttack(float delay)
     {
-        yield return new WaitForSeconds(delay);
-        Instantiate(normalAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
+        isAttacking = true;
         animator.SetTrigger("Attack");
+        yield return new WaitForSeconds(delay);
+        var attack = Instantiate(normalAttack, transform.position + new Vector3(facingRight ? 1 : -1, 0, 0), Quaternion.identity);
+        attack.GetComponent<IAttack>().facingRight = facingRight;
+        isAttacking = false;
     }
 }

@@ -37,21 +37,15 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
 
     protected Rigidbody2D rb;
     [SerializeField] SpriteRenderer spriteRenderer;
-    protected bool facingRight = true;
+    public bool facingRight = true;
     protected Vector3 targetVelocity = Vector3.zero;
 
     protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         if (rb == null)
-            Debug.LogError("Rigidbody2D component not found on Player.");
 
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        if (spriteRenderer == null)
-            Debug.LogError("SpriteRenderer not found on Player.");
-
-        if (playerObject == null)
-            Debug.LogError("Assign a Visuals transform (child object).");
 
         rb.linearDamping = 1f;
     }
@@ -133,7 +127,6 @@ public abstract class IPlayer : MonoBehaviour, IDamagable
 
     protected virtual void Flip()
     {
-        Debug.Log("Flip");
         playerObject.localScale = new Vector3(-playerObject.localScale.x, playerObject.localScale.y, playerObject.localScale.z);
         facingRight = !facingRight;
     }
