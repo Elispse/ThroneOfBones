@@ -16,6 +16,7 @@ public class CameraBound : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             cameraManager.NextSection();
+            Destroy(gameObject);
         }
     }
 }
