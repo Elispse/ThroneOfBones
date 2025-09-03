@@ -1,8 +1,12 @@
+using FMOD.Studio;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class CharacterSelect : MonoBehaviour
 {
+	private EventInstance buttonsfx;
+
+
 	private UIDocument uiDocument;
     private Button submitButton;
 
@@ -17,6 +21,8 @@ public class CharacterSelect : MonoBehaviour
 		rbgplayer1 = uiDocument.rootVisualElement.Q<RadioButtonGroup>("rbgplayer1");
 		rbgplayer2 = uiDocument.rootVisualElement.Q<RadioButtonGroup>("rbgplayer2");
 
+		buttonsfx = AudioManager.instance.CreateInstance(FMODEvents.instance.UIClick);
+
 		submitButton.clicked += () => GoToLevel();
 	}
 
@@ -25,6 +31,7 @@ public class CharacterSelect : MonoBehaviour
 		Debug.Log(rbgplayer1.value);
 
 
+		buttonsfx.start();
 
 
 		switch (rbgplayer1.value)
