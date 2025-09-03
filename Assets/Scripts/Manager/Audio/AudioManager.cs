@@ -1,7 +1,9 @@
-    using FMOD.Studio;
+using FMOD.Studio;
 using FMODUnity;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -47,12 +49,31 @@ public class AudioManager : MonoBehaviour
         musicBus.getVolume(out musicVolume);
         ambienceBus.getVolume(out ambienceVolume);
         sfxBus.getVolume(out SFXVolume);
-    }
 
-    private void Start()
-    {
-        //InitializeAmbience(FMODEvents.instance.ambience);
-        //InitializeMusic(FMODEvents.instance.primaryTrack);
+        UnityEngine.SceneManagement.Scene currentScene = SceneManager.GetActiveScene();
+        switch (currentScene.buildIndex)
+        {
+            case 0:
+                musicEventInstance = CreateInstance(FMODEvents.instance.menuMusic);
+                musicEventInstance.start();
+                break;
+            case 1:
+                musicEventInstance = CreateInstance(FMODEvents.instance.menuMusic);
+                musicEventInstance.start();
+                break;
+            case 2:
+                musicEventInstance = CreateInstance(FMODEvents.instance.forestMusic);
+                ambienceEventInstance = CreateInstance(FMODEvents.instance.forestAmbience);
+                musicEventInstance.start();
+                ambienceEventInstance.start();
+                break;
+            case 3:
+                musicEventInstance = CreateInstance(FMODEvents.instance.castleMusic);
+                ambienceEventInstance = CreateInstance(FMODEvents.instance.castleAmbience);
+                musicEventInstance.start();
+                ambienceEventInstance.start();
+                break;
+        }
     }
 
     private void Update()
