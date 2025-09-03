@@ -3,30 +3,30 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "UIVariables", menuName = "Scriptable Objects/UIVariables")]
 public class UIVariables : ScriptableObject
 {
-	public float Timer = 0f;
-	public int Score = 0;
+    public float Timer = 0f;
+    public string Score = "Score: 0";
 
-	public IPlayer player1;
-	public IPlayer player2;
-	public float p1Health = 100;
-	public float p2Health = 100;
-	public string p1Combo = "0 combo";
-	public string p2Combo = "0 combo";
-	public void UpdateVars()
-	{
-		Score = GameManager.Instance.Score;
-		Timer = (int)GameManager.Instance.Timer;
+    public IPlayer player1;
+    public IPlayer player2;
+    public float p1Health = 100;
+    public float p2Health = 100;
+    public string p1Combo = "0 combo";
+    public string p2Combo = "0 combo";
+    public void UpdateVars()
+    {
+        Score = "Score: " + GameManager.Instance.Score;
+        Timer = (int)GameManager.Instance.Timer;
         player1 = GameManager.Instance.Player1;
         player2 = GameManager.Instance.Player2;
         if (player1)
-		{
-			p1Health = GameManager.Instance.Player1.Health;
-			p1Combo = GameManager.Instance.Player1.Combo + " combo";
-		}
-		if (player2)
-		{
-			p2Health = GameManager.Instance.Player2.Health;
-			p2Combo = GameManager.Instance.Player2.Combo + " combo";
-		}
-	}
+        {
+            p1Health = GameManager.Instance.Player1.Health;
+            p1Combo = GameManager.Instance.Player1.Combo + " combo";
+        }
+        if (player2)
+        {
+            p2Health = GameManager.Instance.Player2.Health;
+            p2Combo = GameManager.Instance.Player2.Combo + " combo";
+        }
+    }
 }
