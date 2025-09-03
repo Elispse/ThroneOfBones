@@ -69,10 +69,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638924237335996403
+  lastModified: 638924410452207160
   FileSizes:
   - Name: Desktop
-    Value: 1888
+    Value: 1984
   Exists: 1
 --- !u!114 &-6711110273718673508
 MonoBehaviour:
@@ -381,13 +381,15 @@ MonoBehaviour:
   - {fileID: 8521473199267800797}
   - {fileID: 5229187838689318177}
   - {fileID: -8065547336645033870}
+  - {fileID: 511517324512006524}
+  - {fileID: 3457438781138182392}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3037067889015032689}
   StringsBanks:
   - {fileID: -7707472834049543520}
   cacheVersion: 131848
-  cacheTime: 638924285782201994
+  cacheTime: 638924410453786887
   SerializableEventsDict:
   - key: event:/Ambience/Forest Ambience
     index: 0
@@ -454,6 +456,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &511517324512006524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Goblin/Goblin Death
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Goblin/Goblin Death
+  Guid:
+    Data1: 1697371162
+    Data2: 1203066417
+    Data3: 1038187435
+    Data4: -343440179
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1100
 --- !u!114 &532342860859190231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,11 +646,38 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638924237335996403
+  lastModified: 638924410452207160
   FileSizes:
   - Name: Desktop
     Value: 1524
   Exists: 1
+--- !u!114 &3457438781138182392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Goblin/Goblin Hurt
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Goblin/Goblin Hurt
+  Guid:
+    Data1: -1874440784
+    Data2: 1208776595
+    Data3: -2024163905
+    Data4: -2022623020
+  Banks:
+  - {fileID: 4565676149254333236}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 697
 --- !u!114 &3631058388203709447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,10 +720,10 @@ MonoBehaviour:
   Path: FMOD/ThroneOfBones/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638924285782201994
+  lastModified: 638924410453786887
   FileSizes:
   - Name: Desktop
-    Value: 251168
+    Value: 283040
   Exists: 1
 --- !u!114 &4752320171984449503
 MonoBehaviour:
