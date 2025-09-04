@@ -1,4 +1,5 @@
-# ThroneOfBones
+# <img width="1919" height="1199" alt="Screenshot 2025-09-04 112811" src="https://github.com/user-attachments/assets/95a8dc26-c8ee-4c80-b5e7-d6c11ec170d6" />
+ThroneOfBones
 This is a project for a college class, we are making a 2D beat-em up in unity 6. With the theme of being in medieval times with a fantasy setting.
 This took roughly 3 1/2 weeks of effort between 4 people
 
@@ -29,3 +30,5 @@ A | ✕ - Jump <br/>
 X | ▢  - Primary Attack <br/>
 Y | △ - Secondary Attack <br/>
 ☰ | ☰ - Pause
+<img width="1919" height="1199" alt="Screenshot 2025-09-04 112659" src="https://github.com/user-attachments/assets/5168dab1-0f46-430c-857d-de1acc8e7d96" />
+<img width="1919" height="1199" alt="Screenshot 2025-09-04 112926" src="https://github.com/user-attachments/assets/da47f2ed-1dd1-449e-8b8e-12008c84ef1d" />
